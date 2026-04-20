@@ -2006,7 +2006,7 @@ const ExamTestApp = () => {
   },
   {
     q: "Qué hace el siguiente código:",
-    image: "/src/assets/img/pregunta7.png",
+    image: '/img/pregunta7.png',
     options: [
       "Según el valor de la variable opciones ejecutara solo el código de uno de los valores ‘a’, ‘b’, ‘c’ o ‘d’.",
       "Según el valor de la variable opciones ejecutará solo el código de uno de los valores que no sean ni ‘a’, ‘b’, ‘c’ y ‘d’.",
@@ -2018,7 +2018,7 @@ const ExamTestApp = () => {
   },
   {
     q: "Qué hace el siguiente código.",
-    image: "/src/assets/img/pregunta8.png",
+    image: '/img/pregunta8.png',
     options: [
       "Solo se ejecutará la instrucción i++.",
       "Se imprimirá por pantalla 10 veces.",
@@ -2601,6 +2601,16 @@ const ExamTestApp = () => {
             <h3 className="text-2xl font-bold text-gray-800 mb-8 leading-relaxed">
               {currentQ.q}
             </h3>
+            
+            {currentQ.image && (
+              <div className="mb-8 flex justify-center">
+                <img 
+                  src={currentQ.image} 
+                  alt="Código de ejemplo" 
+                  className="max-w-full h-auto rounded-lg shadow-lg border-2 border-gray-200"
+                />
+              </div>
+            )}
             
             <div className="space-y-4 mb-8">
               {currentQ.options.map((option, i) => {
