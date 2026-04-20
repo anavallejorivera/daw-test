@@ -2405,66 +2405,469 @@ const ExamTestApp = () => {
 
         unidad9: {
           name: "Unidad 9: Colecciones",
-          questions: [
-            {"q": "¿Qué es una colección?", "options": ["Estática ilimitada", "Estática limitada", "Dinámica limitada", "Dinámica ilimitada"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Collection interfaz de:", "options": ["Set, List y Queue", "Map", "TreeMap", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Con ArrayDeque se puede implementar:", "options": ["Cola", "Pila", "Cola y pila", "Todas"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Característica colección Set", "options": ["Repetidos", "Ordena", "Valores null", "No repetidos"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Map almacena elementos:", "options": ["Clave y valor", "Tabla hash", "Índices", "No usa nada"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "PriorityQueue se puede definir:", "options": ["Collection duplicados natural", "Collection únicos prioridad", "Collection duplicados prioridad", "Map únicos prioridad"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Estructura ordenada Set:", "options": ["HashSet", "LinkedHashSet", "TreeSet", "Ninguna"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Método lastIndexOf ArrayList:", "options": ["Primera ocurrencia", "Última ocurrencia", "Mayor de 0", "Menor de 0"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Interfaces raíces colecciones:", "options": ["ArrayList y LinkedList", "Collection y Map", "Collection y ArrayDeque", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "ArrayList se puede definir como:", "options": ["Estático no modificable", "Dinámico modificable", "Estático ordenado", "Dinámico ordenado"], "correct": 1, "explanation": "La respuesta correcta es B."}
-          ]
+          questions:  [
+  {
+    q: "¿Qué es una colección?",
+    options: [
+      "Una estructura estática que almacena elementos de forma secuencial con un tamaño ilimitado de valores.",
+      "Una estructura estática que almacena elementos con un tamaño limitado de valores.",
+      "Una estructura dinámica que almacena un grupo de elementos limitado.",
+      "Una estructura dinámica que almacena un grupo de elementos ilimitado."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Una estructura dinámica que almacena un grupo de elementos ilimitado.\nSegún el material de estudio, concretamente en el resumen de la unidad dedicada a las colecciones y tipos abstractos de datos, se define de forma explícita que las colecciones son estructuras dinámicas de un tamaño ilimitado que facilitan el tratamiento de un conjunto de valores, como añadir, eliminar, buscar, ordenar, etc. El temario añade que esto permite variar su tamaño según las necesidades requeridas, resolviendo así las limitaciones que presentan los arrays tradicionales.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y B son falsas, ya que catalogan a las colecciones como una estructura estática. El temario hace mucho hincapié en que las colecciones son estructuras dinámicas, y que la estructura que se define por ser un objeto estático es el array.\nLa opción C es falsa, debido a que indica que el grupo de elementos es limitado. Una de las principales ventajas de las colecciones frente a los arrays es precisamente que permiten tener un conjunto dinámico de tamaño ilimitado."
+  },
+  {
+    q: "Collection es la interfaz de:",
+    options: [
+      "Set, List y Queue",
+      "Map",
+      "TreeMap",
+      "Ninguna de las anteriores"
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Set, List y Queue.\nEl material de estudio establece explícitamente, en la unidad dedicada a las colecciones, que la interfaz Collection es la raíz para las colecciones Set, List y Queue. El resumen de la unidad reitera esta estructura jerárquica indicando que, de las dos interfaces principales para definir colecciones, Collection y Map, es concretamente de Collection de donde descienden las interfaces Set, List y Queue.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el temario especifica que Map es una interfaz completamente distinta a Collection. Map difiere en que requiere el uso de una estructura de clave-valor para cada elemento, manteniéndose como una jerarquía principal separada.\nLa opción C es falsa, debido a que TreeMap no es una interfaz base de Collection, sino una clase concreta que implementa o hace uso de la interfaz Map.\nAl ser cierta y exacta la opción A, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Con ArrayDeque se puede implementar:",
+    options: [
+      "Una cola.",
+      "Una pila.",
+      "Una cola y pila simultáneamente.",
+      "Todas las opciones son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Todas las opciones son correctas.\nSegún el material de estudio, concretamente en el apartado dedicado a la interfaz Queue de las colecciones, se define de forma literal a la clase ArrayDeque como una estructura que puede implementar una cola, una pila o ambos a la vez, ya que permite añadir por delante y por detrás. Las diapositivas de la unidad reafirman este concepto indicando que es una estructura que aplica tanto la metodología FIFO para la cola como LIFO para la pila.\nA modo de aclaración sobre por qué la opción D es la única que engloba toda la verdad:\nLas opciones A y B son ciertas individualmente, ya que la estructura está diseñada para funcionar perfectamente como una cola clásica o como una pila.\nLa opción C es cierta, debido a que el temario especifica textualmente que puede operar de ambas formas a la vez gracias a su capacidad de interactuar libremente por ambos extremos.\nAl ser correctos los tres escenarios anteriores, la opción D es la respuesta global válida."
+  },
+  {
+    q: "Indica la principal característica de una colección Set",
+    options: [
+      "Puede tener elementos repetidos.",
+      "Ordena sus elementos.",
+      "Permite tener valores null.",
+      "No puede tener elemento repetidos."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. No puede tener elementos repetidos.\nSegún el material de estudio, concretamente en el apartado dedicado a las colecciones de tipo Set y en el resumen de la unidad, se establece de forma literal y explícita que la interfaz Set hace uso de conjuntos de datos y su principal característica es no tener elementos duplicados.\nA modo de aclaración sobre por qué las demás opciones no son la respuesta correcta:\nLa opción A es totalmente falsa, ya que afirma exactamente lo contrario a la definición principal de esta interfaz.\nLa opción B es incorrecta como característica principal, debido a que la ordenación no es un rasgo general de la interfaz Set. Aunque implementaciones específicas como TreeSet sí ordenan sus elementos, HashSet no lo hace.\nLa opción C es incorrecta como característica definitoria, porque la posibilidad de permitir valores null depende de la clase concreta que implemente la interfaz, no de la interfaz Set en general."
+  },
+  {
+    q: "La interfaz Map almacena siempre sus elementos haciendo uso de:",
+    options: [
+      "Una clave como identificador y el valor del elemento.",
+      "Una tabla hash.",
+      "Índices.",
+      "No usa nada para almacenar sus elementos."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Una clave como identificador y el valor del elemento.\nSegún el material de estudio, concretamente en la unidad dedicada a las colecciones, se establece de forma literal que la interfaz Map permite agrupar datos teniendo que hacer uso de una clave para cada elemento, es decir, una estructura clave-valor. El temario especifica que siempre requiere de un tipo para representar la clave y otro para el elemento, donde la clave actúa como un identificador único.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa como afirmación general para la interfaz Map, ya que no todas sus implementaciones utilizan una tabla hash. Por ejemplo, TreeMap hace uso de una estructura en árbol.\nLa opción C es falsa, debido a que el uso de índices es característico de arrays y listas, no de los mapas.\nLa opción D es falsa, porque el material de estudio detalla precisamente el mecanismo que utiliza, basado siempre en pares clave-valor."
+  },
+  {
+    q: "PriorityQueue se puede definir por:",
+    options: [
+      "Es una cola que hace uso de la interfaz Collection, almacenando elementos duplicados y ordenándolos por su orden natural o definido por el usuario.",
+      "Es una cola que hace uso de la interfaz Collection, almacenando elementos únicos, sin duplicados y ordenándolos según una prioridad.",
+      "Es una cola que hace uso de la interfaz Collection, almacenando elementos duplicados, y ordenándolos según una prioridad.",
+      "Es una cola que hace uso de la interfaz Map, almacenando elementos únicos, sin duplicados y ordenándolos según una prioridad."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Es una cola que hace uso de la interfaz Collection, almacenando elementos duplicados y ordenándolos por su orden natural o definido por el usuario.\nSegún el material de estudio, concretamente en los apartados dedicados a la interfaz Queue y a la clase PriorityQueue, se establece que Queue es una interfaz de tipo colección, ya que la interfaz Collection es la raíz para las colecciones Set, List y Queue. Además, se indica explícitamente que estas colas permiten tener elementos duplicados.\nRespecto a su ordenación particular, el temario define a PriorityQueue señalando que la prioridad es marcada por el orden natural del tipo y que es posible definir una prioridad propia usando Comparable. Esta explicación coincide exactamente con la afirmación de la opción A.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que afirma que almacena elementos únicos, sin duplicados. El temario especifica claramente que PriorityQueue sí permite valores duplicados.\nLa opción C es incompleta frente a la A, porque aunque acierta en los duplicados y en que usa una prioridad, no recoge con la misma precisión que esa prioridad puede venir dada por el orden natural o por una definida por el usuario.\nLa opción D es falsa, debido a que indica erróneamente que hace uso de la interfaz Map."
+  },
+  {
+    q: "Que estructura permite almacenar los elementos ordenados en una colección Set",
+    options: [
+      "HashSet.",
+      "LinkedHashSet.",
+      "TreeSet.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. TreeSet.\nSegún el material de estudio, concretamente en el apartado dedicado a las colecciones de la interfaz Set, la clase TreeSet se define como una estructura en árbol binario cuyas principales características incluyen explícitamente que los elementos están ordenados ascendentemente según sus valores. El temario detalla además que este criterio de ordenación viene establecido por el orden natural del tipo de dato o puede definirse de forma personalizada mediante Comparator.\nA modo de aclaración sobre por qué las demás opciones no encajan con la definición solicitada:\nLa opción A es falsa, ya que HashSet se caracteriza porque sus elementos no están ordenados.\nLa opción B no es la respuesta esperada en este contexto, debido a que LinkedHashSet mantiene el orden de inserción, pero no ordena los elementos por su valor.\nAl ser cierta y exacta la opción C, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Que hace el método int lastIndex0f(E Elemento) de la clase ArrayList",
+    options: [
+      "Devuelve la posición de la primera ocurrencia del elemento.",
+      "Devuelve la posición de la última ocurrencia del elemento.",
+      "Devuelve un valor mayor de 0 si encuentra el elemento.",
+      "Devuelve en valor menor de 0 si encuentra el elemento."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Devuelve la posición de la última ocurrencia del elemento.\nSegún el material de estudio, concretamente en el apartado donde se explican los principales métodos de la clase ArrayList dentro de la unidad de colecciones, se define de forma explícita que el método int lastIndexOf(E Elemento) sirve para devolver la posición de la última ocurrencia del elemento.\nA modo de aclaración sobre por qué las demás alternativas son incorrectas:\nLa opción A es falsa, ya que devolver la posición de la primera ocurrencia del elemento corresponde al método indexOf(E Elemento).\nLas opciones C y D son falsas, debido a que no reflejan el comportamiento real ni la definición estipulada en la teoría para este método. Su finalidad es localizar el índice de la última vez que aparece un elemento."
+  },
+  {
+    q: "Que tipo de interfaces raíces existen para implementar colecciones",
+    options: [
+      "ArrayList y LinkedList",
+      "Collection y Map",
+      "Collection y ArrayDeque",
+      "Ninguna de las anteriores"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Collection y Map.\nSegún el material de estudio, concretamente en el resumen de la unidad dedicada a las colecciones y tipos abstractos de datos, se establece de forma explícita que existen dos interfaces principales para definir colecciones: Collection y Map. El temario detalla que Collection es la raíz para Set, List y Queue, mientras que Map se mantiene como una jerarquía principal separada por su estructura de clave-valor.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que ArrayList y LinkedList son clases concretas, no interfaces raíces.\nLa opción C es falsa, debido a que aunque Collection sí es una interfaz raíz, ArrayDeque es una clase que hace uso de Queue, no una interfaz principal.\nAl ser cierta y exacta la opción B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Se puede definir un ArrayList como:",
+    options: [
+      "Un array estático que no se puede modificar su tamaño en ejecución.",
+      "Un array dinámico que se puede modificar su tamaño en ejecución.",
+      "Un array estático ordenado que se puede modificar su tamaño en ejecución.",
+      "Un array dinámico ordenado que se puede modificar su tamaño en ejecución."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Un array dinámico que se puede modificar su tamaño en ejecución.\nSegún el material de estudio, concretamente en el apartado dedicado a la colección ArrayList, esta estructura se define de forma literal como la implementación de un array dinámico haciendo uso de índices y añadiendo la mejora de que puede variar su tamaño en ejecución.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y C son falsas, ya que afirman que es un array estático. El temario hace especial hincapié en que la estructura estática tradicional es el array básico, mientras que ArrayList surge precisamente como una estructura dinámica para superar esa limitación.\nLa opción D es incorrecta como definición principal porque la idea de ordenado suele referirse a colecciones que ordenan automáticamente sus valores, como TreeSet. Aunque ArrayList mantiene el orden de inserción, su definición fundamental se centra en ser un array dinámico que puede redimensionarse."
+  }
+]
+
+
         },
 
         unidad10: {
           name: "Unidad 10: Excepciones",
-          questions: [
-            {"q": "¿Qué es una excepción?", "options": ["Error ejecución", "Error compilación", "Código especial", "Código especial casos"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "¿Cómo podemos capturar una excepción?", "options": ["try", "catch", "finally", "Método exclusivo"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "¿Cómo podemos tratar una excepción?", "options": ["try", "catch", "constructor", "Método exclusivo"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Con throw podemos:", "options": ["Invocar excepciones", "Capturar", "Propagar", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Recomendación no correcta:", "options": ["No abusar", "Genéricas", "No crear nuevas", "No excepciones graves"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Pila de llamadas:", "options": ["Lista métodos", "Contenedor métodos", "Estructura flujo", "Ninguna"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "¿Qué hace finally?", "options": ["Cuando excepción", "Siempre", "Sin excepción", "Finaliza programa"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Palabra reservada throws:", "options": ["Invocar", "Propagar", "Capturar", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Excepciones heredar de:", "options": ["main o subclase", "Throwable o subclase", "System o subclase", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Excepción Checked", "options": ["Grave no tratar", "Grave tratar", "Leve obligatorio", "Leve no recomendable"], "correct": 2, "explanation": "La respuesta correcta es C."}
-          ]
+          questions:  [
+  {
+    q: "¿Qué es una excepción?",
+    options: [
+      "Un error producido en tiempo de ejecución y que altera el flujo normal del programa.",
+      "Un evento producido en tiempo de compilación y que altera el flujo normal del programa.",
+      "Un código excepcional que se usa cuando se produce un evento.",
+      "Un código excepcional que se usa en casos especiales."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Un error producido en tiempo de ejecución y que altera el flujo normal del programa.\nSegún el material de estudio, concretamente en el resumen dedicado al control y manejo de excepciones, se define de forma explícita que las excepciones son eventos producidos por un error que alteran el flujo normal de ejecución. Además, en la teoría de la unidad se añade que una excepción es un evento ante una situación no prevista, como parámetros no definidos, flujo incorrecto o errores de conectividad, y que siempre se produce en tiempo de ejecución.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que afirma que el evento se produce en tiempo de compilación, cuando el texto indica explícitamente que sucede durante el tiempo de ejecución del programa.\nLas opciones C y D son incorrectas, debido a que definen la excepción como un código excepcional. Según la teoría, las excepciones no son código, sino eventos o errores resultantes de fallos funcionales o lógicos. El código que se usa cuando sucede una excepción se denomina tratamiento de excepciones, no la excepción en sí."
+  },
+  {
+    q: "Como podemos capturar una excepción",
+    options: [
+      "Incluir el código que puede provocar una excepción dentro del bloque try.",
+      "Incluir el código que puede provocar una excepción dentro del bloque catch.",
+      "Incluir el código que puede provocar una excepción dentro del bloque finally.",
+      "Incluir el código que puede provocar una excepción dentro de un método exclusivo."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Incluir el código que puede provocar una excepción dentro del bloque try.\nSegún el material de estudio, concretamente en el resumen de la unidad sobre el control y manejo de excepciones, para capturar y dar tratamiento a una excepción se debe hacer uso de la estructura try/catch/finally. El temario especifica de forma textual que dentro de try se pondrá todo el código que puede producir el error.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el bloque catch no aloja el código que origina el fallo, sino el código para dar tratamiento a la excepción una vez que esta ya se ha producido.\nLa opción C es falsa, debido a que el bloque finally está destinado a alojar el código que se realizará tanto si se produce la excepción como si no.\nLa opción D es incorrecta, porque el temario no estipula que el código problemático deba aislarse obligatoriamente dentro de un método exclusivo. El procedimiento estándar es envolver esas líneas con la estructura try."
+  },
+  {
+    q: "Como podemos tratar una excepción",
+    options: [
+      "Incluir el código correctivo dentro del bloque try.",
+      "Incluir el código correctivo dentro del bloque catch.",
+      "Incluir el código correctivo dentro del constructor.",
+      "Incluir el código correctivo dentro de un método exclusivo."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Incluir el código correctivo dentro del bloque catch.\nSegún el material de estudio, concretamente en el apartado dedicado a la sintaxis para el manejo y captura de excepciones, se establece de forma explícita que dentro del bloque catch se debe colocar el código para dar tratamiento a la excepción. Es decir, es el lugar designado para alojar el código correctivo o las instrucciones a seguir una vez que el error ha sido interceptado.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el bloque try está destinado exclusivamente a englobar todo el código que puede producir el error, no su posterior corrección.\nLas opciones C y D son incorrectas, debido a que la teoría no estipula que el tratamiento del error deba realizarse obligatoriamente creando constructores o métodos exclusivos. El mecanismo estándar es el bloque catch."
+  },
+  {
+    q: "Haciendo uso de throw podemos:",
+    options: [
+      "Invocar nuevas excepciones.",
+      "Capturar una excepción.",
+      "Propagar excepciones en un método.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Invocar nuevas excepciones.\nSegún el material de estudio, concretamente en el apartado de manejo de excepciones, se indica que nosotros mismos podemos provocar o invocar una excepción por iniciativa propia ante un error contemplado. Para realizar este lanzamiento, la teoría especifica que tenemos que usar la palabra reservada throw junto con una instanciación de una excepción.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que capturar una excepción no se realiza con throw, sino haciendo uso de la estructura try/catch.\nLa opción C es falsa, debido a que para propagar una excepción en un método se utiliza la palabra reservada throws, con s al final. El temario hace especial hincapié en no confundir throw con throws."
+  },
+  {
+    q: "Indica que recomendación no es correcta.",
+    options: [
+      "No abusar de excepciones.",
+      "Hacer uso de excepciones genéricas.",
+      "No crear nuevas excepciones y reutilizar las existentes.",
+      "No hacer tratamiento de excepciones graves."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Hacer uso de excepciones genéricas.\nSegún el material de estudio, concretamente en el apartado de recomendaciones de uso de excepciones, la directriz real es exactamente la contraria: se debe evitar tratar excepciones genéricas. El temario especifica que no se debe hacer uso de clases padre generales como Throwable, Exception o Error, sino que es recomendable captar la excepción más detallada posible.\nA modo de aclaración sobre por qué las demás opciones son recomendaciones correctas:\nLa opción A es válida, ya que el temario aconseja establecer validaciones previas y un diseño de código sencillo para evitar la mayor cantidad de excepciones posibles.\nLa opción C es válida, debido a que Java ya aporta la mayoría de las excepciones necesarias, y solo se recomienda crear nuevas si la funcionalidad del programa lo requiere específicamente.\nLa opción D es válida, porque si se produce una excepción grave, hacer un tratamiento no ofrece garantías de que el programa pueda recuperar su estabilidad."
+  },
+  {
+    q: "La pila de llamadas se puede definir como:",
+    options: [
+      "Una lista de métodos que podemos usar.",
+      "Un contenedor de métodos que ya no se están usando.",
+      "Una estructura que guarda el flujo de llamadas que se está ejecutando.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Una estructura que guarda el flujo de llamadas que se está ejecutando.\nSegún el material de estudio, concretamente en el glosario de conceptos de la unidad dedicada al control y manejo de excepciones, se define de forma explícita a la pila de llamadas como una estructura LIFO que guarda todo el flujo de llamadas a métodos del código en el programa. El temario detalla además que, cuando se ejecuta un programa, se empieza desde la clase que contiene el método main y las posteriores llamadas a otras clases y métodos se van acumulando, estableciendo así el flujo activo que da forma a esta pila de llamadas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la pila no representa un listado estático de métodos disponibles, sino un registro dinámico de la secuencia de ejecuciones en curso.\nLa opción B es falsa, debido a que indica exactamente lo contrario a su verdadero propósito. La pila alberga los métodos que sí están actualmente en ejecución o pendientes de finalizar, no los que ya no se están usando."
+  },
+  {
+    q: "Que hace finally en un bloque try/catch",
+    options: [
+      "Ejecuta el código de su interior cuando se produce una excepción.",
+      "Ejecuta el código de su interior siempre.",
+      "Ejecuta el código de su interior cuando no se produce una excepción.",
+      "Finaliza el programa."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Ejecuta el código de su interior siempre.\nSegún el material de estudio, concretamente en el resumen de la unidad de control y manejo de excepciones, se establece de forma explícita que dentro del bloque finally se añadirá código que se ejecutará siempre independientemente de si se produce una excepción o no. Las diapositivas del temario reafirman este concepto definiendo a finally exactamente como el lugar para el código que siempre se ejecuta.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el código que se ejecuta específicamente cuando se produce una excepción debe alojarse dentro del bloque catch, no en finally.\nLa opción C es falsa, debido a que finally no está condicionado a que no haya errores, sino que se ejecuta tanto si el bloque try tuvo éxito como si derivó en un error capturado.\nLa opción D es falsa, porque el objetivo de finally no es finalizar el programa, sino garantizar la ejecución de ciertas acciones críticas como cerrar conexiones o liberar recursos."
+  },
+  {
+    q: "Que permite hacer con la palabra reservada throws",
+    options: [
+      "Invocar nuevas excepciones.",
+      "Propagar excepciones en un método.",
+      "Capturar una excepción.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Propagar excepciones en un método.\nSegún el material de estudio, concretamente en el apartado de propagación de excepciones y en el glosario de la unidad, se establece de forma literal que throws es la palabra reservada para propagar en un método una excepción.\nEl temario especifica que si hay partes del código que pueden producir una excepción, pero no queremos capturarla o tratarla en ese momento, podemos propagar la excepción para que sea el método principal que hizo la llamada quien la trate. Para ello, se debe indicar en la cabecera del método la palabra reservada throws.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que para invocar o lanzar nuevas excepciones se utiliza throw, sin s final.\nLa opción C es falsa, debido a que para capturar una excepción no se usan estas palabras reservadas, sino la estructura try/catch."
+  },
+  {
+    q: "Todas las excepciones deben de heredar de:",
+    options: [
+      "La clase que contiene el método main o cualquier subclase.",
+      "La clase Throwable o cualquier subclase.",
+      "La clase System o cualquier subclase.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. La clase Throwable o cualquier subclase.\nSegún el material de estudio, concretamente en el apartado dedicado a la jerarquía de excepciones, se establece de forma explícita que todas las excepciones tienen una jerarquía usando como raíz java.lang.Throwable. Por lo tanto, la teoría especifica literalmente que si se necesita definir una nueva excepción personalizada, esta ha de heredar obligatoriamente de Throwable o cualquiera de sus hijos, como Exception o Error.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la clase que contiene el método main es simplemente el punto de entrada de la aplicación y no tiene relación con la jerarquía base de las excepciones.\nLa opción C es falsa, debido a que la raíz principal de toda la jerarquía para el control y manejo de errores en Java es Throwable, no System.\nAl ser cierta y exacta la opción B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Un tipo de excepción Checked",
+    options: [
+      "Es una excepción de carácter grave que no es recomendable tratar.",
+      "Es una excepción de carácter grave que hay que tratar.",
+      "Es una excepción de carácter leve que es obligatorio tratar.",
+      "Es una excepción de carácter leve que no es recomendable tratar."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Es una excepción de carácter leve que es obligatorio tratar.\nSegún el material de estudio, concretamente en la clasificación de las excepciones por su grado de error, se define a las excepciones Checked de forma explícita como excepciones de consideración leve y controladas. Además, el temario especifica literalmente que es obligatorio hacer tratamiento de este tipo de excepción para permitir continuar con el programa.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y B son falsas, ya que catalogan a este tipo de excepción como de carácter grave. El temario establece claramente que las excepciones Checked son errores leves. Las excepciones que se consideran fallos graves son las Unchecked.\nLa opción D es falsa, debido a que aunque acierta en que es una excepción de carácter leve, indica erróneamente que no es recomendable tratarla. El material subraya expresamente lo contrario: hacer el tratamiento de una excepción Checked es obligatorio."
+  }
+]
+
         },
 
         unidad11: {
           name: "Unidad 11: Recursividad",
           questions: [
-            {"q": "Recursividad cruzada:", "options": ["Una llamada", "Dos métodos", "Más de una", "Parámetro llamada"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "En recursividad encontramos:", "options": ["Terminación", "Llamada a sí mismo", "Las dos", "Ninguna"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Complejidad algorítmica medida:", "options": ["Big-O", "Cromática", "Unidades tiempo", "Unidades métricas"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Diferencia simple y multiple:", "options": ["Número llamadas", "Parámetros", "Métodos", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Orden complejidad peor:", "options": ["O(1)", "O(n log n)", "O(n2)", "O(log n)"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Reglas calcular complejidad:", "options": ["Recursividad caso base", "If/else mayor", "Bucles anidados", "Todas"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Tipos recursividad:", "options": ["Simple multiple cruzada anidada", "Simple multiple cruzada anillada", "Doble unificada indirecta", "Doble anillada simple"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Ventaja no aporta:", "options": ["Patrones concretos", "Apenas memoria", "Sencillo algoritmo", "Evitar sentencias control"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Recursividad definir como:", "options": ["Flujo lineal", "Cualquier problema", "Flujo cíclico extrayendo", "Flujo cíclico dividiendo"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Orden complejidad código:", "options": ["O(1)", "O(log n)", "O(n3)", "O(n log n)"], "correct": 1, "explanation": "La respuesta correcta es B."}
-          ]
+  {
+    q: "En la recursividad cruzada o indirecta",
+    options: [
+      "Existe una sola llamada a si mismo.",
+      "Existe dos metodos distintos que se llaman entre si.",
+      "Existe mas de una llamada a si misma.",
+      "En la llamada a si misma, uno de los parametros es la propia llamada."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Existe dos métodos distintos que se llaman entre sí.\nSegún el material de estudio, concretamente en los apartados dedicados a los tipos de recursividad y en el resumen de la unidad 11, se define de forma explícita a la recursividad cruzada o indirecta como aquella donde hay dos métodos con una llamada al otro y viceversa. El temario detalla que en este tipo de recursividad el método A en su cuerpo llama al método B y el método B en su cuerpo llama al método A.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que afirmar que existe una sola llamada a sí mismo corresponde exactamente a la definición de la recursividad simple.\nLa opción C es falsa, debido a que el escenario en el que existe más de una llamada a sí mismo dentro del mismo método es la definición literal de la recursividad múltiple.\nLa opción D es falsa, porque la situación en la que aparece como parámetro de la llamada otra llamada define estrictamente a la recursividad anidada."
+  },
+  {
+    q: "En la recursividad nos vamos a encontrar siempre:",
+    options: [
+      "Una condicion de terminación o caso base.",
+      "Un método que se llama a si mismo una o mas veces. O indirectamente entre metodos.",
+      "La opcion a) y b) es correcta.",
+      "Ninguna de las opciones es correcta."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. La opción A y B es correcta.\nSegún el material de estudio, concretamente en el resumen y los apartados teóricos de la unidad dedicada a la recursividad, se establecen de forma explícita ambas afirmaciones como elementos definitorios e indispensables de esta técnica de programación.\nEn relación con la opción B, el texto indica textualmente que la principal característica de la recursividad es que en el mismo cuerpo del método existe una o más llamada al propio método. Además, al explicar los tipos de recursividad, el temario confirma que estas llamadas pueden ser simples, múltiples o cruzadas o indirectas.\nEn relación con la opción A, el temario especifica que al plantear un problema con recursividad es necesario definir una condición de terminación o caso base. Las diapositivas recalcan como regla de diseño que debe haber siempre un caso base para terminar, ya que de lo contrario el comportamiento derivaría en un bucle infinito.\nAl ser los dos apartados condiciones teóricas estrictamente necesarias y presentes siempre en la recursividad, la opción conjunta C es la respuesta definitiva."
+  },
+  {
+    q: "La complejidad algoritmica se puede medir:",
+    options: [
+      "Con la anotación Big-0 (Notación Asintótica o Notación Landau).",
+      "Con la anotación cromática.",
+      "En unidades de tiempo.",
+      "En unidades metricas."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Con la anotación Big-0 (Notación Asintótica o Notación Landau).\nSegún el material de estudio, concretamente en el apartado y el resumen dedicados a la complejidad algorítmica de la unidad 11, se establece de forma literal que la forma de medir la complejidad algorítmica es mediante la notación Big-O, también llamada Notación Asintótica o Notación Landau. Esta notación sirve para medir cómo se va a comportar el algoritmo en función del tamaño de los datos de entrada.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción C es falsa como unidad de medida. El temario especifica que la complejidad algorítmica sí estudia la cantidad de recursos que puede consumir una solución en base al tiempo que tarda y la memoria que necesita, pero la medición estandarizada no se hace en unidades de tiempo literales, sino precisamente mediante la notación asintótica o Big-O.\nLas opciones B y D son completamente falsas, ya que anotación cromática o unidades métricas son términos que no guardan ninguna relación con la teoría de análisis de algoritmos estipulada en el material."
+  },
+  {
+    q: "La diferencia entre la recursividad simple y multiple depende de:",
+    options: [
+      "El número de llamadas.",
+      "Si en los parametros de una de las llamadas se incluye almenos una propia llamada.",
+      "La cantidad de métodos que hacen las llamadas.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. El número de llamadas.\nSegún el material de estudio, concretamente en el apartado y resumen dedicados a los tipos de recursividad, la diferencia entre estas dos categorías radica exclusivamente en cuántas veces el método se invoca a sí mismo. El temario lo define literalmente de la siguiente manera: la recursividad simple solo existe una sola llamada a sí mismo en el cuerpo del método, mientras que la recursividad múltiple existe más de una llamada a sí mismo en el cuerpo del método.\nA modo de aclaración sobre por qué las demás opciones definen conceptos diferentes y, por tanto, son incorrectas:\nLa opción B es falsa, ya que la característica de que aparezca como parámetro de la llamada otra propia llamada define estrictamente a la recursividad anidada.\nLa opción C es falsa, debido a que la existencia de dos o más métodos distintos que se hacen llamadas entre sí es la definición de la recursividad cruzada o indirecta.\nAl ser la opción A cierta y estar estipulada en la teoría, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Que orden de complejidad es la peor:",
+    options: [
+      "O(1)",
+      "O(n log n)",
+      "O(n2)",
+      "O(log n)"
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. O(n2).\nSegún el material de estudio, concretamente en el apartado dedicado a la complejidad algorítmica de la unidad 11, los distintos tipos de orden están clasificados explícitamente según el coste que consumen de recursos. El temario detalla que el orden de menor a mayor consumo es el siguiente: O(1) < O(log n) < O(n) < O(n log n) < O(n2) < O(n3) < O(na) < O(an) < O(n!).\nSiguiendo esta jerarquía oficial estipulada en la teoría, de las opciones proporcionadas en la pregunta, la complejidad cuadrática O(n2) es la que conlleva un mayor coste de recursos y, por tanto, representa el peor orden de complejidad.\nA modo de aclaración sobre las demás opciones:\nLa opción A es falsa, ya que O(1) es la más rápida porque el tiempo es constante y no varía según el tamaño de los datos.\nLa opción D es falsa, ya que O(log n) es muy eficiente y se aplica típicamente al dividir el problema en partes más pequeñas.\nLa opción B es falsa, porque aunque O(n log n) es menos eficiente que las anteriores, sigue siendo mejor que la cuadrática O(n2)."
+  },
+  {
+    q: "Que reglas básicas nos ayuda a calcular la orden de complejidad de un algoritmo:",
+    options: [
+      "En la recursividad la orden de complejidad depende del caso base y de los recurrentes.",
+      "Las sentencias if/else su orden se cogera de la mayor de cualquiera de sus partes condicionales.",
+      "En los bucles anidados se partira de O(n2) a O(na) según el nivel de anidamiento.",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Todas las anteriores son correctas.\nSegún el material de estudio, concretamente en el apartado de la unidad 11 dedicado a las reglas básicas para el cálculo de órdenes de complejidad, todas las afirmaciones expuestas en las opciones A, B y C son pautas literales estipuladas en la teoría para determinar qué orden corresponde al desarrollo de un algoritmo.\nEn relación con la opción A, el temario especifica textualmente que en recursividad la complejidad del algoritmo viene dada por el caso base y de los recurrentes.\nEn relación con la opción B, el texto establece como regla básica que en estructuras condicionales, como if o if/else, la complejidad siempre será la mayor de cualquiera de sus partes condicionales.\nEn relación con la opción C, la teoría indica de forma explícita que si tenemos más de un bucle dentro de otro ya partiremos de una orden de O(n2) a O(na).\nAl ser ciertas, literales y complementarias todas estas directrices, la opción D es la respuesta definitiva que engloba correctamente a las demás."
+  },
+  {
+    q: "Que tipos de recursividad existen:",
+    options: [
+      "Simple, multiple, cruzada o anidada.",
+      "Simple, multiple, cruzada o anillada.",
+      "Doble, unificada, indirecta o anillada.",
+      "Doble, anillada, simple o cruzada."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Simple, multiple, cruzada o anidada.\nSegún el material de estudio, concretamente en los apartados y el resumen de la unidad 11 dedicados a los tipos de recursividad, se establece de forma explícita que existen cuatro tipos o clasificaciones: recursividad simple, recursividad múltiple, recursividad cruzada o indirecta, y recursividad anidada.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones B, C y D son falsas, ya que introducen términos que no forman parte de la clasificación algorítmica expuesta en el temario, como anillada, doble o unificada.\nAl ser la opción A la única que recoge exactamente la clasificación oficial, es la respuesta correcta."
+  },
+  {
+    q: "Que ventaja no aporta la recursividad.",
+    options: [
+      "Se emplea en patrones muy concretos.",
+      "Apenas consume memoria.",
+      "Hace mas sencillo el algoritmo.",
+      "Evita el abuso de sentencias de control y bucles."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Apenas consume memoria.\nSegún el material de estudio, concretamente en el apartado dedicado a las ventajas e inconvenientes de la unidad sobre recursividad, se establece de forma explícita exactamente lo contrario: uno de los principales inconvenientes de esta técnica es que necesita hacer uso de más memoria, aumenta la pila de llamadas considerablemente y, por consecuencia, el programa se vuelve más lento. Por lo tanto, afirmar que apenas consume memoria es falso y constituye una desventaja, no una ventaja.\nA modo de aclaración sobre por qué las demás opciones sí son ventajas genuinas:\nLas opciones A, C y D son las ventajas textuales del temario. El texto indica literalmente que la recursividad se emplea para patrones concretos que de forma iterativa no se pueden llegar a plantear, hace más sencillo el algoritmo y evita el abuso de sentencias de control y bucles."
+  },
+  {
+    q: "Se puede definir la recursividad como:",
+    options: [
+      "Una técnica de resolver determinados problemas siguiendo un flujo lineal. Con diferentes llamadas a distintos métodos.",
+      "Una técnica de resolver cualquier problema siguiendo un flujo lineal. Con diferentes llamadas a distintos métodos.",
+      "Una técnica de resolver determinados problemas siguiendo un flujo cíclico. Extrayendo partes mas pequeñas y unirlas en una sola.",
+      "Una técnica de resolver determinados problemas siguiendo un flujo cíclico, dividiendo el problema en partes más pequeñas hasta una condición de finalización."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Una técnica de resolver determinados problemas siguiendo un flujo cíclico, dividiendo el problema en partes más pequeñas hasta una condición de finalización.\nSegún el material de estudio, concretamente en el apartado de la unidad 11 dedicado al concepto de recursividad, la teoría establece literalmente esta definición. El texto indica que la recursividad es una técnica que permite resolver determinados problemas de forma cíclica o circular y detalla de forma explícita que para aplicarla hay que dividir el problema en subproblemas más pequeños tantas veces como sea necesario hasta una condición de finalización.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y B son falsas, ya que afirman que la recursividad sigue un flujo lineal. El material subraya expresamente lo contrario al advertir que esta técnica es difícil de entender ya que no sigue un flujo lineal iterativo, sino cíclico o circular.\nLa opción C es incorrecta, debido a que, aunque acierta al identificar el flujo como cíclico, define erróneamente su mecanismo. La teoría es clara al estipular que el proceso fundamental consiste en dividir el problema de manera sucesiva hasta topar obligatoriamente con una condición de terminación o caso base."
+  },
+  {
+    q: "Según el código \"for(int i = 100; i>0; i/=2) { }\" que orden complejidad le corresponde:",
+    options: [
+      "O(1)",
+      "O(log n)",
+      "O(n3)",
+      "O(n log n)"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. O(log n).\nSegún el material de estudio, concretamente en el apartado de cálculo de complejidad algorítmica, se presenta un caso exactamente igual donde un bucle reduce su índice dividiéndolo entre 2 en cada iteración. La teoría especifica que en estos casos el bucle nunca va a recorrer el array completo, ya que el índice por cada iteración se divide entre 2, con lo cual podemos determinar que le corresponde O(log n). Este comportamiento define a la complejidad logarítmica, ya que divide el problema en partes más pequeñas, simplificando su resolución.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que O(1) corresponde a instrucciones simples que se ejecutan una sola vez, sin bucles dependientes del tamaño de los datos.\nLa opción C es falsa, debido a que para alcanzar O(n3) se requiere normalmente la ejecución de bucles anidados de tres niveles.\nLa opción D es falsa, porque O(n log n) requiere además una parte lineal combinada con una división del problema, como ocurre en ciertos algoritmos de ordenación, y no es el caso de este bucle."
+  }
+]
         },
 
         unidad12: {
           name: "Unidad 12: Ficheros",
           questions: [
-            {"q": "Comprobar fichero existe:", "options": ["isFile()", "isDirectory()", "exists()", "getPath()"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Con FileWriter podemos:", "options": ["Caracteres", "Bytes", "Predeterminado", "Bytes leer"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Flujo se denomina:", "options": ["Flush", "Stream", "Eoa", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Ficheros tipo datos:", "options": ["Bytes o caracteres", "Enteros", "Cadena", "Hexadecimal"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Serialización consiste en:", "options": ["Datos primitivo", "Objetos", "Serie datos", "Cadena"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Etapas flujos:", "options": ["Transmisión y cierre", "Apertura transmisión cierre", "Apertura transmisión", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Flujos predeterminados:", "options": ["Ya creados", "No habituales", "Crearlos definir", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Crear directorio usaremos:", "options": ["createNewFile()", "createDirectory()", "File(String ruta)", "mkdir()"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Acceso directo fichero:", "options": ["FileReader", "RandomAccessFile", "BufferedReader", "File"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Clasificaciones flujos:", "options": ["Tipo dirección acceso", "Canal medio codificación", "Uso destinado", "Acceso"], "correct": 0, "explanation": "La respuesta correcta es A."}
-          ]
+  {
+    q: "¿Como podemos comprobar si un fichero o directorio existe?",
+    options: [
+      "Usando isFile()",
+      "Usando isDirectory()",
+      "Usando exists()",
+      "Usando getPath()"
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Usando exists().\nSegún el material de estudio, concretamente en la tabla de métodos para operar con sistemas de ficheros de la clase File, se establece explícitamente que el método exists() es el que comprueba si la ruta existe. Dado que una ruta puede apuntar tanto a un fichero como a un directorio, este es el método adecuado para verificar su existencia general.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa en este contexto, ya que isFile() no comprueba la existencia general de la ruta, sino que determina de forma específica si el elemento al que apunta la ruta es un fichero.\nLa opción B es falsa, debido a que isDirectory() se utiliza específicamente para comprobar si la ruta corresponde a un directorio.\nLa opción D es falsa, porque el método getPath() únicamente sirve para obtener la ruta en formato de texto y no realiza ninguna comprobación sobre si dicho archivo o directorio existe realmente en el sistema."
+  },
+  {
+    q: "Con FileWriter podemos:",
+    options: [
+      "Escribir para un flujo de caracteres.",
+      "Escribir para un flujo de bytes.",
+      "Escribir para un flujo predeterminado.",
+      "Escribir o leer un flujo de bytes."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Escribir para un flujo de caracteres.\nSegún el material de estudio, concretamente en los apartados dedicados al manejo de flujos, la clase FileWriter se encuentra clasificada explícitamente dentro de las clases para el manejo de flujos de caracteres. El temario detalla que esta clase permite trabajar con ficheros de texto manejando la información como caracteres.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones B y D son falsas, ya que el manejo de un flujo de bytes no se realiza con FileWriter. Para escribir o leer secuencias de bytes se deben utilizar clases como FileOutputStream o FileInputStream.\nLa opción C es falsa, debido a que los flujos estándar o predeterminados no requieren el uso de FileWriter, sino de herramientas como System.out, System.err y System.in."
+  },
+  {
+    q: "En Java un flujo se denomina:",
+    options: [
+      "Flush",
+      "Stream",
+      "Eoa",
+      "Ninguna de las anteriores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Stream.\nSegún el material de estudio, concretamente en el apartado de introducción a los flujos de comunicación y en el resumen de la unidad dedicada a este tema, se define a los flujos de datos como una secuencia ordenada de datos que se transmiten desde una fuente hacia un destino, y la teoría especifica de forma literal que en Java se denomina Stream.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que flush no es el término para denominar a un flujo general, sino el nombre de un método específico utilizado en ciertas clases de escritura para consolidar los datos escritos.\nLa opción C es falsa, debido a que Eoa no es un término que forme parte de la arquitectura de flujos expuesta en la teoría.\nAl ser cierta y textual la opción B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Es habitual trabajar directamente con ficheros de tipo de datos",
+    options: [
+      "De bytes o caracteres.",
+      "De enteros.",
+      "De cadena de caracteres.",
+      "De hexadecimal."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. De bytes o caracteres.\nSegún el material de estudio, concretamente en la unidad dedicada a la lectura y escritura de información, el manejo de flujos de datos y tipos de ficheros se divide en dos grandes categorías fundamentales con las que es habitual trabajar directamente: los ficheros o flujos de bytes y los ficheros o flujos de caracteres.\nLos flujos de bytes transmiten y almacenan la información en formato binario, mientras que los flujos de caracteres transmiten y almacenan datos de tipo texto.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción C es incompleta, ya que solo abarca los ficheros de texto y deja fuera toda la rama de ficheros binarios.\nLas opciones B y D son falsas, debido a que Java no categoriza los ficheros o sus flujos base como de enteros o hexadecimales. La tipología base sobre la que se asientan las lecturas y escrituras siempre es de bytes o de caracteres."
+  },
+  {
+    q: "La serialización consiste en:",
+    options: [
+      "Guardar y leer datos de tipo primitivo en un fichero.",
+      "Guardar y leer objetos de un fichero.",
+      "Guardar y leer serie de datos en un fichero.",
+      "Guardar y leer cadena de caracteres."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Guardar y leer objetos de un fichero.\nSegún el material de estudio, concretamente en el apartado dedicado al almacenamiento de información, se define explícitamente a la serialización como el proceso de almacenar objetos en ficheros. La teoría especifica que, mediante esta técnica, es posible guardar objetos de una clase transformándolos en un conjunto de bytes para conservarlos y darles persistencia. Además, el temario detalla que el proceso inverso para recuperarlos se denomina deserialización.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el almacenamiento de datos primitivos en ficheros binarios se realiza con clases como DataOutputStream y DataInputStream, pero eso no define técnicamente la serialización.\nLa opción C es falsa, debido a que es una descripción demasiado genérica que realmente encaja mejor con el funcionamiento de un flujo de datos estándar.\nLa opción D es falsa, porque la gestión estricta de cadenas de caracteres corresponde al trabajo con ficheros de texto, no al mecanismo de serializar objetos."
+  },
+  {
+    q: "Las etapas de la utilización de flujos son:",
+    options: [
+      "Transmisión y cierre.",
+      "Apertura, transmisión y cierre.",
+      "Apertura y transmisión.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Apertura, transmisión y cierre.\nSegún el material de estudio, concretamente en el apartado dedicado a la utilización de flujos y en su resumen, se establece de forma explícita que el funcionamiento para utilizar los flujos se basa en tres etapas: apertura inicial, transmisión y cierre.\nLa apertura consiste en conectar con la fuente del flujo, la transmisión corresponde al uso del flujo para leer o escribir información, y el cierre sirve para finalizar la conexión y liberar memoria y recursos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y C son falsas por estar incompletas. La opción A omite la apertura, mientras que la opción C omite el cierre.\nAl ser cierta y exacta la opción B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Los flujos predeterminados",
+    options: [
+      "Son flujos que ya estan creados y no es necesario definirlos.",
+      "Son flujos no habituales.",
+      "Son flujos que hay que crearlos y definirlos.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Son flujos que ya están creados y no es necesario definirlos.\nSegún el material de estudio, concretamente en el apartado de flujos predeterminados, se establece de forma literal que ya existen algunos flujos estándar de datos definidos sin necesidad de crearlos. El temario especifica explícitamente que para los flujos predeterminados o estándar no es necesario crear o cerrar el stream debido a que estas herramientas ya están desarrolladas en el sistema, refiriéndose a System.in, System.out y System.err.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción C es directamente falsa, ya que afirma justamente lo contrario de lo estipulado en el temario.\nLa opción B es falsa, debido a que referirse a ellos como no habituales carece de sentido, pues son precisamente los flujos estándar y por defecto para la comunicación más común de cualquier programa.\nAl ser la opción A literal y exacta, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Para crear un directorio usaremos:",
+    options: [
+      "createNewFile()",
+      "createDirectory()",
+      "File(String ruta)",
+      "mkdir()"
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. mkdir().\nSegún el material de estudio, concretamente en el apartado y las tablas dedicadas a la creación y eliminación de ficheros y directorios, se establece de forma explícita que para la clase File, el método mkdir() es el que crea un directorio en la ruta que contiene File.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el método createNewFile() no sirve para crear directorios, sino para crear un fichero vacío.\nLa opción B es falsa, debido a que createDirectory() no es el método expuesto en la teoría para este fin.\nLa opción C es falsa, porque la sintaxis File(String ruta) corresponde al constructor de la clase. Su función es únicamente inicializar el objeto en memoria apuntando a dicha ruta, pero no crea físicamente el directorio en el sistema."
+  },
+  {
+    q: "Que clase se utilizará para acceder directamente a una parte de un fichero",
+    options: [
+      "FileReader",
+      "RandomAccessFile",
+      "BufferedReader",
+      "File"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. RandomAccessFile.\nSegún el material de estudio, concretamente en los apartados dedicados al modo de acceso directo y al uso de los flujos, se establece de forma explícita que para el acceso directo se usará la clase RandomAccessFile. El temario detalla que esta clase se utiliza específicamente cuando se requiere leer o escribir en ficheros binarios accediendo a cualquier posición del archivo de forma directa, mediante métodos como seek(), en lugar de recorrerlo desde el principio.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y C son falsas, ya que FileReader y BufferedReader están destinadas al manejo de flujos de caracteres y su funcionamiento se basa en un acceso secuencial.\nLa opción D es falsa, debido a que la clase File no se emplea para acceder ni modificar los datos internos de un fichero, sino para operaciones sobre el sistema de archivos, como creación, eliminación o consulta de rutas y permisos."
+  },
+  {
+    q: "Que clasificaciones se puede encontrar en los flujos:",
+    options: [
+      "Según el tipo de datos, dirección del flujo y la forma de acceso.",
+      "Según el canal del medio y la codificación.",
+      "Según el uso al que esta destinado.",
+      "Según su acceso."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Según el tipo de datos, dirección del flujo y la forma de acceso.\nSegún el material de estudio, concretamente en el apartado de tipos de flujo y en el resumen de la unidad, se establece de forma explícita que se pueden clasificar los flujos según el tipo de datos, la dirección del flujo o la forma en que se accede.\nEl temario detalla estas tres categorías de la siguiente manera: según el tipo de datos pueden ser flujos de bytes, de caracteres o estándar; según la dirección del flujo pueden ser de entrada, salida o entrada y salida; y según la forma de acceso pueden ser secuenciales o de acceso directo.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones B y C son falsas, ya que esos criterios no forman parte de la clasificación técnica de los flujos expuesta en el temario.\nLa opción D es incorrecta por estar incompleta, puesto que, aunque menciona correctamente el acceso, omite los otros dos pilares fundamentales de la clasificación general."
+  }
+]
         },
 
         unidad13: {
