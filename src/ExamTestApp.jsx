@@ -2056,49 +2056,351 @@ const ExamTestApp = () => {
         unidad6: {
           name: "Unidad 6: Campos",
           questions: [
-            {"q": "Static:", "options": ["Palabra para campo común", "getter", "setter", "Todas incorrectas"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Garbage collector es un mecanismo de:", "options": ["C++", "Delphi", "Java", "Ninguna"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "JFreeChart es:", "options": ["Librería", "Tipo de dato", "Llamada métodos", "Mecanismo"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Los campos también pueden ser llamados:", "options": ["Atributos", "Variables", "Fields", "Todas"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Los métodos pueden operar devolviendo:", "options": ["Null", "Void", "0", "000"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Para instanciar un objeto:", "options": ["&", "%", "$", "Ninguno"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Sobrecarga de métodos:", "options": ["Métodos diferentes", "Mismo parámetro", "Mismo método diferentes parámetros", "Diferentes parámetros"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Observadores:", "options": ["Constructores", "Observadores", "Modificadores", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Protected:", "options": ["Public", "Protected", "Package", "Private"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Por valor:", "options": ["Referencia", "Frecuencia", "Constantes", "Valor"], "correct": 3, "explanation": "La respuesta correcta es D."}
-          ]
+  {
+    q: "¿Cuál es la palabra reservada que convierte a un campo en común entre todos los objetos de una clase?",
+    options: [
+      "Static.",
+      "getter.",
+      "setter.",
+      "Todas las anteriores son incorrectas."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Static.\nSegún el material de estudio, concretamente en el apartado dedicado a los campos o atributos de una clase, se especifica que \"se puede incluir la palabra reservada static para hacer ese campo común entre todos los objetos de esa clase\". El glosario del temario también lo define textualmente como la palabra reservada que convierte la visibilidad en un campo común entre todos los objetos de esa clase. A estos elementos se les denomina campos estáticos, campos de clase o variables de clase.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que un getter u observador no es una palabra reservada para declarar campos comunes, sino el tipo de método que permite consultar o leer el valor de un campo.\nLa opción C es falsa, debido a que un setter o modificador hace referencia al método utilizado para modificar o establecer el valor de un campo.\nAl ser correcta la opción A, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Garbage collector es un mecanismo de:",
+    options: [
+      "C++.",
+      "Delphi.",
+      "Java.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Java.\nSegún el material de estudio, concretamente en los apartados donde se explican las características de Java y el uso de destructores, se establece que el recolector de basura o garbage collector es un mecanismo fundamental y propio de Java. Este elemento se encarga de gestionar automáticamente la memoria, buscando y liberando el espacio de aquellos objetos que ya no están siendo utilizados o se han quedado sin referencias en la memoria.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y B son falsas, ya que el temario contrasta explícitamente a Java con estos dos lenguajes. Se menciona que, a diferencia de Java, en lenguajes como C++ o Delphi es necesario que el programador gestione la memoria de forma manual definiendo métodos destructores para liberar los recursos asignados.\nAl ser correcta la opción C, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Jfreechar es:",
+    options: [
+      "Un tipo de libreria.",
+      "Un tipo de dato.",
+      "Un tipo de llamada para métodos.",
+      "Un tipo de mecanismo de Java."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Un tipo de libreria.\nSegún el material de estudio, concretamente en el apartado donde se enumeran las librerías más usadas al programar en Java, Jfreechar se define explícitamente como una librería para graficar datos, permite hacer diferentes tipos de gráficos y pasarlos a imagen.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que los tipos de datos en Java se clasifican en primitivos o estructurados, pero Jfreechar no es un formato de dato.\nLa opción C es falsa, debido a que las llamadas a métodos son las invocaciones a funciones o acciones concretas que puede realizar una clase, no el nombre de un conjunto de paquetes completo como lo es una librería.\nLa opción D es falsa, porque al hablar de un mecanismo de Java, el temario suele referirse a elementos estructurales o internos de gestión del propio lenguaje, como por ejemplo el recolector de basura, mientras que Jfreechar es un recurso externo que se integra para aportar una funcionalidad gráfica concreta."
+  },
+  {
+    q: "Los campos también pueden ser llamados:",
+    options: [
+      "Atributos.",
+      "Variables.",
+      "Fields.",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Todas las anteriores son correctas.\nSegún el material de estudio, concretamente en el apartado que explica la estructura y los miembros de una clase, se establece de forma explícita que a los campos se les denomina también atributos, variables o fields.\nEstos elementos son los encargados de guardar la información o las propiedades que debe contener la clase y, por tanto, el objeto instanciado.\nAl ser válidas las opciones A, B y C como sinónimos reconocidos por el temario, la opción D es la respuesta acertada que las engloba a todas."
+  },
+  {
+    q: "Los métodos pueden operar devolviendo algún resultado o sin tener que devolver ningún valor, indicando ___ en la declaración del método.:",
+    options: [
+      "Null.",
+      "Void.",
+      "0.",
+      "000."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Void.\nSegún el material de estudio, concretamente en el apartado sobre la declaración de métodos y valores de retorno, se establece explícitamente que los métodos pueden operar sin tener que devolver ningún valor o devolviendo algún resultado. Para ello se indicará void en la declaración del método para que no devuelva nada.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que null es una palabra reservada en Java que se utiliza para indicar que una variable de tipo referencia está vacía o no apunta a ninguna dirección de memoria, pero no se usa en la cabecera de un método para definir su tipo de retorno.\nLas opciones C y D son falsas, porque son valores numéricos enteros y no palabras reservadas de la sintaxis de Java utilizadas para declarar la cabecera o el valor de retorno de un método. Si un método devolviera un 0, su tipo de retorno declarado debería ser int u otro tipo numérico, no el propio número cero."
+  },
+  {
+    q: "Para instanciar un objeto solo será necesario indicar este operador junto al nombre de clase:",
+    options: [
+      "&.",
+      "%.",
+      "$.",
+      "Ninguno de los anteriores."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Ninguno de los anteriores.\nSegún el material de estudio, concretamente en el apartado dedicado a los constructores y la instanciación de objetos, se establece de forma literal que para instanciar un objeto solo será necesario indicar el operador new junto al nombre de clase. Puesto que la palabra reservada new no se encuentra entre las alternativas dadas, la opción acertada es la D.\nA modo de aclaración sobre la función real en Java de los símbolos presentados en las demás opciones:\nLa opción A es falsa, ya que este símbolo actúa como operador lógico o como operador a nivel de bits.\nLa opción B es falsa, debido a que representa al operador aritmético destinado a obtener el resto o módulo de una división.\nLa opción C es falsa, porque el símbolo del dólar no es un operador. Aunque las reglas de Java permiten emplearlo válidamente como parte del nombre inventado para un identificador, no sirve en absoluto para instanciar objetos."
+  },
+  {
+    q: "Sobrecarga de métodos:",
+    options: [
+      "Declaración de métodos diferentes en una misma clase con diferentes parámetros.",
+      "Declaración de un mismo parámetro en una misma clase, en diferentes métodos.",
+      "Declaración de un mismo método en una misma clase, pero con diferentes parámetros.",
+      "Declaración de diferentes parámetros en una misma clase, en un mismo método."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Declaración de un mismo método en una misma clase, pero con diferentes parámetros.\nSegún el material de estudio, concretamente en el apartado dedicado a la sintaxis y características de los métodos, la sobrecarga de métodos o overloading se define exactamente de esa forma: es la declaración de un mismo método en una misma clase, pero con diferentes parámetros. Esto significa que los métodos comparten el mismo nombre o identificador, pero se diferencian por tener un tipo de datos distinto o un número de parámetros diferente.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que menciona la declaración de métodos diferentes. La esencia de la sobrecarga es precisamente utilizar el mismo nombre para realizar acciones similares pero con distintos datos de entrada.\nLa opción B es falsa, debido a que usar un mismo nombre de parámetro en métodos completamente diferentes no tiene relación con la sobrecarga.\nLa opción D es falsa, porque la sobrecarga implica la existencia de múltiples declaraciones del método. Un único método solo puede tener una firma y un conjunto de parámetros definidos."
+  },
+  {
+    q: "También mencionado como getter. Permiten consultar un campo:",
+    options: [
+      "Constructores.",
+      "Observadores.",
+      "Modificadores.",
+      "Ninguna de las anteriores es correcta"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Observadores.\nEl material de estudio clasifica los diferentes tipos de métodos en Java y define explícitamente a los observadores como aquellos métodos, también mencionados como getter, que permiten consultar un campo.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que los constructores son los métodos encargados de inicializar los objetos, pudiendo ser por defecto o con parámetros.\nLa opción C es falsa, debido a que los modificadores son aquellos métodos, también conocidos como setter, cuya finalidad exclusiva es modificar un campo.\nAl ser correcta y exacta la opción B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Tipo de visibilidad, tendrá acceso a la clase desde el mismo paquete o subclases que estén en diferente paquete. Una clase externa en otro paquete no tendrá acceso:",
+    options: [
+      "Public.",
+      "Protected.",
+      "Package o estándar.",
+      "Private."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Protected.\nSegún el material de estudio, concretamente en el apartado dedicado a la encapsulación y visibilidad de las clases, el modificador Protected se define de forma literal como aquel en el que se tendrá acceso a la clase desde el mismo paquete o subclases que estén en diferente paquete. Una clase externa en otro paquete no tendrá acceso.\nA modo de aclaración sobre por qué las demás opciones son incorrectas según el temario:\nLa opción A es falsa, ya que es la visibilidad menos restrictiva y permite acceder a los elementos desde el exterior y cualquier parte del programa.\nLa opción C es falsa, debido a que, aunque permite el acceso desde el mismo paquete, no permite el acceso a subclases que se encuentren en otros paquetes distintos.\nLa opción D es falsa, porque es la visibilidad más restrictiva de todas y solo se puede acceder desde la misma clase, no desde el exterior."
+  },
+  {
+    q: "Tipos de paso al enviar un método: Envía una copia del valor original y por lo tanto no se puede modificar el valor original:",
+    options: [
+      "Por referencia.",
+      "Por frecuencia.",
+      "Por constantes.",
+      "Por valor."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Por valor.\nSegún el material de estudio, concretamente en el apartado donde se explica el comportamiento de los argumentos y parámetros al invocar un método, se establece literalmente que el paso por valor envía una copia del valor original y por lo tanto no se puede modificar el valor original. En Java, este tipo de paso se aplica siempre a todos los tipos de datos primitivos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el paso por referencia solo envía una copia de su dirección de memoria, pero no de su estructura, con lo cual puede ser modificado. En Java, esto ocurre cuando se envían objetos como argumentos.\nLas opciones B y C son incorrectas, debido a que no son mecanismos o tipos de paso reconocidos en la teoría de programación para el envío de argumentos a un método."
+  }
+]
+
         },
 
         unidad7: {
           name: "Unidad 7: Herencia",
           questions: [
-            {"q": "Al sobrescribir el método:", "options": ["Se eliminará", "Seguirá disponible", "También se sobrescribirá", "Visibilidad pública"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "instanceof:", "options": ["Crear instancia", "Sin heredar", "Comprobar instancia", "Todas incorrectas"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "La interfaz permite:", "options": ["Organización", "Separación visual", "Las dos", "Ninguna"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Las clases abstractas:", "options": ["Instantiarse normalmente", "Con abstract", "No instantiarse", "No instantiarse pero herencia"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Constructores herencia:", "options": ["Facilitar construcción", "No heredados directamente", "Sobrescribir Override", "Todas"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "@override:", "options": ["@override", "@overwrite", "$override", "$overwrite"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "No pueden pasar override:", "options": ["Métodos", "Abstractos", "Constructores", "Todas incorrectas"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "palabra reservada interfaz:", "options": ["null", "void", "status", "Ninguna"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Relación dependiente:", "options": ["Asociación", "Composición", "Agregación", "Entrelazado"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Subrutina instanciar:", "options": ["Constructores", "Observadores", "Modificadores", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."}
-          ]
+  {
+    q: "Al sobrescribir el método este se modificará para la clase concreta, el método original:",
+    options: [
+      "Se eliminará de la clase padre.",
+      "Seguirá estando disponible para la clase padre u otras clases que hereden.",
+      "También se sobrescribirá.",
+      "Cambiará su visibilidad a público."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Seguirá estando disponible para la clase padre u otras clases que hereden.\nSegún el material de estudio, concretamente en el apartado dedicado a la sobreescritura de métodos (Override), se establece de forma literal que al sobrescribir el método este se modificará para la clase concreta, pero el método original seguirá estando disponible para la clase padre u otras clases que hereden.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la sobreescritura no elimina ni altera el código de la clase padre. La clase padre mantiene toda su funcionalidad original intacta.\nLa opción C es falsa, debido a que la modificación o sobreescritura se aplica de forma local y exclusiva a la clase hija concreta donde se está utilizando la anotación `@Override`, sin que esto cambie el comportamiento del método original en la clase padre.\nLa opción D es falsa, porque la sobreescritura no cambia automáticamente la visibilidad del método original a público. Lo que se exige es que la clase hija vuelva a crear el método con el mismo nombre, parámetros y retorno que la clase padre."
+  },
+  {
+    q: "El operador instaceof:",
+    options: [
+      "Permite crear una instancia de una clase.",
+      "Permite crear una instancia de una clase evitando que herede los métodos de esta.",
+      "Permite comprobar si un objeto es instancia de un tipo concreto.",
+      "Todas las anteriores son incorrectas."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Permite comprobar si un objeto es instancia de un tipo concreto.\nSegún el material de estudio, concretamente en el apartado donde se explica la ejecución polimorfa, el operador instanceof se utiliza para solucionar el problema de no conocer la clase real que contiene una instancia, permitiendo comprobar si un objeto es instancia de un tipo concreto. Además, en la tabla de operadores del lenguaje, se clasifica como un operador especial cuya función es validar si un objeto es de un tipo determinado.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y B son falsas, ya que la herramienta utilizada para instanciar o crear un objeto de una clase es el operador `new`, el cual se indica junto al nombre de la clase e invoca a su constructor.\nLa afirmación de la opción B también es conceptualmente errónea, ya que al crear una instancia no se puede evitar que herede los métodos de la clase padre, puesto que la herencia forma parte del diseño de la clase.\nAl ser literal y exacta la opción C, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "La interfaz permite:",
+    options: [
+      "La organización y estructuración del código.",
+      "La separación de la parte visual a su implementación.",
+      "Las dos anteriores son correctas.",
+      "Ninguna de las anteriores es correcta."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Las dos anteriores son correctas.\nSegún el material de estudio, concretamente en el apartado dedicado a las interfaces dentro de la unidad de clases avanzadas, se definen literalmente como características principales de las interfaces la organización y estructuración del código y la separación de la parte visual respecto a su implementación.\nA modo de aclaración:\nLas opciones A y B son afirmaciones verdaderas, ya que el temario confirma que una interfaz, que actúa como un prototipo o plantilla de métodos sin implementar, cumple exactamente con esas dos funciones.\nSin embargo, al ser ambas ciertas, la opción C es la única respuesta válida que engloba toda la verdad.\nAl ser correctas la A y la B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Las clases abstractas:",
+    options: [
+      "Pueden ser instanciadas normalmente.",
+      "Pueden ser instanciadas per requieren de la palabra reservada abstract.",
+      "No puede ser instanciada ni empleada de otro modo.",
+      "No puede ser instanciada, pero sí empleada para la herencia."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. No puede ser instanciada, pero sí empleada para la herencia.\nSegún el material de estudio, concretamente en el apartado dedicado a las clases y métodos abstractos, se establece de forma literal que una clase abstracta no se puede instanciar. Su propósito dentro de la programación se define indicando que sirve exclusivamente para la herencia, actuando como una plantilla o modelo superclase para indicar cómo pueden definirse sus métodos en las clases hijas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y B son falsas, ya que el temario es tajante al afirmar que de las clases abstractas nunca se generan instancias. La palabra reservada `abstract` se utiliza en la definición de la clase, no como una herramienta para instanciar.\nLa opción C es falsa, debido a que, aunque es cierto que no puede ser instanciada, afirma erróneamente que no puede ser empleada de otro modo. Su uso fundamental es servir como base para la herencia."
+  },
+  {
+    q: "¿Qué afirmación es verdadera con respecto a los constructores en la herencia y clases abstractas?",
+    options: [
+      "Existen en las clases abstractas para facilitar la construcción de objetos.",
+      "Los constructores no pueden ser heredados directamente.",
+      "Se pueden sobreescribir con Override",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Los constructores no pueden ser heredados directamente.\nSegún el material de estudio, concretamente en el apartado dedicado a constructores y herencia, se establece de forma explícita que en herencia los constructores no se pueden heredar directamente, sino de forma indirecta. Por este motivo, cada clase hija tiene la obligación de definir sus propios constructores e invocar al de la clase padre mediante la palabra reservada `super`.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el temario señala expresamente que de una clase abstracta no se puede instanciar objetos. En todo caso, si una clase abstracta dispone de constructor, este se usa para inicializar la parte heredada cuando una subclase concreta se instancia, no para crear objetos directos de la clase abstracta.\nLa opción C es falsa, debido a que los constructores no se pueden sobrescribir. El texto detalla que se pueden sobrescribir métodos de la clase padre a excepción de los constructores.\nAl ser falsas las opciones A y C, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Los métodos sobrescritos tendrán que añadir encima de la cabecera del método la palabra reservada:",
+    options: [
+      "@override.",
+      "@overwrite.",
+      "$override.",
+      "$overwrite."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. @override.\nSegún el material de estudio, concretamente en el apartado dedicado a la sobreescritura de métodos en la unidad de clases avanzadas, se establece que para sobrescribir un método se tendrá que añadir encima de la cabecera del método la anotación `@override`.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones B y D son falsas, ya que la anotación correcta definida en Java para este propósito es `override`, no `overwrite`.\nLa opción C es falsa, debido a que las anotaciones o metadatos en Java se declaran utilizando el símbolo de la arroba `@` al principio, y no el símbolo del dólar `$`."
+  },
+  {
+    q: "No pueden pasar por un proceso de override:",
+    options: [
+      "Métodos.",
+      "Métodos abstractos.",
+      "Constructores.",
+      "Todas las anteriores son incorrectas."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Constructores.\nSegún el material de estudio, concretamente en el apartado dedicado a la sobreescritura de métodos, se establece de forma explícita que se pueden sobrescribir cualquier método de la clase padre a excepción de los constructores. Esto se debe a que los constructores no se heredan de una clase a otra, por lo que se tienen que invocar de forma indirecta utilizando la palabra reservada `super`.\nEl resumen conceptual del temario también reitera textualmente que los constructores no pueden ser sobrescritos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el propósito esencial de la sobreescritura es precisamente permitir que una clase hija modifique o aplique una funcionalidad diferente a un método heredado.\nLa opción B es falsa, porque los métodos abstractos se utilizan para obligar a que las clases hijas los implementen o sobrescriban con su propia funcionalidad.\nAl ser correcta la opción C, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Palabra reservada que permite llamar y hacer uso de la interfaz:",
+    options: [
+      "null.",
+      "void.",
+      "status.",
+      "Ninguna de las anteriores es correcta."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Ninguna de las anteriores es correcta.\nSegún el material de estudio, concretamente en el glosario de conceptos fundamentales y en el apartado dedicado a las interfaces, se establece de forma literal que la palabra reservada que permite llamar y hacer uso de la interfaz es `implements`. Al no encontrarse esta palabra entre las opciones A, B y C, la opción D es la acertada.\nA modo de aclaración sobre por qué las demás alternativas son incorrectas:\nLa opción A es falsa, ya que `null` hace referencia a un valor nulo o vacío.\nLa opción B es falsa, debido a que `void` es la palabra reservada que se utiliza en la declaración de un método para indicar que no devuelve ningún valor.\nLa opción C es falsa, porque `status` ni siquiera forma parte de la lista oficial de palabras reservadas de Java."
+  },
+  {
+    q: "Relación donde una clase no tiene sentido sin otra, ambas son dependientes:",
+    options: [
+      "Asociación.",
+      "Composición de clases.",
+      "Agregación.",
+      "Entrelazado."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Composición de clases.\nEl material de estudio define explícitamente la composición como una asociación que ocurre cuando una clase no tiene sentido sin otra, ambas son dependientes. Se trata de una asociación obligatoria donde, si el objeto principal es destruido, también deben desaparecer sus componentes, ya que sin él no tiene sentido que existan.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que en una relación de asociación las clases pueden existir sin depender necesariamente una de la otra.\nLa opción C es falsa, debido a que la agregación, aunque es un tipo de asociación, mantiene la característica de que las clases pueden existir por sí mismas sin necesidad de la otra. También se le conoce como composición débil.\nLa opción D es falsa, porque no es un tipo de relación entre clases reconocido en el temario de programación orientada a objetos."
+  },
+  {
+    q: "Subrutina que permite instanciar objetos a partir de una clase:",
+    options: [
+      "Constructores.",
+      "Observadores.",
+      "Modificadores.",
+      "Ninguna de las anteriores es correcta"
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Constructores.\nSegún el material de estudio, concretamente en el glosario de conceptos fundamentales de la unidad sobre clases avanzadas, se define de forma literal a los constructores como la subrutina que permite instanciar objetos a partir de una clase. Además, el temario reitera en varios apartados que estos métodos son los encargados de inicializar los objetos de las clases.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que los observadores o getter son los métodos que permiten consultar o leer el valor de un campo, no instanciar objetos.\nLa opción C es falsa, debido a que los modificadores o setter son aquellos métodos cuya finalidad exclusiva es modificar o establecer el valor de un campo.\nAl ser correcta la opción A, la opción D queda lógicamente descartada."
+  }
+]
+
         },
 
         unidad8: {
           name: "Unidad 8: Arrays",
           questions: [
-            {"q": "Longitud array:", "options": ["Recorriendo", ".length", "Opciones a) y b)", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Tipo se puede declarar array:", "options": ["Primitivo o abstracto", "Primitivo", "Abstracto", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "¿Es posible cambiar tamaño array?", "options": ["Sí", "Solo primer valor", "Cualquier momento", "No, solo en declaración"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Función cortar cadena:", "options": ["replace", "substring", "trim", "contains"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "El tipo String se considera:", "options": ["Primitivo cadena", "Primitivo agrupación", "Primitivo conjunto", "Todas falsas"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Cambiar número a cadena:", "options": ["String.valueOf", "Float.parseFloat", "New String", "String.parseString"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Inicializar array:", "options": ["new int[2][1]", "{{1},{2}}", "números.clone()", "Todas"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Copia exacta independiente:", "options": ["Shallow", "Deep", "Uno a uno", "Incremental"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Primer y último elemento:", "options": ["[1] y [9]", "[1] y [10]", "[0] y [9]", "[0] y [10]"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Un array se puede definir como:", "options": ["Estático ilimitado", "Estático limitado", "Dinámico limitado", "Dinámico ilimitado"], "correct": 1, "explanation": "La respuesta correcta es B."}
-          ]
+  {
+    q: "¿Cómo podemos conocer la longitud de un array?",
+    options: [
+      "Recorriendo todo el array y guardando el total de elementos.",
+      "Con la función .length",
+      "Las opciones a) y b) son correctas.",
+      "Ninguna opción es correcta."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Con la función .length.\nSegún el material de estudio, concretamente en el apartado sobre las operaciones para realizar sobre un array estático, se establece explícitamente que para recorrer un array tenemos que conocer previamente su capacidad total o longitud de la dimensión, y para ello el array tiene un campo length que nos devuelve la longitud total. Además, en el resumen de acceso a los arrays se reitera que para conocer la posición del último elemento se usa la propiedad .length del array.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el propio temario indica la lógica inversa: para recorrer un array tenemos que conocer previamente su capacidad total. Por lo tanto, no se recorre el array para descubrir su tamaño, sino que se utiliza .length para conocerlo antes de recorrerlo.\nAl ser incorrecta la opción A, la opción C también es falsa.\nAl ser válida la opción B como la forma estipulada para conocer la longitud, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "¿De qué tipo se puede declarar los valores un array?",
+    options: [
+      "Tipo primitivo o abstracto.",
+      "Tipo primitivo.",
+      "Tipo abstracto.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Tipo primitivo o abstracto.\nSegún el material de estudio, concretamente en el apartado donde se explica el concepto y la estructura de los arrays, se establece de forma explícita que un array puede almacenar dos tipos de datos: primitivo y abstracto o referencia. Los tipos primitivos abarcan datos como int, long, double o boolean, mientras que los tipos abstractos o de referencia pueden contener cualquier objeto. El resumen de la unidad reitera esta idea señalando que los arrays permiten almacenar elementos del mismo tipo primitivo o abstracto.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones B y C son falsas por ser incompletas, ya que en Java la declaración de los elementos de un array no está limitada exclusivamente a una sola de estas categorías, sino que el lenguaje soporta ambas.\nAl ser correcta la opción A, que engloba la respuesta completa, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "¿Es posible cambiar el tamaño de un array durante su ejecución?",
+    options: [
+      "Sí.",
+      "Sí, solo cuando tenga un primer valor asignado.",
+      "Sí, en cualquier momento.",
+      "No, solo se puede indicar su tamaño en la declaración inicial."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. No, solo se puede indicar su tamaño en la declaración inicial.\nSegún el material de estudio, concretamente en el resumen de la unidad sobre estructuras de almacenamiento, se establece de forma explícita que los arrays son objetos estáticos y secuenciales, y no es posible cambiar su tipo de datos ni su tamaño para incrementarlo o decrementarlo en ejecución. Tienen un número fijo de valores que queda determinado en el momento exacto de su creación o instanciación.\nSi durante el programa surge la necesidad de insertar o eliminar elementos y cambiar la capacidad, la teoría indica que obligatoriamente hay que declarar un nuevo array con el nuevo tamaño y copiar los datos del original, pero el array inicial no se puede redimensionar.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A, B y C son falsas, ya que todas afirman que sí es posible modificar el tamaño del array original de forma directa. Para lograr ese comportamiento dinámico, el temario especifica que se debe utilizar un mecanismo distinto llamado colecciones, como por ejemplo ArrayList."
+  },
+  {
+    q: "¿Qué función permite cortar una cadena de caracteres?",
+    options: [
+      "replace(String cadenaBuscada, String remplazo)",
+      "substring(int posiciónInicial, int posiciónFinal)",
+      "trim()",
+      "contains (String cadena)"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. substring(int posiciónInicial, int posiciónFinal).\nSegún el material de estudio, concretamente en el apartado dedicado a las operaciones con cadenas de caracteres de la clase String, el método substring se define como la función que devuelve la cadena comprendida entre las posiciones indicadas por parámetros o que extrae una parte de la cadena según la posición inicial y final. Esto es lo que comúnmente conocemos como cortar o extraer un fragmento de texto.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que replace no corta la cadena, sino que devuelve la cadena sustituyendo las partes que coinciden con la cadena buscada por otra indicada como reemplazo.\nLa opción C es falsa, debido a que trim sirve exclusivamente para eliminar espacios al principio y al final del texto.\nLa opción D es falsa, porque contains no extrae ni corta texto, sino que únicamente devuelve verdadero o falso si el String contiene la cadena pasada por parámetro."
+  },
+  {
+    q: "El tipo String se considera por ser:",
+    options: [
+      "Tipo primitivo que define una cadena de caracteres.",
+      "Tipo primitivo que define una agrupación de datos de tipo carácter.",
+      "Tipo primitivo que define un conjunto de cadenas.",
+      "Todas las anteriores son falsas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Todas las anteriores son falsas.\nSegún el material de estudio, concretamente en el resumen dedicado a las cadenas de caracteres, se advierte textualmente que aunque puede causar confusión String no es un tipo primitivo. El temario lo define de forma explícita como un tipo de datos no primitivo para representar una cadena de caracteres, recordando que en Java para esto se utilizan objetos de clase String. Además, una pista visual clave es que se declara con su primera letra en mayúscula, como las clases, a diferencia de los tipos primitivos que van en minúscula.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A, B y C son falsas, ya que todas parten de la afirmación errónea de que String es un tipo primitivo. En Java, los tipos primitivos son byte, short, int, long, float, double, char y boolean, mientras que las cadenas de caracteres se manejan a través de la clase String."
+  },
+  {
+    q: "Indica que código es el correcto para cambiar el número 10,5 a cadena.",
+    options: [
+      "String.valueOf(10,5f);",
+      "Float.parseFloat(10,5f);",
+      "New String(10,5f);",
+      "String.parseString(10,5f);"
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. String.valueOf(10,5f).\nSegún el material de estudio, concretamente en el apartado de conversiones de cadenas de caracteres, se especifica de forma literal que para convertir un valor numérico a cadena se debe utilizar el método String.valueOf(numero).\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que Float.parseFloat realiza la operación contraria: sirve para convertir un texto de tipo String a un valor numérico float.\nLas opciones C y D son incorrectas, debido a que no son los métodos estipulados ni reconocidos en Java para realizar la conversión de un número a texto."
+  },
+  {
+    q: "Indica que código es el correcto para inicializar un array",
+    options: [
+      "int [][] numeros = new int[2][1]; numeros[0][0] = 1; numeros[1][0] = 2;",
+      "int [][] numeros1 = {{1},{2}};",
+      "int [][] numeros2 = números.clone();",
+      "Todas las opciones son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Todas las opciones son correctas.\nSegún el material de estudio, concretamente en los apartados dedicados a la declaración, creación e inicialización de arrays, así como en las operaciones de copia, en Java existen múltiples formas válidas de inicializar un array, y las opciones A, B y C representan sintaxis correctas contempladas en el temario.\nLa opción A es correcta, ya que ilustra la inicialización elemento a elemento. El temario especifica que primero se crea el array y posteriormente se accede a cada posición para introducir su valor usando índices.\nLa opción B es correcta, porque representa la inicialización directamente en la declaración mediante llaves.\nLa opción C es correcta, debido a que el temario explica que para hacer una copia de un array, y así inicializar uno nuevo a partir de otro existente, se puede utilizar el método .clone().\nAl ser los tres códigos expuestos formas correctas y contempladas en el lenguaje Java para darle valores iniciales a un array, la opción D es la única respuesta global válida."
+  },
+  {
+    q: "Si queremos hacer una copia exacta y que el objeto sea independiente de un array de tipo clase estamos hablando de:",
+    options: [
+      "Copia shallow",
+      "Copia deep",
+      "Copia uno a uno",
+      "Copia incremental"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Copia deep.\nSegún el material de estudio, concretamente en el apartado dedicado a la copia de arrays y en el glosario de conceptos, se establece de forma literal que una copia deep o profunda es el método utilizado para hacer una copia exacta de los mismos valores de forma que la copia será independiente del original. Al apuntar a una dirección de memoria diferente, si se modifica el array original o la copia, el cambio no tendrá efecto en la otra.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la copia shallow o poco profunda hace una copia de las direcciones de memoria a las que apuntan los elementos, por lo que no es una copia independiente y cualquier modificación afecta a ambas.\nLas opciones C y D son incorrectas, debido a que el material de estudio divide las operaciones de copia de arrays exclusivamente en dos tipos, deep y shallow, por lo que estas denominaciones no forman parte de los mecanismos estipulados en la teoría."
+  },
+  {
+    q: "Si se quiere acceder al primer y último elemento de un array de tipo int con un total de valores de 10, usaremos el siguiente código:",
+    options: [
+      "int primerElemento = nombreArray[1]; int ultimoElemento = nombreArray[9];",
+      "int primerElemento = nombreArray[1]; int ultimoElemento = nombreArray[10];",
+      "int primerElemento = nombreArray[0]; int ultimoElemento = nombreArray[9];",
+      "int primerElemento = nombreArray[0]; int ultimoElemento = nombreArray[10];"
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. int primerElemento = nombreArray[0]; int ultimoElemento = nombreArray[9];\nSegún el material de estudio, concretamente en los apartados dedicados al acceso de los elementos de un array, se establece de forma literal que el índice va desde la primera posición 0 hasta la última que será la cantidad total menos 1. Las diapositivas del temario refuerzan este concepto indicando explícitamente que el primer elemento tiene la posición 0 y el último elemento será el número total de elementos menos 1. Por lo tanto, si el array tiene un total de 10 valores, el primer elemento se encuentra en el índice 0 y el último en el índice 9.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que asume erróneamente que el índice del primer elemento empieza en 1.\nLa opción B es falsa, debido a que asume que los índices van del 1 al 10. En Java, intentar acceder a la posición 10 de un array de 10 elementos provocaría un error ArrayIndexOutOfBoundsException.\nLa opción D es falsa, porque aunque acierta en que la primera posición es la 0, intenta acceder al último elemento utilizando el índice 10, el cual está fuera de los límites del array."
+  },
+  {
+    q: "Un array se puede definir como:",
+    options: [
+      "Un objeto estático que almacena elementos de forma secuencial un número ilimitado de valores.",
+      "Un objeto estático que almacena elementos de forma secuencial un número limitado de valores.",
+      "Un objeto dinámico que almacena elementos de forma secuencial un número limitado de valores.",
+      "Un objeto dinámico que almacena elementos de forma secuencial un número ilimitado de valores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Un objeto estático que almacena elementos de forma secuencial un número limitado de valores.\nSegún el material de estudio, concretamente en el apartado donde se explica el concepto de estas estructuras, se define literalmente que un array es un objeto estático que almacena o contiene elementos de forma secuencial un número fijo de valores del mismo tipo. Además, las diapositivas de la unidad lo resumen indicando que se caracteriza por ser un objeto estático, que contiene elementos de forma secuencial y que posee un número finito de elementos. Al tener un número fijo y finito, su capacidad es limitada.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que afirma que puede almacenar un número ilimitado de valores. El temario especifica claramente que los arrays tienen un límite fijo de valores y no es posible incrementar o decrementar su tamaño en ejecución.\nLas opciones C y D son falsas, debido a que catalogan al array como un objeto dinámico. El material de estudio es explícito al señalar que los arrays son objetos estáticos. Las estructuras dinámicas que pueden variar su tamaño durante la ejecución son las colecciones, como ArrayList."
+  }
+]
         },
 
         unidad9: {
