@@ -1474,181 +1474,583 @@ const ExamTestApp = () => {
         unidad1: {
           name: "Unidad 1: Introducción a la programación",
           questions: [
-            {
-              q: "Acoplamiento patológico:",
-              options: [
-                "Se produce siempre que entre dos o más módulos se usen las mismas fuentes externas de datos.",
-                "Se produce siempre que los módulos usen los mismos datos globales.",
-                "Se produce siempre que un módulo acceda a otro para leer o modificar los datos internos del último.",
-                "Todas las anteriores son correctas."
-              ],
-              correct: 2,
-              explanation: "La respuesta correcta es C. Se produce siempre que un módulo acceda a otro para leer o modificar los datos internos del último. El acoplamiento patológico o por contenido se refiere precisamente a cuando un módulo modifica o depende directamente de los datos o el funcionamiento interno de otro, dificultando el mantenimiento."
-            },
-            {
-              q: "Dentro de la simbología de los diagramas de flujo cuál de estas afirmaciones es falsa:",
-              options: [
-                "Las operaciones que se vayan realizando deben de seguir un orden en concreto, y este orden se indica con flechas.",
-                "Las decisiones se indican en un rombo donde pondremos tantas líneas de flujo como alternativas finales tengamos.",
-                "Las operaciones de cálculo interno del programa se describen con una bandera.",
-                "Cada uno de los diagramas de flujo comienzan y terminan con terminal que se representa con un óvalo o elipse."
-              ],
-              correct: 2,
-              explanation: "La respuesta correcta es C. Las operaciones de cálculo interno del programa se describe con una bandera. Esta afirmación es falsa porque las operaciones o instrucciones de cálculo interno se representan mediante rectángulos, no con banderas."
-            },
-            {
-              q: "El valor Booleano:",
-              options: [
-                "Es numérico.",
-                "Es secuencial.",
-                "Es modular.",
-                "Ninguna de las anteriores."
-              ],
-              correct: 3,
-              explanation: "La respuesta correcta es D. Ninguna de las anteriores. Un valor booleano es un tipo de valor que tiene solo dos opciones: verdadero o falso. No es numérico, ni secuencial, ni modular."
-            },
-            {
-              q: "En la cohesión comunicacional:",
-              options: [
-                "Los elementos software que constituyen el módulo tienen una sola tarea definida.",
-                "La salida de una instrucción debe de coincidir de manera estricta con la entrada.",
-                "Conviven varias actividades paralelas que no siguen un orden específico y que comparten los mismos datos de entrada y salida.",
-                "Ninguna de las anteriores es correcta."
-              ],
-              correct: 2,
-              explanation: "La respuesta correcta es C. Conviven varias actividades paralelas que no siguen un orden específico y que comparten los mismos datos de entrada y salida. La cohesión comunicacional ocurre cuando un módulo no realiza una única función, sus actividades están relacionadas por datos compartidos y la secuencia no es importante."
-            },
-            {
-              q: "En la cohesión lógica:",
-              options: [
-                "Los elementos software que constituyen el módulo tienen una sola tarea definida.",
-                "La salida de una instrucción debe de coincidir de manera estricta con la entrada.",
-                "Conviven varias actividades paralelas que no siguen un orden específico y que comparten los mismos datos de entrada y salida.",
-                "Ninguna de las anteriores es correcta."
-              ],
-              correct: 3,
-              explanation: "La respuesta correcta es D. Ninguna de las anteriores es correcta. La cohesión lógica ocurre cuando un módulo no realiza una función única, sus actividades están relacionadas por otros motivos (ni por datos ni por flujo) y la secuencia sí es importante. Ninguna de las otras opciones describe correctamente la cohesión lógica."
-            },
-            {
-              q: "Es una representación gráfica de elementos y sus relaciones:",
-              options: [
-                "Paradigma.",
-                "Diagrama.",
-                "Iteración.",
-                "Todas las anteriores son incorrectas."
-              ],
-              correct: 1,
-              explanation: "La respuesta correcta es B. Diagrama. En los conceptos fundamentales de programación, un diagrama se define explícitamente como la representación gráfica de elementos y sus relaciones."
-            },
-            {
-              q: "La cohesión es una cualidad de la estructura:",
-              options: [
-                "Secuencial.",
-                "Alternativa.",
-                "Iterativa.",
-                "Ninguna de las anteriores."
-              ],
-              correct: 3,
-              explanation: "La respuesta correcta es D. Ninguna de las anteriores. La cohesión es una cualidad propia de la programación modular, que hace referencia a la relación entre los distintos elementos de software albergados en cada módulo. Las estructuras secuencial, alternativa e iterativa son tipos de estructuras de control."
-            },
-            {
-              q: "La cohesión funcional, secuencial y comunicacional son cohesiones:",
-              options: [
-                "Procedurales.",
-                "Fuertes.",
-                "Débiles.",
-                "Ninguna de las anteriores."
-              ],
-              correct: 1,
-              explanation: "La respuesta correcta es B. Fuertes. La cohesión funcional, secuencial y comunicacional se consideran las cohesiones de nivel alto o fuertes en la ingeniería de software, siendo las más deseables para la calidad del código."
-            },
-            {
-              q: "La estructura basada en bucles es:",
-              options: [
-                "Secuencial.",
-                "Alternativa.",
-                "Iterativa.",
-                "Ninguna de las anteriores."
-              ],
-              correct: 2,
-              explanation: "La respuesta correcta es C. Iterativa. La estructura iterativa es aquella que crea un bucle en el que se repiten diferentes instrucciones mientras se cumpla una condición propuesta."
-            },
-            {
-              q: "La programación surgió como un intento para:",
-              options: [
-                "Automatizar procesos.",
-                "Dividir problemas en subproblemas más simples.",
-                "Con paradigmas resolver otros problemas.",
-                "Ninguno de los anteriores."
-              ],
-              correct: 0,
-              explanation: "La respuesta correcta es A. Automatizar procesos. La programación se define como el proceso de agrupar, diseñar y codificar instrucciones para implementar un algoritmo generalmente con la intención de automatizar algún proceso."
-            }
-          ]
+  {
+    q: "Acoplamiento patológico:",
+    options: [
+      "Se produce siempre que entre dos o más módulos se usen las mismas fuentes externas de datos.",
+      "Se produce siempre que los módulos usen los mismos datos globales.",
+      "Se produce siempre que un módulo acceda a otro para leer o modificar los datos internos del último.",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Se produce siempre que un módulo acceda a otro para leer o modificar los datos internos del último.\nSegún el material de estudio, concretamente en el apartado dedicado a la cohesión y el acoplamiento dentro de la programación modular, el acoplamiento patológico o por contenido se define explícitamente como aquel que \"se produce siempre que un módulo acceda a otro para leer o modificar los datos internos del último\".\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que describe el acoplamiento externo, el cual ocurre cuando dos o más módulos usan las mismas fuentes externas de datos.\nLa opción B es falsa, debido a que define el acoplamiento global, que se da siempre que los módulos usan los mismos datos globales.\nAl ser únicamente correcta la C para el término consultado, la opción D también es incorrecta."
+  },
+  {
+    q: "Dentro de la simbología de los diagramas de flujo cuál de estas afirmaciones es falsa:",
+    options: [
+      "Las operaciones deben seguir un orden indicado con flechas.",
+      "Las decisiones se indican en un rombo.",
+      "Las operaciones se describen con una bandera.",
+      "Empiezan y terminan con un óvalo."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Las operaciones de cálculo interno del programa se describen con una bandera.\nEsta afirmación es la falsa porque, según el material de estudio correspondiente a la simbología de los diagramas de flujo, \"las operaciones de cálculo interno del programa se describen con un rectángulo\", no con una bandera.\nA modo de aclaración:\nLa opción A es verdadera.\nLa opción B es verdadera.\nLa opción D es verdadera."
+  },
+  {
+    q: "El valor Booleano:",
+    options: [
+      "Es numérico.",
+      "Es secuencial.",
+      "Es modular.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Ninguna de las anteriores.\nSegún el material de estudio, un valor Booleano se define como un tipo con dos valores: verdadero o falso.\nAclaraciones:\nLa opción A es falsa.\nLa opción B es falsa.\nLa opción C es falsa."
+  },
+  {
+    q: "En la cohesión comunicacional:",
+    options: [
+      "Una sola tarea definida.",
+      "Salida coincide con entrada.",
+      "Actividades paralelas con mismos datos.",
+      "Ninguna."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Conviven varias actividades paralelas que no siguen un orden específico y que comparten los mismos datos de entrada y salida.\nSegún el material de estudio, se define literalmente así.\nAclaraciones:\nLa opción A es cohesión funcional.\nLa opción B es cohesión secuencial.\nLa opción D es incorrecta."
+  },
+  {
+    q: "En la cohesión lógica:",
+    options: [
+      "Una sola tarea definida.",
+      "Salida coincide con entrada.",
+      "Actividades paralelas.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Ninguna de las anteriores es correcta.\nSegún el material de estudio, la cohesión lógica se define como aquella en la que los elementos están destinados a realizar actividades de la misma categoría general.\nAclaraciones:\nLa opción A es funcional.\nLa opción B es secuencial.\nLa opción C es comunicacional."
+  },
+  {
+    q: "Es una representación gráfica de elementos y sus relaciones:",
+    options: [
+      "Paradigma.",
+      "Diagrama.",
+      "Iteración",
+      "Ninguna."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Diagrama.\nSegún el material de estudio, un diagrama es la representación gráfica de elementos y sus relaciones.\nAclaraciones:\nLa opción A es falsa.\nLa opción C es falsa."
+  },
+  {
+    q: "La cohesión es una cualidad de la estructura:",
+    options: [
+      "Secuencial.",
+      "Alternativa.",
+      "Iterativa.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D.\nSegún el material de estudio, la cohesión es una cualidad de los módulos, no de estructuras de control.\nAclaraciones:\nLas otras opciones son tipos de estructuras de control."
+  },
+  {
+    q: "La cohesión funcional, secuencial y comunicacional son cohesiones:",
+    options: [
+      "Procedurales.",
+      "Fuertes.",
+      "Débiles.",
+      "Ninguna."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Fuertes.\nSegún el material de estudio, estas cohesiones pertenecen al grupo fuerte.\nAclaraciones:\nLa opción A es incorrecta.\nLa opción C es incorrecta."
+  },
+  {
+    q: "La estructura basada en bucles es:",
+    options: [
+      "Secuencial.",
+      "Alternativa.",
+      "Iterativa.",
+      "Ninguna."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Iterativa.\nSegún el material de estudio, los bucles son estructuras iterativas.\nAclaraciones:\nLas demás no usan bucles."
+  },
+  {
+    q: "La programación surgió como un intento para:",
+    options: [
+      "Automatizar procesos.",
+      "Dividir problemas.",
+      "Usar paradigmas.",
+      "Ninguno."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Automatizar procesos.\nSegún el material de estudio, surgió para automatizar tareas.\nAclaraciones:\nLa opción B es programación modular.\nLa opción C es paradigma."
+  }
+]
         },
 
         unidad2: {
           name: "Unidad 2: POO",
           questions: [
-            {"q": "De una clase podemos extraer las … que necesitemos", "options": ["Instancias", "Variables", "Métodos", "Ninguna de las anteriores"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "De una clase podemos obtener la cantidad de objetos instanciados que se requieran", "options": ["Es cierto.", "Es falso.", "Depende del lenguaje.", "Solo en lenguajes compilados."], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "El encapsulamiento:", "options": ["Agrupación en un mismo elemento", "Es solo para datos privados", "Es un tipo de herencia", "No permite proteger la información"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Elementos que actúan como variables propias", "options": ["Propiedad", "Método", "Constructor", "Ninguna de las anteriores"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "En el área intermedia de los diagramas de clase:", "options": ["Se encuentra el nombre", "Se encuentran los campos", "Se encuentran los métodos", "Se encuentra el constructor"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Es el elemento principal de POO:", "options": ["Clase.", "Campo.", "Objeto.", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Están formados por datos primitivos:", "options": ["Objetos primitivos", "Objetos instanciados", "Objetos simples y compuestos", "Ninguna"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "La forma de declarar las propiedades en Java:", "options": ["Es sencilla", "No es sencilla", "No es sencilla ni permite reutilizar", "Java no ofrece mecanismos"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "La visión pública se representa con el símbolo:", "options": ["+", "-", "#", "&"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "No es una forma de polimorfismo:", "options": ["Asignación polimorfa", "Ejecución polimorfa", "Herencia polimorfa", "Todas son incorrectas"], "correct": 2, "explanation": "La respuesta correcta es C."}
-          ]
+  {
+    q: "De una clase podemos extraer las … que necesitemos:",
+    options: [
+      "Instancias.",
+      "Abstracciones.",
+      "Propiedades.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Instancias.\nSegún el material de estudio, una clase actúa como un modelo o plantilla de la cual \"podemos obtener la cantidad de objetos instanciados que se requieran\".\nEl temario especifica textualmente que cada una de las instancias (u objetos) \"son los resultados específicos extraídos a partir de él\".\n\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que la abstracción no es un elemento físico o lógico que se extraiga repetidamente de una clase, sino un mecanismo o concepto que permite reducir la complejidad de los objetos minimizando la información a representar, dejando solo los aspectos fundamentales.\nLa opción C es falsa, debido a que las propiedades son los elementos que definen los atributos y forman parte de la estructura interna (miembros) con la que se diseña la propia clase, no son el producto resultante (los objetos) que se instancian o extraen a partir de dicho modelo."
+  },
+  {
+    q: "De una clase podemos obtener la cantidad de objetos instanciados que se requieran:",
+    options: [
+      "Es cierto.",
+      "Es falso.",
+      "Es cierto, pero el número de las instancias es limitado.",
+      "Ninguno de los anteriores, las clases no se instancian."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Es cierto.\nSegún el material de estudio, el enunciado es literalmente correcto, ya que se especifica textualmente que \"De una clase podemos obtener la cantidad de objetos instanciados que se requieran\".\nPor este motivo, una clase es considerada como una plantilla o modelo con el cual se pueden crear y definir todos esos objetos.\n\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el enunciado es una afirmación verdadera dentro de los conceptos básicos de la Programación Orientada a Objetos.\nLa opción C es falsa, debido a que el temario no establece que exista un límite estricto o predeterminado.\nLa opción D es falsa, porque las clases sí se instancian."
+  },
+  {
+    q: "El encapsulamiento:",
+    options: [
+      "Agrupación en un mismo elemento de los datos y las operaciones relacionadas con estos.",
+      "Reducir complejidad (abstracción).",
+      "Permite reutilizar código.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Agrupación en un mismo elemento de los datos y las operaciones relacionadas con estos.\nSegún el material de estudio, el encapsulamiento se define como la \"agrupación en un mismo elemento de los datos y las operaciones relacionadas con estos\".\nSu propósito es ocultar los datos y acceder mediante interfaces.\n\nAclaraciones:\nLa opción B describe abstracción.\nLa opción C describe reutilización."
+  },
+  {
+    q: "Elementos que actúan como variables propias de cada instancia:",
+    options: [
+      "Propiedad.",
+      "Método.",
+      "Constructor.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D.\nSegún el material de estudio, el término correcto es \"campo\".\n\nAclaraciones:\nLa opción A es acceso indirecto.\nLa opción B son acciones.\nLa opción C instancia objetos."
+  },
+  {
+    q: "En el área intermedia de los diagramas de clase:",
+    options: [
+      "Nombre de la clase.",
+      "Campos de la clase.",
+      "Métodos.",
+      "Ninguna."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B.\nSegún el material, el área intermedia contiene los campos.\n\nEstructura:\nSuperior → nombre\nIntermedia → campos\nInferior → métodos"
+  },
+  {
+    q: "Es el elemento principal de POO:",
+    options: [
+      "Clase.",
+      "Campo.",
+      "Objeto.",
+      "Ninguna."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Clase.\nSegún el material, la clase es el elemento principal.\n\nAclaraciones:\nCampo → atributo\nObjeto → instancia"
+  },
+  {
+    q: "Están formados por datos primitivos:",
+    options: [
+      "Objetos primitivos.",
+      "Objetos instanciados.",
+      "Objetos simples y compuestos.",
+      "Ninguna."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C.\nSegún el material, los objetos simples y compuestos contienen datos primitivos.\n\nAclaraciones:\nA es incorrecto.\nB es genérico."
+  },
+  {
+    q: "La forma de declarar propiedades en Java:",
+    options: [
+      "Es sencilla y reutilizable.",
+      "No es sencilla pero reutilizable.",
+      "No es sencilla ni reutilizable.",
+      "Java no ofrece mecanismos."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D.\nSegún el material, Java no tiene mecanismo específico.\n\nSe usan campos + getters/setters."
+  },
+  {
+    q: "La visibilidad pública se representa con:",
+    options: [
+      "+.",
+      "-.",
+      "#.",
+      "&."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. +.\nSegún el material:\n+ → público\n- → privado\n# → protegido"
+  },
+  {
+    q: "No es una forma de polimorfismo:",
+    options: [
+      "Asignación polimorfa.",
+      "Ejecución polimorfa.",
+      "Herencia polimorfa.",
+      "Ninguna."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C.\nSegún el material, solo existen asignación y ejecución polimorfa.\n\nHerencia polimorfa no existe."
+  }
+]
         },
 
         unidad3: {
           name: "Unidad 3: Lenguajes",
           questions: [
-            {"q": ".war es una extensión que:", "options": ["Almacena texto plano", "Almacena bytecode", "Es un archivo comprimido", "Ninguna de las anteriores"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Código traducido para que pueda ser interpretado:", "options": ["Código fuente", "Código máquina", "Código intermedio", "Todas"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "CIL o MSIL es una forma de .NET", "options": ["El código fuente", "El código intermedio", "El código máquina", "Ninguno"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "El recolector de basura se ejecuta", "options": ["Compilar", "Borrar", "Compactar", "Marcar"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "El lenguaje informático de alto nivel", "options": ["El microprocesador lee", "Es semejante al humano", "Se encuentra compilado", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "En la configuración de NetBeans Keymap", "options": ["Simbología", "Establece shortcuts", "Configurar depurador", "Todas"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Es una versión de Java:", "options": ["J2ME", "J2SE", "J2EE", "Todas"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "GNU General Public License", "options": ["JDK", "Java", "OpenJDK", "JRE"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Un compilador JIT:", "options": ["Compilar alto nivel", "Ahorrar tiempo", "Codificar código", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Una de las desventajas del recolector de basura:", "options": ["No se puede ejecutar", "Consume recursos", "Solo cuando queda memoria", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."}
-          ]
+  {
+    q: ".war es una extensión que:",
+    options: [
+      "Almacena texto plano.",
+      "Almacena bytecode.",
+      "Es un archivo comprimido con ZIP.",
+      "Ninguna de las anteriores es correcta."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Ninguna de las anteriores es correcta.\nSegún el material de estudio, concretamente en el apartado donde se explican los tipos de archivos empleados en Java, la extensión .war (Web Application Archive) se define explícitamente como archivos que \"contienen aquellos archivos que conforman una aplicación web que se haya desarrollado con Java (Servlets, JSP, etc.) y, además, facilitan su despliegue\".\nComo esta definición no aparece en ninguna de las opciones anteriores, la correcta es la D.\nA modo de aclaración sobre a qué extensiones corresponden las demás opciones:\nLa opción A es falsa, ya que los archivos que se utilizan para almacenar el código fuente en texto plano son los que tienen la extensión .java.\nLa opción B es falsa, debido a que los archivos que contienen el código intermedio o bytecode son los que se generan con la extensión .class tras la compilación.\nLa opción C es falsa, porque el temario asocia textualmente el \"algoritmo de compresión Zip\" a los archivos con extensión .jar (Java Archive), los cuales sirven para empaquetar los .class y otros recursos."
+  },
+  {
+    q: "Código traducido para que pueda ser interpretado por el microprocesador:",
+    options: [
+      "Código fuente.",
+      "Código máquina.",
+      "Código intermedio.",
+      "Todas las anteriores son incorrectas."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Código máquina.\nSegún el material de estudio, concretamente en los conceptos fundamentales de los lenguajes de programación, el código máquina (también llamado código objeto) se define de forma explícita como el \"código traducido para que pueda ser interpretado por el microprocesador\".\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el código fuente se define como el \"programa en lenguaje de alto nivel, aquel cercano al lenguaje humano y no reconocido por la computadora sin pasar por traducción\".\nLa opción C es falsa, debido a que el código intermedio (como el bytecode en Java) es un código generado por el compilador que \"no se puede ejecutar directamente en el sistema operativo\", sino que requiere de un elemento especial (como una máquina virtual) para llevar a cabo una segunda traducción que la máquina finalmente pueda entender.\nAl ser correcta la opción B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "CIL o MSIL es una forma de .NET de llamar a:",
+    options: [
+      "El código fuente.",
+      "El código intermedio.",
+      "El código máquina.",
+      "Ninguno de los anteriores es correcto."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. El código intermedio.\nSegún el material de estudio, concretamente al explicar cómo funcionan los compiladores modernos, se especifica textualmente que \"CIL o MSIL es como se le denominaría al código intermedio en el mundo .NET y la máquina virtual que lo traduciría sería CLR (Common Language Runtime)\".\nEste código intermedio es el equivalente al bytecode que se utiliza en el ecosistema de Java.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa.\nLa opción C es falsa.\nAl ser correcta la opción B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "El compilador de basura se ejecuta en varios pasos, el último de ellos es:",
+    options: [
+      "Compilar el código.",
+      "Borrar los objetos no referenciados.",
+      "Compactar el espacio usado.",
+      "Marcar los objetos de eliminación."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Compactar el espacio usado.\nSegún el material de estudio, el proceso se ejecuta en tres pasos: marcado, borrado y compactación.\nLa compactación es el último paso.\nAclaraciones:\nLa opción A es falsa.\nLa opción B es paso intermedio.\nLa opción D es el primer paso."
+  },
+  {
+    q: "El lenguaje informático de alto nivel es aquel que:",
+    options: [
+      "El microprocesador lee.",
+      "Es semejante al humano.",
+      "Se encuentra compilado.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Es semejante al humano.\nSegún el material de estudio, son lenguajes cercanos al lenguaje humano.\nAclaraciones:\nLa opción A es código máquina.\nLa opción C no define el nivel."
+  },
+  {
+    q: "En la configuración de NetBeans Keymap permite:",
+    options: [
+      "Elegir tipografía.",
+      "Permite establecer shortcuts.",
+      "Configurar depurador.",
+      "Ninguna."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B.\nKeymap permite establecer shortcuts.\nAclaraciones:\nA es Fonts & Colors.\nC es configuración Java."
+  },
+  {
+    q: "Es una versión de Java:",
+    options: [
+      "J2ME.",
+      "J2SE.",
+      "J2EE.",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D.\nJ2ME, J2SE y J2EE son versiones de Java."
+  },
+  {
+    q: "GNU General Public License, version 2 es la licencia de:",
+    options: [
+      "JDK.",
+      "Java.",
+      "OpenJDK.",
+      "JRE."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. OpenJDK.\nSegún el material de estudio, OpenJDK usa GPL v2.\nAclaraciones:\nOracle JDK usa otra licencia."
+  },
+  {
+    q: "Un compilador JIT:",
+    options: [
+      "Compila alto nivel.",
+      "Evita recompilar varias veces.",
+      "Codifica intermedio.",
+      "Ninguna."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B.\nEl JIT mejora rendimiento evitando traducciones repetidas.\nAclaraciones:\nA es falso.\nC es incorrecto."
+  },
+  {
+    q: "Una desventaja del recolector de basura es:",
+    options: [
+      "No se puede ejecutar regularmente.",
+      "Consume recursos mientras se ejecuta.",
+      "Solo se ejecuta sin memoria.",
+      "Ninguna."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B.\nConsume recursos y afecta rendimiento.\nAclaraciones:\nA y C son falsas."
+  }
+]
         },
 
         unidad4: {
           name: "Unidad 4: Elementos",
           questions: [
-            {"q": "Estos, continue, default, else y try, son:", "options": ["Palabras reservadas", "Notaciones", "Constantes", "Secuencias"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Estos, <, %, !, y ||, son:", "options": ["Constantes", "Tipos de datos", "Operadores", "Variables"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Estos, char, int, boolean y double, son:", "options": ["Constantes", "Tipos de datos primitivos", "Operadores", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Las palabras reservadas son:", "options": ["Palabras con significado propio", "Palabras que permiten operaciones", "Palabras que mantienen valor", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Los comentarios pueden iniciarse con:", "options": ["//", "/*", "/**", "Todas"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Los datos primitivos al realizar casting:", "options": ["Declarados y no declarados", "Implícitos y explícitos", "Autoboxing y unboxing", "Compilatorio"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Palabras que cuentan con su propio significado:", "options": ["Constantes", "Identificadores", "String", "Ninguna"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Sistemas de signos destinado a representar:", "options": ["lowercase", "UpperCamelCase", "Datos primitivos", "Notación"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Un identificador puede emplear el símbolo:", "options": ["&", "%", "$", "#"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Un paquete:", "options": ["Identifica las clases", "Mantiene independientes", "Puede controlar visibilidad", "Todas"], "correct": 3, "explanation": "La respuesta correcta es D."}
-          ]
+  {
+    q: "Estos ,continue, default, else y try, son:",
+    options: [
+      "Palabras reservadas.",
+      "Notaciones.",
+      "Constantes.",
+      "Secuencias de escape."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Palabras reservadas.\nSegún el material de estudio, los términos continue, default, else y try forman parte explícita de la lista de palabras reservadas del lenguaje de programación Java. Estas palabras cuentan con su propio significado reservado por el sistema, por lo que el temario advierte explícitamente que \"no se pueden utilizar como identificadores en los programas\".\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que las notaciones hacen referencia a los sistemas de signos o convenciones de escritura (como lowerCamelCase, UpperCamelCase o SCREAMING_SNAKE_CASE) que se utilizan para nombrar o representar elementos específicos.\nLa opción C es falsa, debido a que las constantes son elementos que mantienen un valor fijo a lo largo de toda la ejecución del programa y, por recomendación, deben escribirse con todas las letras en mayúsculas separadas por guiones bajos.\nLa opción D es falsa, porque las secuencias de escape son combinaciones de caracteres que empiezan por una barra invertida (como \\n, \\t, \\b o \\\") y se utilizan en variables de texto para representar un retorno de carro, tabulaciones o comillas sin que interfieran en el código."
+  },
+  {
+    q: "Estos, <, %, !, y ||, son:",
+    options: [
+      "Constantes.",
+      "Tipos de datos primitivos.",
+      "Operadores.",
+      "Variables."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Operadores.\nSegún el material de estudio, concretamente en el apartado dedicado a los operadores y expresiones, los símbolos <, %, ! y || se encuentran clasificados explícitamente dentro de la tabla de operadores. El temario especifica que los operadores sirven para realizar operaciones con las variables y clasifica a estos símbolos de la siguiente manera:\n< es un operador de relaciones (menor).\n% es un operador aritmético (resto o módulo).\n! es un operador unario (negación lógica).\n|| es un operador lógico (o lógico o disyunción).\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que las constantes son elementos que mantienen un mismo valor fijo a lo largo de toda la vida del programa.\nLa opción B es falsa, debido a que los tipos de datos primitivos (como byte, int, float, boolean, char, etc.) son los formatos predefinidos en el lenguaje para indicar qué tipo de valores podrá contener una variable.\nLa opción D es falsa, porque las variables son elementos que permiten almacenar valores en la memoria principal mientras el programa se está ejecutando, mientras que los símbolos por los que se pregunta sirven precisamente para operar o realizar cálculos lógicos y aritméticos con estas variables."
+  },
+  {
+    q: "Estos, char, int, boolean y double, son:",
+    options: [
+      "Constantes.",
+      "Tipos de datos primitivos.",
+      "Operadores.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Tipos de datos primitivos.\nSegún el material de estudio, concretamente en el apartado dedicado a los tipos de datos, char, int, boolean y double se encuentran clasificados explícitamente dentro de la tabla de tipos de datos primitivos. El temario detalla que los datos primitivos \"son aquellos que ya están definidos en el lenguaje por defecto, por lo que, para referenciarlos, hay que utilizar una palabra reservada\".\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que las constantes se definen como elementos que mantienen un mismo valor fijo a lo largo de toda la vida de ejecución del programa y, por convención y recomendación, se nombran con todas las letras en mayúsculas separadas por guiones bajos.\nLa opción C es falsa, debido a que los operadores son los símbolos (como +, -, <, %, ||, etc.) que sirven para realizar operaciones lógicas, relacionales y aritméticas con las variables o valores, no los tipos de formato que definen a dichas variables.\nAl ser correcta la opción B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Las palabras reservadas son:",
+    options: [
+      "Palabras que cuentan con su propio significado, por lo que no se pueden utilizar como identificadores en los programas.",
+      "Palabras que permiten realizar operaciones con las variables explicadas anteriormente.",
+      "Palabras que, a lo largo de la vida del programa, mantienen un mismo valor.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Palabras que cuentan con su propio significado, por lo que no se pueden utilizar como identificadores en los programas.\nSegún el material de estudio, concretamente en el resumen de los elementos de un programa informático, las palabras reservadas se definen textualmente como aquellas \"palabras que cuentan con su propio significado, por lo que no se pueden utilizar como identificadores en los programas\".\nA modo de aclaración sobre a qué conceptos corresponden las demás opciones:\nLa opción B es falsa, ya que los elementos \"que permiten realizar operaciones con las variables\" son los operadores.\nLa opción C es falsa, debido a que los elementos \"que, a lo largo de la vida del programa, mantienen un mismo valor\" se denominan constantes.\nAl ser correcta la opción A, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Los comentarios pueden iniciarse con la marca:",
+    options: [
+      "//.",
+      "/*.",
+      "/**.",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Todas las anteriores son correctas.\nSegún el material de estudio, concretamente en el apartado que explica los tipos de comentarios en Java, se establece que los comentarios pueden iniciarse de las tres formas mencionadas dependiendo de su propósito:\nOpción A (//): Se utiliza para dar inicio a los comentarios de una línea, los cuales sirven para añadir una explicación breve al código.\nOpción B (/*): Se utiliza para iniciar los comentarios de varias líneas (que terminan con */), los cuales también sirven para añadir explicaciones más extensas al código.\nOpción C (/**): Es la marca que inicia los comentarios de documentación (y terminan con */), que son aquellos de varias líneas utilizados por el programa javadoc para generar de forma automática la documentación del código.\nAl ser válidas las tres marcas para iniciar diferentes tipos de comentarios dentro del lenguaje, la opción correcta es la D que engloba a todas las anteriores."
+  },
+  {
+    q: "Los datos primitivos al realizar casting pueden ser:",
+    options: [
+      "Declarados y no declarados.",
+      "Implícitos y explícitos.",
+      "Autoboxing y unboxing.",
+      "Compilatorio y compilado."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Implícitos y explícitos.\nSegún el material de estudio, concretamente en el apartado dedicado a las conversiones de tipo (casting), se especifica explícitamente que estas pueden ser de dos tipos: implícitas (suceden cuando se lleva a cabo una operación de asignación sin declarar el tipo de conversión a realizar) y explícitas (se llevan a cabo colocando primero el tipo de variable destino y después el dato origen de la conversión).\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que los términos \"declarados y no declarados\" no corresponden a ninguna clasificación válida para el casting dentro del temario.\nLa opción C es falsa, debido a que el autoboxing y unboxing no definen el casting entre tipos de datos primitivos, sino que son los conceptos utilizados para referirse a la conversión automática que ocurre entre un dato de tipo primitivo y su correspondiente clase envoltorio (Wrapper Class).\nLa opción D es falsa, porque los términos relacionados con la compilación se refieren al proceso de traducción del código fuente o al tipo de lenguaje de programación (interpretado o compilado), no a la conversión de valores entre tipos de datos."
+  },
+  {
+    q: "Palabras que cuentan con su propio significado, por lo que no se pueden utilizar como identificadores en los programas:",
+    options: [
+      "Constantes.",
+      "Identificadores.",
+      "String.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Ninguna de las anteriores.\nSegún el material de estudio, concretamente en la definición de los elementos de un programa informático, la frase \"Palabras que cuentan con su propio significado, por lo que no se pueden utilizar como identificadores en los programas\" es la definición exacta de las palabras reservadas. Como este concepto no aparece entre las opciones A, B y C, la opción correcta es la D.\nA modo de aclaración sobre a qué conceptos corresponden las demás opciones:\nLa opción A es falsa, ya que las constantes son elementos que, a lo largo de la vida del programa, mantienen un mismo valor fijo.\nLa opción B es falsa, debido a que los identificadores son precisamente las secuencias de caracteres (nombres o etiquetas) que el programador inventa y utiliza para denominar a los distintos elementos del programa (como variables, clases, métodos, etc.). Las palabras reservadas no pueden usarse como identificadores.\nLa opción C es falsa, porque un String es un tipo de objeto o clase que se utiliza en Java para almacenar y manejar de forma cómoda cadenas de caracteres (textos)."
+  },
+  {
+    q: "Sistemas de signos destinado a representar símbolos o conceptos especiales por pertenecer a campos específicos y por lo tanto no encontrarse en el lenguaje general:",
+    options: [
+      "lowercase.",
+      "UpperCamelCase.",
+      "Datos primitivos.",
+      "Notación."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Notación.\nEl material de estudio define explícitamente la notación como los \"sistemas de signos destinado a representar símbolos o conceptos especiales por pertenecer a campos específicos y por lo tanto no encontrarse en el lenguaje general\".\nA modo de aclaración sobre a qué conceptos corresponden las demás opciones:\nLa opción A es falsa, ya que lowercase hace referencia a una convención de escritura donde \"las palabras se juntan para evitar espacios y todo en minúsculas\".\nLa opción B es falsa, debido a que UpperCamelCase es otra convención de escritura en la que \"las palabras se juntan para evitar espacios y se distinguen entre ellas con mayúsculas en la primera letra de cada palabra\".\nLa opción C es falsa, porque los datos primitivos se refieren a los tipos de datos que \"ya están definidos en el lenguaje por defecto, por lo que, para referenciarlos, hay que utilizar las palabras reservadas\"."
+  },
+  {
+    q: "Un identificador puede emplear el símbolo:",
+    options: [
+      "&.",
+      "%.",
+      "$.",
+      "#."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. $.\nSegún el material de estudio, concretamente en el apartado de las reglas para formar identificadores (los nombres que se dan a variables, clases, métodos, etc.), se establece explícitamente que \"solo pueden usarse letras (a-Z), dígitos (0-9), el símbolo dólar ($) o el guion bajo (_)\".\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A (&), B (%) y D (#) son falsas, ya que ninguno de estos caracteres especiales está permitido por las reglas de sintaxis de Java para nombrar un identificador. Únicamente el símbolo del dólar ($) y el guion bajo (_) son los símbolos especiales válidos para este propósito."
+  },
+  {
+    q: "Un paquete paquetes:",
+    options: [
+      "Identifica las clases cuyas características sean comunes y las agrupa.",
+      "Mantiene independientes las declaraciones que son realizadas en un paquete de las que existen en otros paquetes.",
+      "Puede controlar la visibilidad de los elementos contenidos en él.",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Todas las anteriores son correctas.\nSegún el material de estudio, concretamente en el apartado dedicado a los paquetes como elementos de un programa informático en Java, se enumeran explícitamente estas tres características como las ventajas principales de este mecanismo para conseguir la encapsulación y la modularidad.\nA modo de aclaración sobre por qué las opciones A, B y C son afirmaciones verdaderas:\nLa opción A es correcta, ya que el uso de paquetes \"identifica las clases cuyas características sean comunes y las agrupa\".\nLa opción B es correcta, debido a que \"mantiene independientes las declaraciones que son realizadas en un paquete de las que existen en otros paquetes\", lo cual permite al programador utilizar los mismos identificadores en distintos paquetes si fuera necesario.\nLa opción C es correcta, porque mediante los paquetes se puede \"controlar la visibilidad de los paquetes, y esto afecta a aquello elementos contenidos en él\", facilitando de este modo un mecanismo de control de acceso."
+  }
+]
         },
 
         unidad5: {
           name: "Unidad 5: Depuración",
-          questions: [
-            {"q": "La depuración", "options": ["Pruebas unitarias", "Inspeccionar código", "Resultado aplicación", "Todas"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "La entrada de datos puede ser:", "options": ["Mediante argumentos", "Por consola", "Otros", "Todas"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "La estructura for", "options": ["Repetición", "Condicional", "Salto incondicional", "Flujo"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "La estructura if", "options": ["Saltos incondicionales", "Ejecutar según condición", "Varias veces", "Solo una"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "La salida de datos por consola", "options": ["System.out", "System.in", "System.out y System.err", "Todas"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "La sentencia break permite:", "options": ["Parar ejecución", "Salta interacción", "Rompe ejecución", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "¿Qué hace el siguiente código switch?", "options": ["Ejecuta solo uno", "Ejecuta valores diferentes", "Ejecuta todas", "Verdadera ejecuta todas"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "¿Qué hace el siguiente código for y do-while?", "options": ["Solo i++", "10 veces", "10 ambos", "No hará nada"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "¿Qué método permite obtener una línea completa?", "options": ["next()", "nextLine()", "hasNext()", "hasNextInt()"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Una aplicación…", "options": ["No necesita manejar", "Necesita según funcionalidad", "Solo entrada", "Entrada y salida"], "correct": 3, "explanation": "La respuesta correcta es D."}
-          ]
+          questions:  [
+  {
+    q: "La depuración:",
+    options: [
+      "Es el proceso encargado de hacer pruebas unitarias.",
+      "Permite inspeccionar el código para eliminar posibles errores.",
+      "Determinar el resultado de la aplicación según la entrada de datos.",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Permite inspeccionar el código para eliminar posibles errores.\nSegún el material de estudio, concretamente en el apartado de conceptos fundamentales asociados a las estructuras de control, la depuración se define literalmente como el \"proceso para inspeccionar el código y eliminar errores\". Se recurre a este proceso cuando se detecta un fallo (conocido como bug) para asegurar la correcta operatividad del programa.\nA modo de aclaración sobre por qué las demás opciones son incorrectas o inexactas:\nLa opción A es falsa, ya que, aunque la realización de pruebas unitarias es uno de los pasos o herramientas que se utilizan durante la depuración, la depuración en sí no se define como el proceso encargado únicamente de hacer pruebas unitarias, sino de buscar y corregir fallos.\nLa opción C es falsa, debido a que \"determinar el resultado de la aplicación según la entrada de datos\" hace referencia al uso de baterías de prueba o a la ejecución regular del programa para ver si funciona, pero no define el acto de inspeccionar el código internamente para eliminar un error ya detectado.\nAl ser la opción B la única que se ajusta a la definición exacta del temario, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "La entrada de datos puede ser:",
+    options: [
+      "Mediante argumentos.",
+      "Por consola.",
+      "Otros.",
+      "Todas las opciones son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Todas las opciones son correctas.\nSegún el material de estudio, la entrada de información a un programa puede provenir de diversas fuentes y realizarse mediante distintas alternativas.\nA modo de aclaración sobre por qué las opciones A, B y C son afirmaciones verdaderas:\nLa opción A es correcta, ya que los datos pueden ser cargados y transferidos al programa en el momento de ejecutarse por primera vez la aplicación mediante el parámetro args del método main.\nLa opción B es correcta, debido a que se puede interactuar con el usuario para obtener datos a partir del teclado usando el flujo estándar de entrada System.in o clases facilitadoras como Scanner en tiempo de ejecución.\nLa opción C es correcta, porque el temario especifica en las unidades más avanzadas que cualquier entrada de información también puede realizarse mediante otros elementos externos, como por ejemplo a través de un fichero, una red, etc.\nPor lo tanto, al ser válidas y posibles todas las alternativas mencionadas, la opción D que las engloba a todas es la respuesta acertada."
+  },
+  {
+    q: "La estructura for:",
+    options: [
+      "Es una estructura de repetición o iterativa.",
+      "Es una estructura condicional.",
+      "Es una estructura de salto incondicional.",
+      "Es una estructura de flujo."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Es una estructura de repetición o iterativa.\nSegún el material de estudio, concretamente en el apartado dedicado a las estructuras de control, la sentencia for se clasifica de forma explícita como una estructura de repetición (iterativa) o bucle. El temario detalla que esta estructura se utiliza \"si queremos iterar sobre un rango de valores\" para ejecutar repetidamente un bloque de instrucciones.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que las estructuras condicionales o de selección son aquellas que evalúan una condición para decidir qué camino tomar, como es el caso de if, else, else if y switch.\nLa opción C es falsa, debido a que las estructuras de salto incondicional corresponden a las sentencias break y continue, las cuales permiten interrumpir o saltar partes del código.\nLa opción D es falsa, porque aunque todas estas sentencias sirven para alterar el orden del flujo de ejecución del programa, la clasificación específica, exacta y formal para el for en el temario es la de estructura de repetición o iterativa."
+  },
+  {
+    q: "La estructura if:",
+    options: [
+      "Permite hacer saltos incondicionales",
+      "Permite ejecutar una parte de código según una condición.",
+      "Permite ejecutar varias veces una parte de código.",
+      "Solo se ejecuta una vez."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Permite ejecutar una parte de código según una condición.\nSegún el material de estudio, concretamente en el apartado dedicado a las estructuras de selección o condicionales, la sentencia if se define literalmente como aquella que \"sirve para evaluar una condición, y dependiendo del resultado, actuar de una cierta manera\". El resumen del temario corrobora esto indicando que el if \"aplica el código a ejecutar si se cumple una condición\".\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que las estructuras que permiten hacer saltos incondicionales para interrumpir el flujo natural de ejecución son las sentencias break y continue.\nLa opción C es falsa, debido a que ejecutar repetidamente un bloque de instrucciones es el propósito exclusivo de las estructuras de repetición o iterativas, como son el for, el while y el do while.\nLa opción D es inexacta y falsa, porque aunque un bloque if se evalúa al pasar por él secuencialmente, su función no es limitar la ejecución a solo una vez. De hecho, si un if está dentro de un bucle iterativo, se ejecutará múltiples veces. Su característica definitoria es condicionar si el código se ejecuta o no en base a un resultado booleano."
+  },
+  {
+    q: "La salida de datos por consola en Java se emplea:",
+    options: [
+      "System.out por defecto.",
+      "System.in por defecto.",
+      "System.out por defecto y System.err para salidas de error.",
+      "Todas las opciones son correctas."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. System.out por defecto y System.err para salidas de error.\nSegún el material de estudio, concretamente en el resumen sobre el manejo de información, se establece explícitamente que \"Para la salida de datos usaremos el flujo estándar de la consola con System.out por defecto o System.err para salidas de error\". El temario detalla que System.out es la pantalla por defecto para imprimir datos, mientras que System.err funciona de la misma manera pero está destinado a mostrar los mensajes de error.\nA modo de aclaración sobre por qué las demás opciones son incorrectas o inexactas:\nLa opción A es incompleta, ya que, aunque System.out es efectivamente la salida por defecto, la opción C refleja de forma mucho más precisa y completa la teoría al incluir la salida de errores.\nLa opción B es falsa, debido a que System.in es el flujo estándar de entrada de datos, no de salida.\nAl ser falsa la opción B, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "La sentencia break permite:",
+    options: [
+      "Parar la ejecución de un bucle para ejecutar la próxima instrucción fuera del bucle.",
+      "Salta una interacción",
+      "Rompe la ejecución y detiene la aplicación.",
+      "Ninguna de las anteriores es correcta."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Parar la ejecución de un bucle para ejecutar la próxima instrucción fuera del bucle.\nSegún el material de estudio, concretamente en el apartado dedicado a las estructuras de salto incondicional, se establece literalmente que utilizando la sentencia break \"podemos parar la ejecución de un bucle para avanzar a la próxima instrucción que haya después del bucle\". Es decir, interrumpe la ejecución del bloque de código iterativo actual y hace un salto a la siguiente instrucción fuera de ese contexto.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que la estructura que detiene solamente la iteración actual para saltar a la próxima iteración de un bucle es la sentencia continue.\nLa opción C es falsa, debido a que el break rompe únicamente la ejecución del bucle o del bloque switch en el que se encuentre anidado, pero no detiene la ejecución completa de la aplicación.\nAl ser afirmativa y exacta la opción A, la opción D queda lógicamente descartada."
+  },
+  {
+    q: "Qué hace el siguiente código:",
+    image: "/src/assets/img/pregunta7.png",
+    options: [
+      "Según el valor de la variable opciones ejecutara solo el código de uno de los valores ‘a’, ‘b’, ‘c’ o ‘d’.",
+      "Según el valor de la variable opciones ejecutará solo el código de uno de los valores que no sean ni ‘a’, ‘b’, ‘c’ y ‘d’.",
+      "Ejecutará el código de la opciones ‘a’, ‘b’, ‘c’ y ‘d’",
+      "Si la variable opciones es verdadera, ejecutará cada parte de las opciones."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Según el valor de la variable opciones ejecutará solo el código de uno de los valores ‘a’, ‘b’, ‘c’ o ‘d’.\nComo no se ha incluido el fragmento de código en el enunciado, no es posible confirmarlo con certeza absoluta. Sin embargo, basándonos en el planteamiento de las opciones y en el contenido habitual del temario, lo más probable es que la pregunta haga referencia a una estructura de selección múltiple, concretamente a una sentencia switch o a un bloque if-else if que evalúa la variable opciones.\nSegún el material de estudio, si el código es un bloque switch bien formado que contiene la sentencia break al final de cada caso, o si se trata de una estructura if-else if, el programa evaluará la variable y ejecutará solo el bloque de instrucciones correspondiente al valor coincidente. El uso de break sirve precisamente para interrumpir la ejecución de ese bloque y evitar que se ejecuten los demás.\nA modo de aclaración sobre por qué las demás opciones serían incorrectas en ese escenario:\nLa opción B es falsa, ya que describe el comportamiento de un caso por defecto o default, no el funcionamiento general del bloque para los valores ‘a’, ‘b’, ‘c’ o ‘d’.\nLa opción C solo sería correcta si se tratara de una sentencia switch en la que se hubieran omitido los break, ya que en ese caso se produciría una ejecución en cascada de los casos siguientes.\nLa opción D es falsa, debido a que no depende de que la variable opciones sea verdadera o falsa, sino del valor concreto que contenga y de la estructura condicional utilizada.\nPor ello, y tomando como referencia la forma correcta y estándar de este tipo de estructuras en Java, la opción más probable es la A."
+  },
+  {
+    q: "Qué hace el siguiente código.",
+    image: "/src/assets/img/pregunta8.png",
+    options: [
+      "Solo se ejecutará la instrucción i++.",
+      "Se imprimirá por pantalla 10 veces.",
+      "Se ejecutará 10 veces la instrucción de imprimir y 10 veces la instrucción i++",
+      "No hará nada."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Se ejecutará 10 veces la instrucción de imprimir y 10 veces la instrucción i++.\nComo no se ha incluido el fragmento de código en el enunciado, no es posible asegurarlo con certeza absoluta. Sin embargo, basándonos en el tipo de pregunta y en la sintaxis habitual de las estructuras de repetición en Java, lo más probable es que se trate de un bucle correctamente escrito en el que tanto la instrucción de impresión como el incremento i++ forman parte del bloque iterativo.\nSegún el material de estudio, las estructuras de repetición como for o while permiten ejecutar repetidamente un bloque de instrucciones mientras se cumpla una condición. Si ambas instrucciones están correctamente agrupadas dentro del bloque del bucle, lo normal es que la impresión se ejecute 10 veces y también el incremento i++ se ejecute 10 veces.\nA modo de aclaración sobre por qué las demás opciones serían incorrectas en ese escenario:\nLa opción A solo sería correcta si, por un problema de sintaxis o por ausencia de llaves, la única instrucción controlada por el bucle fuera i++.\nLa opción B sería posible si el incremento quedara fuera del bloque y la impresión estuviera dentro, aunque eso dependería completamente de cómo estuviera escrito el código concreto.\nLa opción D sería falsa en un bucle estándar cuya condición inicial permita entrar en él al menos una vez.\nPor tanto, tomando como referencia la forma más habitual y correcta de este tipo de ejercicios, la opción más probable es la C."
+  },
+  {
+    q: "Qué método permite obtener una línea completa por teclado.",
+    options: [
+      "Next().",
+      "nextLine().",
+      "hasNext().",
+      "hasNextInt()."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. nextLine().\nSegún el material de estudio, concretamente en el apartado dedicado a la clase Scanner para la lectura de datos, el método nextLine() se define explícitamente como aquel que devuelve como un String la línea completa.\nA modo de aclaración sobre por qué las demás opciones son incorrectas, el temario detalla el funcionamiento exacto de cada uno de estos métodos:\nLa opción A es falsa, ya que next() no obtiene la línea completa, sino que únicamente devuelve como un String el siguiente token, es decir, normalmente una sola palabra hasta encontrar un espacio en blanco.\nLa opción C es falsa, debido a que hasNext() no sirve para extraer o leer un texto introducido por teclado, sino que es un método de comprobación que retorna true en caso de que el escáner pueda devolver otro token.\nLa opción D es falsa, porque hasNextInt() es también un método lógico de validación que devuelve true solo si se puede interpretar el siguiente token como un valor entero. No sirve para capturar líneas de texto."
+  },
+  {
+    q: "Una aplicación…",
+    options: [
+      "No necesita manejar información.",
+      "Necesita el manejo de información dependiendo de la funcionalidad.",
+      "Necesita el manejo de información existiendo solo una entrada de datos.",
+      "Necesita el manejo de información existiendo una entrada y salida de datos."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Necesita el manejo de información existiendo una entrada y salida de datos.\nSegún el material de estudio, concretamente en el resumen de la unidad sobre estructuras de control y el manejo de información, se establece de forma explícita que \"Cualquier programa necesita del manejo de información siendo necesario una entrada por donde recibe los datos y una salida para mostrar los datos hacia el usuario\".\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el temario indica textualmente que cualquier programa necesita de este manejo de información.\nLa opción B es incompleta, debido a que aunque el manejo de información dependa de la funcionalidad, todas las aplicaciones sin excepción requieren una entrada y una salida de datos como mínimo.\nLa opción C es parcial e incorrecta, porque no solo necesita una entrada, sino que también requiere obligatoriamente una salida para que el usuario reciba los resultados del procesamiento."
+  }
+]
         },
 
         unidad6: {
@@ -1766,32 +2168,132 @@ const ExamTestApp = () => {
         unidad13: {
           name: "Unidad 13: JPA",
           questions: [
-            {"q": "¿Que es JPA?", "options": ["Lenguaje programación", "Herramientas persistencia Java", "Herramientas cualquier plataforma", "Ninguna"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "¿Gestor base datos orientado a objetos?", "options": ["SQL Server", "MySQL", "ObjectDB", "MongoDB"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Con createQuery() podemos:", "options": ["Consulta actualización borrado", "Solo consulta", "Inserción", "Actualización borrado"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Campos no guardarán:", "options": ["Todos", "final static transient @Transient", "Privados", "@FieldNotIncluded"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Característica correcta OODB:", "options": ["Acceso lento", "Mismos tipos datos", "Relaciones", "Tablas"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "Condición clase guardar OODB:", "options": ["Constructor sin argumentos", "Públicos", "No get set", "No serializar"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Método persist() EntityManager:", "options": ["Mantiene memoria", "Persistencia serialización", "Iniciar transacción", "Guardar base datos"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Método entityManager.find():", "options": ["Busca clave primaria", "Busca persona", "Busca sustituye", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Se puede usar JPQL para:", "options": ["Definir objetos", "Inserción", "Consultas actualización borrado", "Ninguna"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Base datos orientada objetos:", "options": ["Representa objetos", "Aplica POO", "Caracteriza NoSQL", "Todas"], "correct": 3, "explanation": "La respuesta correcta es D."}
-          ]
+  {
+    q: "¿Qué es JPA?",
+    options: [
+      "Un lenguaje de programación.",
+      "Un conjunto de herramientas para trabajar la persistencia en base de datos en Java.",
+      "Un conjunto de herramientas para trabajar la persistencia en base de datos en cualquier plataforma.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Un conjunto de herramientas para trabajar la persistencia en base de datos en Java.\nSegún el material de estudio, JPA (Java Persistence API) se define como un API o un conjunto de herramientas utilizado para trabajar con la persistencia en bases de datos específicamente para Java.\nEs el estándar establecido para manejar y persistir datos relacionales a objetos directamente desde este lenguaje de programación.\n\nA modo de aclaración sobre las demás opciones:\nLa opción A es incorrecta porque JPA no es un lenguaje de programación por sí mismo, sino una Interfaz de Programación de Aplicaciones (API) orientada al lenguaje Java.\n(Para las consultas dentro de JPA se suele utilizar el lenguaje JPQL).\nLa opción C es incorrecta porque JPA está diseñado y estandarizado específicamente para el ecosistema de Java, no para trabajar la persistencia de forma nativa en \"cualquier plataforma\" o lenguaje."
+  },
+  {
+    q: "¿Qué gestor de base de datos aplica orientado a objetos?",
+    options: [
+      "Microsoft SQL Server",
+      "MySQL",
+      "ObjectDB",
+      "MongoDB"
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. ObjectDB.\nSegún el material de estudio, ObjectDB es uno de los gestores que aplica el modelo de base de datos orientada a objetos (BDOO), y es la herramienta específica que se utiliza en el temario para aprender a trabajar la persistencia de objetos en Java.\nOtros ejemplos de este tipo de bases de datos mencionados en el texto son Db4o, Objectivity/DB, ObjectStore, GemStone/S y Wakanda.\n\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A (Microsoft SQL Server) y B (MySQL) son incorrectas porque se definen en el temario explícitamente como gestores de bases de datos relacionales.\nLa opción D (MongoDB) es incorrecta, ya que no forma parte de los ejemplos de bases de datos orientadas a objetos citados en el material."
+  },
+  {
+    q: "Con el método .createQuery(String) podemos:",
+    options: [
+      "Crear una query de consulta, actualización o borrado pasada como String por parametro.",
+      "Crear una query de solo consulta pasada como String por parametro.",
+      "Crear una query de inserción pasada como String por parametro.",
+      "Crear una query de actualización o borrado pasada como String por parametro."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Crear una query de consulta, actualización o borrado pasada como String por parametro.\nSegún el material de estudio, el método .createQuery(String) se utiliza para construir una query dinámica en tiempo de ejecución, pasando como parámetro una cadena de texto (String) con la sentencia escrita en lenguaje JPQL.\nEste lenguaje soporta SELECT, UPDATE y DELETE.\n\nA modo de aclaración:\nLa opción B es falsa porque no se limita solo a consultas.\nLa opción C es falsa porque la inserción se realiza con .persist().\nLa opción D es falsa porque es incompleta."
+  },
+  {
+    q: "¿Qué campos de una clase no se guardarán en una base de datos orientada a objetos?",
+    options: [
+      "Todos los campos se guardan siempre.",
+      "Los campos que se declaren como final, static, transient o lleve la etiqueta @Transient",
+      "Los que tengan visibilidad privada.",
+      "Los que lleven la etiqueta @FieldNotIncluded."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Los campos que se declaren como final, static, transient o lleve la etiqueta @Transient.\nSegún el material de estudio, estos campos no son persistentes.\n\nAclaraciones:\nLa opción A es falsa.\nLa opción C es falsa (deben ser privados).\nLa opción D es falsa porque no existe esa anotación."
+  },
+  {
+    q: "¿Qué característica es correcta en una base de datos orientada a objetos?",
+    options: [
+      "Su acceso es lento.",
+      "Usan los mismos tipos de datos que el lenguaje de programación.",
+      "Se basan en relaciones.",
+      "Trabaja con tablas."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B.\nSegún el material, usan los mismos tipos de datos del lenguaje.\n\nAclaraciones:\nLa opción A es falsa (son más rápidas).\nC y D pertenecen a bases relacionales."
+  },
+  {
+    q: "¿Qué condición debe cumplir una clase para persistirse?",
+    options: [
+      "Tiene que tener un constructor sin argumentos.",
+      "Los campos deben ser públicos.",
+      "No necesita getters/setters.",
+      "No debe ser serializable."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A.\nDebe tener constructor sin argumentos, campos privados, getters/setters y ser serializable.\n\nLas demás opciones son falsas."
+  },
+  {
+    q: "¿Qué hace el método .persist(Object)?",
+    options: [
+      "Mantiene el objeto en memoria.",
+      "Aplica serialización.",
+      "Inicia una transacción.",
+      "Guardar el objeto en la base de datos."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D.\nEl método .persist() guarda el objeto en la base de datos.\n\nLas demás opciones son incorrectas."
+  },
+  {
+    q: "¿Qué hace entityManager.find(Persona.class, 1)?",
+    options: [
+      "Busca una Persona con clave primaria 1.",
+      "Busca una persona.",
+      "Sustituye una persona.",
+      "Ninguna."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Busca en la base de datos un elemento Persona que tiene como clave primaria el valor 1.\nSegún el material de estudio, se utiliza el método .find(clase, identificador).\n\nLas demás opciones son incorrectas."
+  },
+  {
+    q: "JPQL se puede usar para",
+    options: [
+      "Definir objetos.",
+      "Inserción de datos.",
+      "Consultas, actualización y borrado de datos.",
+      "Ninguna."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C.\nJPQL permite SELECT, UPDATE y DELETE.\n\nLas demás opciones son incorrectas."
+  },
+  {
+    q: "Una base de datos orientada a objetos...",
+    options: [
+      "La información la representa en forma de objetos.",
+      "Aplica el paradigma orientado a objetos.",
+      "Se caracteriza por ser NoSQL.",
+      "Todas las opciones son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D.\nCumple todas esas características."
+  }
+]
         },
 
         unidad14: {
           name: "Unidad 14: SQL",
           questions: [
-            {"q": "DELETE SQL:", "options": ["Borrar filas", "Borrar registros", "Borrar columnas", "Dos primeras"], "correct": 3, "explanation": "La respuesta correcta es D."},
-            {"q": "Claves primarias PK:", "options": ["Campo", "Columna", "Registro", "Ninguna"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Lenguaje definición estructuras:", "options": ["DDL", "DML", "DCL", "Todas incorrectas"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Drivers librerías ficheros:", "options": [".jar", ".xml", ".iso", "Ninguna"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "MariaDB es:", "options": ["Librería", "Gestor relacionales", "Objeto SQL", "BD orientada objetos"], "correct": 1, "explanation": "La respuesta correcta es B."},
-            {"q": "MariaDB introducir comandos SQL:", "options": ["Client Command", "Command MySQL", "MySQL Client", "Ninguna"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "Conexión base datos Java:", "options": ["Driver específico", "Objeto statement", "Librería .iso", "Todas incorrectas"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Ejecutar sentencias SQL:", "options": ["Objeto statement", "Objeto abstract", "Objeto execute", "Todas incorrectas"], "correct": 0, "explanation": "La respuesta correcta es A."},
-            {"q": "Tras setAutoCommit(false):", "options": ["commit()", "rollback()", "Dos anteriores", "Todas incorrectas"], "correct": 2, "explanation": "La respuesta correcta es C."},
-            {"q": "UPDATE SQL permite:", "options": ["Nuevas filas", "Actualizar filas", "Introducir columnas", "Actualizar columnas"], "correct": 1, "explanation": "La respuesta correcta es B."}
+            {"q": "DELETE SQL:", "options": ["Borrar filas", "Borrar registros", "Borrar columnas", "Las dos primeras son correctas"], "correct": 3, "explanation": "La respuesta correcta es D: Las dos primeras son correctas. La opción C es incorrecta, ya que la sentencia DELETE de SQL interviene sobre los registros/filas y no se utiliza para borrar las columnas que representan la estructura o los campos de la tabla."},
+            {"q": "Existen claves primarias o PK dentro de una tabla que identifican inequívocamente:", "options": ["Campo", "Columna", "Registro", "Ninguna de las anteriores es correcta."], "correct": 2, "explanation": "La respuesta correcta es C: Un registro. Dentro de esta tabla, existen claves primarias o PK que sirven exactamente para identificar inequívocamente un registro.\n\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\n\nLas opciones A y B son falsas, debido a que un campo y una columna son el mismo concepto (representan la estructura o los atributos de la tabla), mientras que la clave primaria (PK) se utiliza para distinguir y localizar individualmente cada registro o fila completa de datos almacenada en esa tabla."},
+            {"q": "Lenguaje de programación para la definición de estructuras de datos, empleado en los sistemas gestores de bases de datos:", "options": ["DDL", "DML", "DCL", "Todas las anteriores son incorrectas"], "correct": 0, "explanation": "La respuesta correcta es A: DDL. Según el material de estudio, DDL (Data Definition Language o Lenguaje de Definición de Datos) se describe textualmente como el \"lenguaje de programación para la definición de estructuras de datos, empleado en los sistemas gestores de bases de datos\".\n\nMediante el uso de sentencias DDL es posible realizar la definición inicial de los datos, como crear las bases de datos, las tablas y las vistas.\n\nA modo de aclaración sobre por qué la alternativa más cercana es incorrecta:\n\nLa opción B (DML) es falsa en este contexto, ya que DML (Data Manipulation Language o Lenguaje de Modificación de Datos) no crea la estructura, sino que se emplea para manipular o modificar los datos dentro de una estructura ya creada (es decir, para añadir, cambiar o eliminar la información contenida en las tablas)."},
+            {"q": "Los drivers son librerías en ficheros .jar:", "options": [".jar", ".xml", ".iso", "Ninguna de las anteriores es correcta"], "correct": 0, "explanation": "La respuesta correcta es A: .jar. Según el material de estudio, para establecer cualquier conexión a una base de datos desde Java, es necesario usar un driver específico que dependerá del tipo de base de datos y del proveedor.\n\nEl temario especifica textualmente que \"los drivers son librerías en ficheros .jar\" que se descargan desde las páginas web oficiales de cada proveedor y se añaden al proyecto (por ejemplo, en el Java Build Path) para dotarlo de la funcionalidad necesaria.\n\nA modo de aclaración sobre las demás opciones:\n\nLas extensiones .xml (archivos de marcas/configuración) e .iso (imágenes de discos) son incorrectas, ya que en el ecosistema Java las librerías empaquetadas (como es el caso de los drivers de conexión JDBC) utilizan siempre la extensión de archivo comprimido Java Archive (.jar)."},
+            {"q": "MariaDB es:", "options": ["Librería", "Un gestor de base de datos relacionales.", "Objeto SQL", "Un tipo de base de datos orientada a objetos."], "correct": 1, "explanation": "La respuesta correcta es B: Un gestor de base de datos relacionales. A modo de aclaración sobre las demás opciones:\n\nLa opción A es incorrecta, porque en este contexto una \"librería\" hace referencia al archivo empaquetado (el driver .jar, como mariadb-java-client-3.0.5.jar) que se añade al proyecto Java para establecer la conexión, pero MariaDB en sí mismo es el servidor/gestor completo.\n\nLa opción C es falsa, ya que SQL (Structured Query Language) es el lenguaje estandarizado que se emplea para interactuar con la base de datos (mediante sentencias como SELECT, INSERT o UPDATE), no un objeto.\n\nLa opción D es falsa, debido a que el material hace una distinción muy clara entre las bases de datos orientadas a objetos (como ObjectDB, abordada en un tema anterior) y las bases de datos relacionales (como MariaDB), las cuales estructuran su información mediante tablas, columnas y filas."},
+            {"q": "MariaDB permite introducir comandos SQL mediante:", "options": ["Client Command", "Command MySQL", "MySQL Client", "Ninguna de las anteriores es correcta"], "correct": 2, "explanation": "La respuesta correcta es C: MySQL Client. Según el material de estudio, una vez instalado el servidor de MariaDB, esta plataforma contiene y permite hacer uso de la herramienta MySQL Client.\n\nEste programa se define explícitamente como \"un cliente de tipo consola para introducir comandos SQL para operar con las bases de datos\", permitiendo trabajar directamente con el servidor para crear bases de datos, tablas, etc.\n\nA modo de aclaración sobre las demás opciones:\n\nLas opciones A y B son incorrectas porque \"Client Command\" y \"Command MySQL\" no son los nombres reales de la herramienta de consola incluida con MariaDB para este fin."},
+            {"q": "Para establecer cualquier conexión a una base de datos desde Java, es necesario:", "options": ["Emplear un driver específico", "Emplear el objeto statement.", "Emplear una librería con ficheros .iso.", "Todas incorrectas"], "correct": 0, "explanation": "La respuesta correcta es A: Emplear un driver específico. A modo de aclaración sobre las demás opciones:\n\nLa opción B es incorrecta, ya que el objeto Statement (declaración de trabajo) se crea a partir de la conexión una vez que esta ya ha sido exitosamente establecida; su función es permitir la ejecución de operaciones y sentencias SQL sobre la base de datos, no iniciar la conexión.\n\nLa opción C es incorrecta, debido a que el temario especifica textualmente que \"los drivers son librerías en ficheros .jar\", por lo que utilizan la extensión nativa de Java y no el formato .iso."},
+            {"q": "Podemos ejecutar sentencias SQL en las bases de datos mediante el empleo de:", "options": ["El Objeto statement", "ElObjeto abstract", "El Objeto execute", "Todas incorrectas"], "correct": 0, "explanation": "La respuesta correcta es A: El objeto statement. A modo de aclaración sobre por qué las demás opciones son incorrectas:\n\nLas opciones B y C son falsas porque en la API de conexión a bases de datos de Java (JDBC) no se utilizan objetos llamados \"abstract\" ni \"execute\" para este propósito. Cabe destacar que execute, executeQuery o executeUpdate son los métodos (las acciones) que se invocan a través del objeto Statement para lanzar la sentencia, pero no son el objeto en sí."},
+            {"q": "Tras emplear setAutoCommit(false) deberemos emplear:", "options": ["commit()", "rollback()", "Las dos anteriores son correctas", "Todas incorrectas"], "correct": 2, "explanation": "La respuesta correcta es C: Las dos anteriores son correctas. Se empleará commit() si todas las operaciones del bloque se han ejecutado correctamente para guardar los cambios de forma definitiva.\n\nSe empleará rollback() en caso de que ocurra algún fallo (capturado generalmente en un bloque catch), para cancelar la transacción y revertir los cambios realizados hasta ese momento.\n\nAl ser necesarios y correctos ambos métodos para la gestión manual de la transacción, la opción C es la adecuada."},
+            {"q": "UPDATE SQL permite:", "options": ["Introducir nuevas filas", "Actualizar filas", "Introducir columnas", "Actualizar columnas"], "correct": 1, "explanation": "La respuesta correcta es B: Actualizar filas. A modo de aclaración sobre por qué las demás opciones son incorrectas:\n\nLa opción A es falsa, ya que para introducir nuevas filas en las tablas de la base de datos se emplea la sentencia de inserción INSERT INTO, no UPDATE.\n\nLas opciones C y D son falsas, porque UPDATE forma parte del Lenguaje de Modificación de Datos (DML) y sirve para manipular la información contenida en las filas/registros existentes. No se utiliza para modificar la estructura de la tabla (como introducir o actualizar la estructura de las columnas), lo cual correspondería a sentencias del Lenguaje de Definición de Datos (DDL). Aunque con UPDATE se modifiquen los valores que toman ciertas columnas en un registro, la acción en sí se define como actualizar la fila."}
           ]
         },
 
