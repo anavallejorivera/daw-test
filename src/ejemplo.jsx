@@ -1,443 +1,445 @@
 const questions = [
   {
-    q: "¿Cuál de las siguientes es una tendencia actual relativa a la comunicación interna?:",
+    q: "Choose the correct answer:",
     options: [
-      "Motor de digitalización.",
-      "Employer Branding.",
-      "Apps internas.",
-      "Todas son correctas."
+      "I think it going to be sunny tomorrow.",
+      "She is going to visit her cousins next weekend.",
+      "Look at those clouds! It goes to rain this afternoon.",
+      "We are going to watch a movie last night."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. She is going to visit her cousins next weekend.\nLa opción B es correcta porque sigue perfectamente la regla gramatical para hablar de planes personales o intenciones en el futuro con la estructura to be going to. Su estructura correcta es: sujeto + verbo to be + going to + forma base del verbo. En esta oración se cumple a la perfección: She + is + going to + visit.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque le falta el verbo to be conjugado, es decir, is, antes de going to. La forma correcta sería: I think it is going to be sunny tomorrow.\nLa opción C es incorrecta porque la estructura goes to no es válida para formar este tiempo verbal. Lo correcto es utilizar el verbo to be más going to, por lo que debería ser: It is going to rain.\nLa opción D es incorrecta porque presenta una contradicción temporal, ya que utiliza una estructura de futuro junto con una expresión de tiempo que indica pasado, last night."
+  },
+  {
+    q: "Choose the correct passive form of the sentence: \"They will publish the results next week\".",
+    options: [
+      "The results are published next week.",
+      "The results were published next week.",
+      "The results are being published next week.",
+      "The results will be published next week."
     ],
     correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nLas tendencias actuales relativas a la comunicación interna en las organizaciones incluyen todas las opciones listadas en la pregunta.\nLa opción A es correcta, ya que la comunicación interna actúa como un motor de digitalización, involucrando a toda la plantilla en el uso de la tecnología para crear un ecosistema más abierto.\nLa opción B es correcta, debido a que el employer branding convierte a los empleados en embajadores de la empresa y en altavoces internos de sus políticas.\nLa opción C es correcta, porque las apps internas se utilizan como un canal interactivo que permite a los trabajadores comunicarse con sus compañeros y acceder rápidamente a la información que necesitan para su trabajo diario, mejorando así su sentimiento de pertenencia.\nAdemás de estas tres, las fuentes también señalan otras tendencias actuales como la creación de lugares de trabajo digitales y la comunicación inside out.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
+    explanation: "La respuesta correcta es la D. The results will be published next week.\nPara transformar una oración de voz activa a voz pasiva, la regla gramatical establece que se debe utilizar el verbo to be conjugado en el mismo tiempo verbal que el verbo de la oración activa, seguido del participio pasado del verbo principal.\nLa opción D es correcta porque la oración original está en futuro simple. Por lo tanto, en la voz pasiva el verbo to be debe ir en futuro, will be, acompañado del participio pasado del verbo publish, que es published.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque conjuga el verbo to be en presente simple.\nLa opción B es incorrecta porque utiliza el pasado simple, lo cual no tiene sentido con la expresión de tiempo futuro next week.\nLa opción C es incorrecta porque utiliza la estructura del presente continuo en voz pasiva."
   },
   {
-    q: "¿Cuál de las siguientes no es una de las 5 fuerzas de Porter?:",
+    q: "Choose the correct prepositions of place for this sentence: \"The children are playing ________ the garden ________ the big tree.\"",
     options: [
-      "El flujo del proceso de compraventa.",
-      "La amenaza de productos sustitutivos.",
-      "El poder de negociación de los proveedores.",
-      "Las barreras de entrada."
+      "in / under",
+      "on / next to",
+      "at / near to",
+      "on / between"
     ],
     correct: 0,
-    explanation: "La respuesta correcta es la A. El flujo del proceso de compraventa.\nEl flujo del proceso de compraventa no forma parte del modelo de las cinco fuerzas de Porter, sino que se refiere a la cadena de emisión de documentos administrativos, como presupuesto, pedido, albarán, factura y pago, que rigen la gestión administrativa de una empresa.\nSegún las fuentes, las cinco fuerzas fundamentales de Porter para analizar el microentorno de una empresa son la amenaza de nuevos competidores, el poder de negociación de los clientes, el poder de negociación de los proveedores, la rivalidad entre los actuales competidores y la amenaza de productos sustitutivos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que la amenaza de productos sustitutivos sí forma parte del modelo.\nLa opción C es falsa, debido a que el poder de negociación de los proveedores también es una de las cinco fuerzas.\nLa opción D es falsa, porque las barreras de entrada están directamente relacionadas con la amenaza de nuevos competidores.\nPor tanto, la única opción que no pertenece al modelo es la A."
+    explanation: "La respuesta correcta es la A. in / under.\nLa opción A es correcta porque la preposición in se utiliza para hablar de un lugar que está dentro de un espacio más grande o delimitado, como in the garden. Por su parte, under significa debajo de algo, lo cual encaja perfectamente con la idea de jugar debajo del gran árbol.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones B y D son incorrectas en su primera parte, ya que on indica una ubicación sobre una superficie. Decir on the garden es incorrecto.\nLa opción C es incorrecta porque at se emplea para lugares donde se realiza una actividad específica o para puntos concretos, no para un espacio acotado como un jardín.\nLa opción D también es incorrecta en su segunda parte porque between se usa para algo que está en medio de dos elementos, y aquí solo se menciona un objeto, the big tree."
   },
   {
-    q: "¿Cuál de las siguientes no sería una estrategia del plan de marketing en función del producto?:",
+    q: "Choose the correct reported version of the following command: \"Close the door\", she said to me.",
     options: [
-      "Estrategia de penetración.",
-      "Estrategia de desarrollo de producto.",
-      "Estrategia de enraizamiento.",
-      "Estrategia de diversificación."
+      "She said to close the door.",
+      "She told me to close the door.",
+      "She told me to closing the door.",
+      "She said to closed the door."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. She told me to close the door.\nPara transformar una orden o mandato de estilo directo a estilo indirecto, se debe utilizar la estructura told + objeto + to + verbo en infinitivo.\nLa opción B es correcta porque sigue exactamente esta estructura: She + told + me + to close.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y D son incorrectas porque utilizan said en lugar de told. Para reportar órdenes directas, el verbo introductorio correcto es told.\nLa opción D también es incorrecta porque pone el verbo en pasado, closed, después de to.\nLa opción C es incorrecta porque después de la partícula to el verbo debe ir en infinitivo, close, y no en gerundio, closing."
+  },
+  {
+    q: "Choose the correct Second Conditional sentence.",
+    options: [
+      "If I have a million dollars, I buy a big house.",
+      "If I had a million dollars, I would buy a big house.",
+      "If I has a million dollars, I bought a big house.",
+      "If I had a million dollars, I buy a big house."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. If I had a million dollars, I would buy a big house.\nLa opción B es correcta porque sigue exactamente la regla gramatical del segundo condicional, que se utiliza para hablar de situaciones imaginarias, irreales o improbables en el presente o futuro. La estructura obligatoria es: If + pasado simple, would + verbo en infinitivo.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque utiliza presente simple en ambas partes, estructura que no corresponde al segundo condicional.\nLa opción C es incorrecta porque contiene un error de conjugación, I has, y además utiliza bought en lugar de would buy.\nLa opción D es incorrecta porque la segunda parte no utiliza el auxiliar would."
+  },
+  {
+    q: "Choose the correct sentence in the Past Simple tense.",
+    options: [
+      "We watch a great movie yesterday.",
+      "She study for the exam last night.",
+      "They played football in the park last week.",
+      "He stops at the supermarket on his way home."
     ],
     correct: 2,
-    explanation: "La respuesta correcta es la C. Estrategia de enraizamiento.\nSegún las fuentes, las estrategias genéricas del plan de marketing en función del producto son únicamente cuatro: estrategia de penetración, estrategia de desarrollo de mercado, estrategia de desarrollo de producto y estrategia de diversificación.\nLa estrategia de penetración busca el aumento de la cuota de mercado dentro del propio mercado de la empresa. La estrategia de desarrollo de producto modifica o sustituye el producto para mejorarlo y conseguir mayor incursión en el mercado. La estrategia de diversificación combina las estrategias de desarrollo de mercado y de desarrollo de producto.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A, B y D sí forman parte de las estrategias del plan de marketing.\nLa opción C es la única que no figura como estrategia reconocida en el material.\nPor lo tanto, la respuesta correcta es la C."
+    explanation: "La respuesta correcta es la C. They played football in the park last week.\nLa opción C es correcta porque sigue la regla del Past Simple para verbos regulares, añadiendo la terminación -ed al verbo play, y además incluye la expresión temporal last week, que sitúa la acción en el pasado.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque mantiene el verbo watch en presente a pesar de usar yesterday.\nLa opción B es incorrecta porque study debería transformarse en studied, cambiando la y por i y añadiendo -ed.\nLa opción D es incorrecta porque stops está en presente simple, no en pasado."
   },
   {
-    q: "¿Cuál es el objetivo principal del marketing relacional?:",
+    q: "Choose the correct sentence in the Present Simple:",
     options: [
-      "Incrementar las ventas a corto plazo.",
-      "Mantener una relación significativa a largo plazo con el público objetivo.",
-      "Realizar promociones y descuentos.",
-      "Atraer nuevos clientes a través de la publicidad masiva."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Mantener una relación significativa a largo plazo con el público objetivo.\nEl marketing relacional engloba todas las iniciativas y actuaciones que desarrolla una organización al interactuar con los públicos que la rodean. Su finalidad principal es lograr una relación duradera mediante canales de comunicación que construyan un ambiente de confianza y aceptación.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el marketing relacional no se centra principalmente en incrementar ventas a corto plazo, sino en construir vínculos estables.\nLa opción C es falsa, debido a que las promociones y descuentos pueden formar parte de acciones concretas, pero no constituyen su objetivo principal.\nLa opción D es falsa, porque atraer nuevos clientes a través de publicidad masiva se relaciona más con enfoques promocionales tradicionales que con el marketing relacional.\nPor ello, la opción correcta es la B."
-  },
-  {
-    q: "¿Cuál es la definición más completa de marketing?:",
-    options: [
-      "El proceso de ventas de bienes y servicios.",
-      "El estudio de la competencia y el comportamiento del consumidor.",
-      "La actividad de publicidad y análisis de mercado.",
-      "La planificación y ejecución de la concepción del producto, fijación de precios, promoción y distribución de ideas, bienes y servicios para crear relaciones de intercambio que satisfagan objetivos individuales y organizacionales."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. La planificación y ejecución de la concepción del producto, fijación de precios, promoción y distribución de ideas, bienes y servicios para crear relaciones de intercambio que satisfagan objetivos individuales y organizacionales.\nDe acuerdo con las fuentes, el marketing se define exactamente con estos términos. Frecuentemente se comete el error de reducir el concepto de marketing a solo algunas de las actividades que forman parte de él, como pueden ser las ventas, la publicidad o el análisis de mercado, lo que desvirtúa su verdadero significado.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que reduce el marketing solo al proceso de ventas.\nLa opción B es falsa, debido a que se limita al estudio de la competencia y del consumidor.\nLa opción C es falsa, porque lo identifica únicamente con publicidad y análisis de mercado.\nLa definición global y completa abarca todo el proceso integral sustentado en producto, precio, promoción y distribución, por lo que la opción correcta es la D."
-  },
-  {
-    q: "¿Cuál es la principal diferencia entre marketing estratégico y marketing operativo?:",
-    options: [
-      "El marketing estratégico se centra en el corto plazo, mientras que el operativo se centra en el largo plazo.",
-      "El marketing estratégico se ocupa de la implementación de acciones, mientras que el operativo se ocupa del análisis de necesidades del público objetivo.",
-      "El marketing estratégico se ocupa de la publicidad, mientras que el marketing operativo se centra en las ventas.",
-      "El marketing estratégico se centra en el análisis continuo y la identificación de necesidades del público objetivo, mientras que el marketing operativo se focaliza en la puesta en marcha de medidas para aprovechar oportunidades."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. El marketing estratégico se centra en el análisis continuo y la identificación de necesidades del público objetivo, mientras que el marketing operativo se focaliza en la puesta en marcha de medidas para aprovechar oportunidades.\nDe acuerdo con las fuentes, el marketing estratégico se centra en el análisis continuo del entorno y de la competencia, así como en la identificación de las necesidades y anhelos del público objetivo. Su propósito es dirigir las acciones de la empresa para cubrir esas necesidades, facilitando la detección de nuevas oportunidades de negocio y preparando a la organización para adaptarse a los cambios del mercado.\nPor su parte, el marketing operativo se focaliza en la acción y en la implementación práctica de las medidas adecuadas para aprovechar de forma óptima las oportunidades previamente identificadas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que invierte los plazos habituales de ambos enfoques.\nLa opción B es falsa, porque intercambia las funciones de cada uno.\nLa opción C es falsa, debido a que simplifica en exceso ambos conceptos.\nPor tanto, la respuesta correcta es la D."
-  },
-  {
-    q: "¿Cuál es la principal herramienta del marketing estratégico?:",
-    options: [
-      "Análisis DAFO.",
-      "Plan de marketing.",
-      "Investigación de mercado.",
-      "Estrategia de precios."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Plan de marketing.\nEl marketing estratégico se centra en el análisis continuo y la identificación de las necesidades del público objetivo, con el fin de dirigir las metas de la empresa hacia la cobertura de dichas necesidades. Para lograr esto, su herramienta primordial es el plan de marketing, un documento estructurado que permite a las organizaciones alinear sus objetivos y dar respuesta a medio y largo plazo a tres cuestiones empresariales básicas: quiénes somos, qué queremos y cómo conseguirlo.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el análisis DAFO es una herramienta importante, pero no se presenta como la principal herramienta global del marketing estratégico.\nLa opción C es falsa, debido a que la investigación de mercado forma parte del análisis, pero no constituye por sí sola la herramienta principal.\nLa opción D es falsa, porque la estrategia de precios es solo una parte concreta de la actuación comercial.\nPor ello, la opción correcta es la B."
-  },
-  {
-    q: "¿En qué se basa la decisión que se toma para cubrir necesidades?:",
-    options: [
-      "En un impulso.",
-      "En una comparativa.",
-      "En una encuesta.",
-      "En una imitación de lo que hace la sociedad."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. En una comparativa.\nPara decidir cómo cubrir sus necesidades, el individuo realiza un análisis que tiene en cuenta la relación coste-beneficio que cada opción le reporta. Por tanto, se trata de una elección racional basada en una comparativa entre aquello que se gana o satisface y aquello a lo que se renuncia o se pierde al tomar la decisión.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la teoría no presenta esta decisión como un impulso espontáneo.\nLa opción C es falsa, debido a que una encuesta puede aportar información, pero no define el fundamento de la decisión individual.\nLa opción D es falsa, porque imitar lo que hace la sociedad no constituye el criterio esencial señalado por el material.\nPor ello, la respuesta correcta es la B."
-  },
-  {
-    q: "¿Qué análisis no forma parte del análisis de la situación en el plan de marketing?:",
-    options: [
-      "Análisis de la demanda.",
-      "Análisis de la competencia.",
-      "Análisis del producto.",
-      "Análisis interno de la empresa."
+      "She go always to the gym.",
+      "She goes always to the gym.",
+      "She always goes to the gym.",
+      "She always go to the gym."
     ],
     correct: 2,
-    explanation: "La respuesta correcta es la C. Análisis del producto.\nDe acuerdo con las fuentes proporcionadas, el análisis de la situación dentro de un plan de marketing se divide en cuatro apartados específicos: análisis de la demanda, análisis de la competencia, análisis del entorno y análisis interno de la empresa.\nPor lo tanto, el análisis del producto no se considera un apartado dentro del análisis de la situación.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el análisis de la demanda sí forma parte del análisis de la situación.\nLa opción B es falsa, debido a que el análisis de la competencia también está incluido.\nLa opción D es falsa, porque el análisis interno de la empresa es otro de los apartados reconocidos.\nPor ello, la única opción que no forma parte de este análisis es la C."
+    explanation: "La respuesta correcta es la C. She always goes to the gym.\nLa opción C es correcta porque cumple dos reglas fundamentales del Present Simple. En primer lugar, la tercera persona del singular requiere que el verbo go se conjugue como goes. En segundo lugar, el adverbio de frecuencia always debe colocarse delante del verbo principal.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque no conjuga correctamente el verbo y además coloca mal el adverbio.\nLa opción B es incorrecta porque, aunque conjuga bien el verbo, sitúa always después del verbo principal.\nLa opción D es incorrecta porque no aplica la regla de la tercera persona del singular."
   },
   {
-    q: "¿Qué herramienta permite analizar las debilidades, amenazas, fortalezas y oportunidades de una empresa?:",
+    q: "Choose the correct sentence using the verb To Be in the past tense.",
     options: [
-      "Análisis PEST.",
-      "Análisis DAFO.",
-      "Investigación de mercado.",
-      "Matriz de crecimiento."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Análisis DAFO.\nSegún las fuentes proporcionadas, la matriz de análisis DAFO, siglas de Debilidades, Amenazas, Fortalezas y Oportunidades, es una herramienta que permite recoger información del entorno para adaptar la empresa a la sociedad, al mismo tiempo que evalúa su estructura interna y la competencia para lograr un funcionamiento óptimo.\nPara llevar a cabo este análisis, la matriz se divide en dos vertientes: análisis interno, que evalúa fortalezas y debilidades, y análisis externo, que evalúa oportunidades y amenazas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el análisis PEST se centra en factores del entorno, pero no estudia conjuntamente fortalezas y debilidades internas.\nLa opción C es falsa, debido a que la investigación de mercado es una herramienta distinta y más amplia.\nLa opción D es falsa, porque la matriz de crecimiento no corresponde al análisis DAFO.\nPor tanto, la respuesta correcta es la B."
-  },
-
-  {
-    q: "A las personas que, sin haber sido dotadas de autoridad, tienen la capacidad de influenciar sobre los demás por su carisma y personalidad, se les denomina:",
-    options: [
-      "Líderes.",
-      "Directores.",
-      "Jefes.",
-      "Mandos."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Líderes.\nUn líder se define como una persona que tiene capacidad de influencia y que, aunque nadie le haya dotado de autoridad formal, la genera por sí mismo gracias a su carisma y a una personalidad que hace que otros le sigan.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que un director ocupa normalmente un cargo formal dentro de la organización, pero eso no implica necesariamente el liderazgo carismático descrito en el enunciado.\nLa opción C es falsa, debido a que un jefe posee autoridad jerárquica formal impuesta por la empresa para dirigir y exigir resultados a sus subordinados.\nLa opción D es falsa, porque el término mandos se refiere a posiciones de supervisión o responsabilidad formal dentro de la estructura organizativa.\nPor tanto, la respuesta correcta es la A."
-  },
-  {
-    q: "Al responsable de recursos humanos se le presuponen varias habilidades, entre ellas:",
-    options: [
-      "Tener motivación y ser capaz de trasmitirla al equipo.",
-      "Comunicar efectivamente.",
-      "Ser resolutivo y determinado en la toma de decisiones.",
-      "Todas son correctas."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nTeniendo en cuenta que las personas conforman el mayor recurso de una empresa, la figura de quien gestiona este capital humano es primordial para la organización. Por este motivo, al responsable o director de Recursos Humanos se le presuponen diversas habilidades clave, entre las que se encuentran tener motivación y ser capaz de transmitirla al equipo, comunicar efectivamente y ser resolutivo y determinado en la toma de decisiones.\nAdemás de estas competencias, las fuentes indican que un buen responsable de RRHH también debe conocer internamente la organización, estar formado y actualizado, poseer habilidades de negociación y resolución de conflictos, y tener capacidad para tratar con personas diversas.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
-  },
-  {
-    q: "Cuando hablamos de segmentación, la estrategia de expansión de mercado:",
-    options: [
-      "Se centrará en más de un segmento, pero con un solo producto.",
-      "Actuará en un solo segmento con un solo producto.",
-      "Ofrecerá distintos productos a un solo segmento.",
-      "Adaptará el producto a las particularidades de cada segmento."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Se centrará en más de un segmento, pero con un solo producto.\nSegún las fuentes, al realizar la segmentación del mercado, la estrategia de expansión de mercado consiste precisamente en dirigir un único producto a varios segmentos distintos. Esta estrategia se suele aplicar cuando la organización cuenta con un producto que es muy potente.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B define a la estrategia de concentración, que actúa en un solo segmento con un solo producto.\nLa opción C corresponde a la estrategia de expansión de productos, que ofrece distintos productos a un solo segmento.\nLa opción D hace referencia a la estrategia de diferenciación, que adapta el producto a las particularidades de cada segmento.\nPor tanto, la respuesta correcta es la A."
-  },
-  {
-    q: "Dentro de las teorías del liderazgo, la teoría del gran hombre afirma que:",
-    options: [
-      "Los rasgos del líder son innatos y no se pueden adquirir ni con entrenamiento ni con experiencia.",
-      "El comportamiento del líder depende de la percepción que tenga de la naturaleza de sus subordinados,",
-      "Solo puede existir un líder en la organización, que ejercerá su mando con mano de hierro.",
-      "El líder teje una malla gerencial para desarrollar sus funciones."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Los rasgos del líder son innatos y no se pueden adquirir ni con entrenamiento ni con experiencia.\nSegún las fuentes, la teoría del gran hombre o de rasgos defiende que los líderes nacen, no se hacen. Esta teoría asume que existe una forma ideal de liderar y que los líderes poseen de nacimiento ciertas características comunes y fuertemente enraizadas en su personalidad que no se pueden obtener mediante la experiencia o la formación.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B define la Teoría X e Y de McGregor, donde el estilo de dirección depende de la percepción que tiene el líder sobre la naturaleza de sus subordinados.\nLa opción C es falsa, ya que no corresponde a una formulación reconocida de la teoría del gran hombre.\nLa opción D hace referencia a la teoría de la malla gerencial de Blake y Mouton.\nPor ello, la respuesta correcta es la A."
-  },
-  {
-    q: "Documento formal que incorpora una orden de pago, por la que una persona ordena pagar una determinada cantidad de dinero al poseedor de esta a su vencimiento:",
-    options: [
-      "Cheque.",
-      "Letra de cambio.",
-      "Recibo normalizado.",
-      "Transferencia bancaria."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Letra de cambio.\nSegún las fuentes, la letra de cambio se define exactamente como un documento formal que incorpora una orden de pago, mediante la cual una persona ordena pagar una cantidad determinada de dinero a su poseedor en la fecha de su vencimiento.\nUna característica principal y distintiva de este documento es que el derecho de cobro se puede transmitir a un tercero.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el cheque es otro medio de pago distinto y no responde exactamente a la definición dada.\nLa opción C es falsa, debido a que el recibo normalizado consiste en domiciliar pagos periódicos en una entidad bancaria.\nLa opción D es falsa, porque la transferencia bancaria es una operación de pago entre cuentas, no un documento formal con las características descritas.\nPor tanto, la respuesta correcta es la B."
-  },
-  {
-    q: "El Estado puede conseguir los ingresos públicos de:",
-    options: [
-      "Las donaciones y la deuda pública.",
-      "La extracción o expropiación.",
-      "Los ingresos contractuales.",
-      "Todas son correctas."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nSegún las fuentes proporcionadas, para que el Estado y las administraciones puedan cubrir el gasto público, es necesario obtener ingresos, los cuales se consiguen a través de varias vías: mediante la extracción o expropiación, a través de los ingresos contractuales, mediante donaciones y por la emisión de deuda pública.\nA modo de aclaración sobre por qué las demás opciones también son verdaderas:\nLa opción A es correcta, ya que las donaciones y la deuda pública forman parte de las fuentes de ingresos públicos.\nLa opción B es correcta, debido a que la extracción o expropiación incluye ingresos derivados del poder sancionador y fiscal.\nLa opción C es correcta, porque los ingresos contractuales son los que recibe el Estado por la prestación de servicios.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
-  },
-  {
-    q: "El estilo de liderazgo en el que el líder interviene solo cuando lo cree conveniente, dejando máxima libertad a sus empleados y controlando lo mínimo imprescindible, se denomina:",
-    options: [
-      "Liderazgo laissez faire.",
-      "Liderazgo democrático.",
-      "Liderazgo paternalista.",
-      "Liderazgo visionario."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Liderazgo laissez faire.\nSegún las fuentes, el liderazgo de no intervención o laissez faire, también denominado delegativo, se define exactamente así: el líder interviene solo cuando lo cree conveniente, dejando máxima libertad a sus empleados y controlando lo mínimo imprescindible.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el liderazgo democrático fomenta la comunicación y tiene en cuenta la opinión del equipo en la toma de decisiones.\nLa opción C es falsa, debido a que el liderazgo paternalista se caracteriza porque el líder toma las decisiones y adopta una actitud protectora hacia su equipo.\nLa opción D es falsa, porque el liderazgo visionario se basa en transmitir con claridad una meta común para que el equipo la comparta.\nPor ello, la respuesta correcta es la A."
-  },
-  {
-    q: "El estilo de liderazgo en el que el líder tiene claro dónde quiere ir e intenta que el equipo visualice su meta y la comparta, se denomina:",
-    options: [
-      "Liderazgo laissez faire.",
-      "Liderazgo democrático.",
-      "Liderazgo paternalista.",
-      "Liderazgo visionario."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Liderazgo visionario.\nDe acuerdo con las fuentes, el liderazgo visionario se caracteriza porque el líder moviliza al equipo transmitiendo con claridad una meta común; es decir, tiene claro dónde quiere ir e intenta que el equipo visualice su meta y la comparta. Este estilo de dirección además favorece un buen ambiente de trabajo.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A describe el liderazgo laissez faire, en el que el líder interviene muy poco.\nLa opción B corresponde al liderazgo democrático o participativo, donde se fomenta la comunicación y la participación del grupo.\nLa opción C hace referencia al liderazgo paternalista, en el que el líder toma las decisiones y protege al equipo.\nPor tanto, la respuesta correcta es la D."
-  },
-  {
-    q: "El factor que impulsa a las personas a iniciar, mantener o terminar una actividad, un comportamiento o una actitud se denomina:",
-    options: [
-      "Motivación.",
-      "Pirámide de necesidades.",
-      "Autoestima.",
-      "Higiénico."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Motivación.\nSegún las fuentes, la motivación se define exactamente como el factor que impulsa a las personas a iniciar, mantener o terminar una actividad, un comportamiento o una actitud. Se trata de un estímulo que empuja al individuo a cubrir sus necesidades y encontrar satisfacción.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que la pirámide de necesidades es un modelo teórico sobre la jerarquía de las necesidades humanas, no el factor impulsor en sí mismo.\nLa opción C es falsa, debido a que la autoestima es una necesidad o dimensión personal, pero no define de forma general el concepto preguntado.\nLa opción D es falsa, porque higiénico hace referencia a los factores higiénicos de ciertas teorías de motivación, no al concepto global de impulso de la conducta.\nPor ello, la respuesta correcta es la A."
-  },
-  {
-    q: "El impuesto que se encarga de gravar el consumo es:",
-    options: [
-      "El IVA.",
-      "El IRPF.",
-      "El Impuesto sobre Sociedades.",
-      "La declaración censal."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. El IVA.\nDe acuerdo con las fuentes, el Impuesto sobre el Valor Añadido o IVA es el tributo indirecto que se encarga de gravar el consumo de bienes y la prestación de servicios. Este impuesto recae sobre todo el proceso productivo y afecta a todos los consumidores finales por igual.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el IRPF grava la obtención de rentas de las personas físicas.\nLa opción C es falsa, debido a que el Impuesto sobre Sociedades grava los beneficios obtenidos por empresas y entidades jurídicas.\nLa opción D es falsa, porque la declaración censal no es un impuesto, sino una obligación fiscal para darse de alta en el censo correspondiente.\nPor tanto, la respuesta correcta es la A."
-  },
-  {
-    q: "El Impuesto sobre Sociedades:",
-    options: [
-      "Tiene carácter indirecto.",
-      "Grava la ganancia de rentas por parte de personas físicas y entidades públicas.",
-      "Es de naturaleza personal porque tiene en cuenta determinadas circunstancias particulares de cada contribuyente.",
-      "Ninguna es correcta."
+      "They wasn't at home last night.",
+      "We was at the cinema.",
+      "I was late for the meeting.",
+      "She were very tired after work."
     ],
     correct: 2,
-    explanation: "La respuesta correcta es la C. Es de naturaleza personal porque tiene en cuenta determinadas circunstancias particulares de cada contribuyente.\nSegún las fuentes, el Impuesto sobre Sociedades tiene una naturaleza personal precisamente porque valora las circunstancias concretas de cada contribuyente para determinar la cuantía que debe abonar.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el Impuesto sobre Sociedades no tiene carácter indirecto, sino directo.\nLa opción B es falsa, debido a que no grava a las personas físicas, sino a empresas, entidades jurídicas y algunas entidades no jurídicas residentes.\nLa opción D es falsa, porque sí existe una afirmación correcta, que es la opción C.\nPor ello, la respuesta correcta es la C."
+    explanation: "La respuesta correcta es la C. I was late for the meeting.\nEl verbo to be en pasado tiene dos formas principales: was y were. Según las reglas gramaticales, was se utiliza con I, he, she e it, mientras que were se emplea con you, we y they.\nLa opción C es correcta porque empareja adecuadamente el pronombre I con la forma was.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque con they debe usarse were o weren't, no was.\nLa opción B es incorrecta porque con we debe utilizarse were.\nLa opción D es incorrecta porque con she la forma correcta es was."
   },
   {
-    q: "El presupuesto familiar se compone de:",
+    q: "Choose the correct superlative adjective to complete the sentence: \"That was ___________ movie I have ever seen!\"",
     options: [
-      "Gastos fijos.",
-      "Gastos corrientes.",
-      "Gastos ocasionales.",
-      "Todas son correctas."
+      "Funnier",
+      "the most funny",
+      "the funniest",
+      "funnier than"
     ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nSegún las fuentes, el presupuesto familiar es una herramienta básica de planificación financiera que sirve para prever y anticipar los ingresos y gastos de una persona o familia. Para que refleje fielmente la realidad, debe componerse de gastos fijos, gastos corrientes y gastos ocasionales.\nLa opción A es correcta, ya que los gastos fijos son aquellos obligatorios o derivados de un contrato, como la hipoteca o el alquiler.\nLa opción B es correcta, debido a que los gastos corrientes son los necesarios para la vida diaria, como la comida o el transporte.\nLa opción C es correcta, porque los gastos ocasionales son aquellos que se producen de manera irregular, como una avería o un gasto médico imprevisto.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
+    correct: 2,
+    explanation: "La respuesta correcta es la C. the funniest.\nLa opción C es correcta porque sigue la regla para formar el superlativo de un adjetivo terminado en consonante más y, como funny. En este caso, la y cambia por i y se añade -est, precedido por the, formando the funniest.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es incorrecta porque the most se utiliza normalmente con adjetivos largos, no con funny.\nLas opciones A y D son incorrectas porque funnier es un comparativo, no un superlativo, y se usa para comparar dos elementos, no para expresar el grado máximo."
   },
   {
-    q: "Engloba todas las tareas dirigidas a la obtención y transformación de los recursos que permiten desarrollar la actividad de la empresa y aprovechar las oportunidades de mercado, delimitando el plan de actuación que llevará a la generación de beneficios económicos:",
+    q: "Choose the right answer:",
     options: [
-      "Ciclo de explotación.",
-      "Sistema de mercado.",
-      "Aprovisionamiento.",
-      "Marketing relacional."
+      "She be a doctor.",
+      "She is a doctor.",
+      "She are a doctor.",
+      "She am a doctor."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. She is a doctor.\nEl verbo to be en presente tiene tres formas: am, is y are. Para la tercera persona del singular, es decir, he, she e it, la forma correcta es is.\nLa opción B es correcta porque conjuga adecuadamente el verbo con el sujeto she.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque utiliza el verbo en forma base, be, sin conjugar.\nLa opción C es incorrecta porque are se utiliza con you, we y they.\nLa opción D es incorrecta porque am se utiliza únicamente con I."
+  },
+  {
+    q: "Choose the right relative pronoun below:",
+    options: [
+      "That was the year when I started learning English.",
+      "That year was the day which I started learning English.",
+      "That year was the day who I started learning English.",
+      "That year was the day where I started learning English."
     ],
     correct: 0,
-    explanation: "La respuesta correcta es la A. Ciclo de explotación.\nSegún las fuentes, el ciclo de explotación se define exactamente como el conjunto de tareas dirigidas a la obtención y transformación de los recursos que permiten desarrollar la actividad de la empresa y aprovechar las oportunidades de mercado, delimitando así el plan de actuación para generar beneficios económicos y alcanzar los objetivos propuestos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que sistema de mercado no corresponde a la definición descrita.\nLa opción C es falsa, debido a que el aprovisionamiento es solo uno de los subsistemas que componen el ciclo de explotación.\nLa opción D es falsa, porque el marketing relacional tiene la finalidad de mantener relaciones duraderas con el público objetivo, no de englobar todas las tareas productivas y operativas de la empresa.\nPor tanto, la respuesta correcta es la A."
+    explanation: "La respuesta correcta es la A. That was the year when I started learning English.\nLa opción A es correcta porque, según las reglas de las oraciones de relativo, when se utiliza específicamente para referirse a un tiempo o momento definido, como the year.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es incorrecta porque which se emplea para cosas y animales, no para periodos de tiempo. Además, year y day no encajan semánticamente en esa estructura.\nLa opción C es incorrecta porque who se utiliza únicamente para personas.\nLa opción D es incorrecta porque where se usa para lugares físicos, no para expresiones temporales."
   },
   {
-    q: "Entre los objetivos del análisis de los puestos de trabajo se encuentra:",
+    q: "Choose the WRONG sentence.",
     options: [
-      "Ayudar al reclutamiento y selección de personal.",
-      "Detectar necesidades de formación.",
-      "Prever los costes salariales.",
-      "Todas son correctas."
+      "He hasn't got a pet snake.",
+      "We don't have a house at the beach.",
+      "Does she have a brother?",
+      "I don't have got a motorbike."
     ],
     correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nDe acuerdo con las fuentes proporcionadas, el análisis de los puestos de trabajo persigue múltiples propósitos fundamentales para la gestión de los recursos humanos. Entre sus objetivos explícitos se encuentran ayudar al reclutamiento y selección de personal, detectar necesidades de formación y prever los costes salariales en base a los sueldos establecidos para cada puesto.\nAdemás de estas funciones, este análisis también permite diseñar planes de prevención de riesgos laborales, determinar planes de carrera y controlar si el personal realiza correctamente sus funciones.\nAl ser verdaderas todas las opciones anteriores, la respuesta correcta es la D."
+    explanation: "La respuesta correcta es la D. I don't have got a motorbike.\nLa opción D es la oración incorrecta porque mezcla dos estructuras distintas para expresar posesión. Se puede usar have got, cuya forma negativa es haven't got, o el verbo have con auxiliar, cuya forma negativa es don't have. Mezclar don't con got es un error.\nA modo de aclaración sobre por qué las demás opciones son correctas:\nLa opción A utiliza correctamente la negación de have got.\nLa opción B emplea correctamente la forma negativa del verbo have con el auxiliar don't.\nLa opción C forma la pregunta correctamente con el auxiliar does y el verbo base have."
   },
   {
-    q: "Es una modificación de la jerarquía de Maslow que clasifica las necesidades básicas en tres subgrupos (existencia, relación y crecimiento):",
+    q: "Choose the WRONG sentence.",
     options: [
-      "Teoría de McGregor.",
-      "Pirámide de las tres esquinas.",
-      "Teoría ERG.",
-      "Jerarquía de Adams."
-    ],
-    correct: 2,
-    explanation: "La respuesta correcta es la C. Teoría ERG.\nSegún las fuentes, la Teoría ERG es una modificación de la jerarquía de Maslow que agrupa las necesidades básicas en tres subgrupos: existencia, relación y crecimiento. Además, a diferencia del modelo de Maslow, esta teoría plantea que puede operar más de una necesidad de forma simultánea en un mismo momento.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la Teoría de McGregor, también conocida como Teoría X e Y, se centra en estilos de liderazgo y dirección.\nLa opción B es falsa, debido a que pirámide de las tres esquinas no es una formulación teórica reconocida en este contexto.\nLa opción D es falsa, porque la teoría de Adams se relaciona con la equidad y la comparación entre esfuerzo y recompensa.\nPor ello, la respuesta correcta es la C."
-  },
-  {
-    q: "La Agencia Tributaria:",
-    options: [
-      "Es una entidad de derecho público adscrita al Ministerio de Hacienda.",
-      "Se misión es aplicar el sistema tributario y hacer cumplir el artículo 31 de la Constitución.",
-      "Se creó en 1992.",
-      "Todas son correctas."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nDe acuerdo con las fuentes proporcionadas, la Agencia Tributaria se define por tener todas estas características: se creó en el año 1992, es una entidad de derecho público adscrita al Ministerio de Hacienda y su misión es aplicar el sistema tributario y hacer cumplir el artículo 31 de la Constitución, el cual establece que todos los ciudadanos han de contribuir al sostenimiento de los gastos públicos de acuerdo con su capacidad económica.\nA modo de aclaración sobre por qué las demás opciones también son verdaderas:\nLa opción A es correcta, ya que la Agencia Tributaria está adscrita al Ministerio de Hacienda.\nLa opción B es correcta, debido a que su misión es aplicar el sistema tributario y velar por el cumplimiento del deber constitucional de contribuir.\nLa opción C es correcta, porque fue creada en 1992.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
-  },
-  {
-    q: "La demanda dependerá, entre otros, de:",
-    options: [
-      "El comportamiento del consumidor.",
-      "El precio del producto.",
-      "La renta disponible y su distribución.",
-      "Todas son correctas."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nDe acuerdo con las fuentes, la demanda de un producto dependerá de varias cuestiones, entre las que se incluyen explícitamente todas las opciones mencionadas: el comportamiento del consumidor, el precio del producto y la renta disponible y su distribución.\nLa renta disponible influye porque cuanto más alto sea su nivel, mayor será la demanda general. El comportamiento del consumidor también es determinante, ya que está condicionado por factores internos y externos que afectan a los hábitos de compra. Por último, el precio del producto incide directamente en la demanda, pues cuanto más se ajuste a las expectativas y condiciones de los clientes, más alta será esta.\nAdemás, las fuentes indican que la demanda también depende del precio de otros bienes, especialmente de los productos competidores y sustitutivos.\nAl ser correctas todas las opciones, la respuesta válida es la D."
-  },
-  {
-    q: "La organización formal:",
-    options: [
-      "Es aquella donde la estructura organizativa la definen los directivos y se refleja en un organigrama con los puestos de trabajo, relaciones jerárquicas y funciones.",
-      "Es aquella donde la estructura organizativa está conformada según las relaciones personales que surgen de forma natural entre los trabajadores.",
-      "Es aquella que procura que su estructura esté en todo momento provista de personal, en sentido tanto cuantitativo como cualitativo.",
-      "Es aquella que impulsa la transformación digital implicando a todos los integrantes en el uso de la tecnología para fomentar un ecosistema abierto y digitalizado."
+      "I go to the cinema usually.",
+      "Sometimes, she watches anime.",
+      "He plays tennis very often.",
+      "They rarely listen to rock music."
     ],
     correct: 0,
-    explanation: "La respuesta correcta es la A. Es aquella donde la estructura organizativa la definen los directivos y se refleja en un organigrama con los puestos de trabajo, relaciones jerárquicas y funciones.\nDe acuerdo con las fuentes proporcionadas, dentro de una empresa conviven dos tipos de organizaciones. La organización formal es la estructura diseñada y establecida por los directivos para poder desarrollar la actividad de la empresa. Esta se refleja visualmente en el organigrama, una representación gráfica que muestra los puestos de trabajo, las personas que los ocupan, las funciones de cada uno y las relaciones jerárquicas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B describe la organización informal, que surge espontáneamente a través de las relaciones personales entre trabajadores.\nLa opción C hace referencia a una finalidad propia de la planificación de recursos humanos, no a la definición de organización formal.\nLa opción D alude a tendencias de digitalización y comunicación interna, no a la estructura organizativa formal.\nPor ello, la respuesta correcta es la A."
+    explanation: "La respuesta correcta es la A. I go to the cinema usually.\nLa opción A es la oración incorrecta porque no sigue la posición general de los adverbios de frecuencia. Normalmente, estos deben colocarse delante del verbo principal. La forma correcta sería: I usually go to the cinema.\nA modo de aclaración sobre por qué las demás opciones son correctas:\nLa opción B es correcta porque sometimes puede colocarse al principio de la oración.\nLa opción C es correcta porque very often puede aparecer al final.\nLa opción D es correcta porque sitúa rarely delante del verbo principal."
   },
   {
-    q: "La organización informal:",
+    q: "Complete the sentence using the Past Simple and the Past Continuous: \"While my brother __________ TV, the phone __________.\"",
     options: [
-      "Es aquella donde la estructura organizativa la define la dirección y se refleja en un organigrama con los puestos de trabajo, relaciones jerárquicas y funciones.",
-      "Es aquella donde la estructura organizativa está conformada según las relaciones personales que surgen de forma natural entre los trabajadores.",
-      "Es aquella que procura que su estructura esté en todo momento provista de personal, en sentido tanto cuantitativo como cualitativo.",
-      "Es aquella que impulsa la transformación digital implicando a todos los integrantes en el uso de la tecnología para fomentar un ecosistema abierto y digitalizado."
+      "watched / rang",
+      "was watching / rang",
+      "watching / ring",
+      "was watched / was ringing"
     ],
     correct: 1,
-    explanation: "La respuesta correcta es la B. Es aquella donde la estructura organizativa está conformada según las relaciones personales que surgen de forma natural entre los trabajadores.\nSegún las fuentes, la organización informal se constituye de manera espontánea a través de las relaciones personales que surgen de forma natural entre los empleados. Estas relaciones pueden darse tanto dentro como fuera del entorno de la empresa, y los directivos no tienen ningún tipo de control sobre ellas, puesto que son independientes de la estructura organizativa oficial.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A describe la organización formal, ya que se refiere a la estructura definida por la dirección y reflejada en un organigrama.\nLa opción C se refiere a la planificación de personal y a la cobertura cuantitativa y cualitativa de la estructura, no a la organización informal.\nLa opción D trata sobre la transformación digital y no sobre el concepto de organización informal.\nPor tanto, la respuesta correcta es la B."
+    explanation: "La respuesta correcta es la B. was watching / rang.\nLa opción B es correcta porque combina adecuadamente el Past Continuous para la acción en progreso y el Past Simple para la acción corta que la interrumpe. Después de while, la acción en desarrollo debe ir en pasado continuo: was watching. La acción breve que interrumpe va en pasado simple: rang.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque utiliza pasado simple en ambas acciones.\nLa opción C es incorrecta porque carece del auxiliar necesario y además deja el segundo verbo en presente.\nLa opción D es incorrecta porque was watched es una estructura pasiva que no tiene sentido aquí y además no expresa adecuadamente la acción interruptora."
   },
   {
-    q: "La planificación para establecer el personal de una organización se realiza en dos direcciones:",
+    q: "Complete the sentence using the Present Simple to talk about a future event: \"The plane ________ at 10:00 a.m. tomorrow.\"",
     options: [
-      "Expansión laboral y fusión de centros.",
-      "Aumento de personal y reducción de personal.",
-      "Renovación de puestos y reciclaje de puestos actuales.",
-      "Ninguna empresa realiza ya planificaciones de los recursos humanos."
+      "arrive",
+      "arrives",
+      "arriving",
+      "will arrive"
     ],
     correct: 1,
-    explanation: "La respuesta correcta es la B. Aumento de personal y reducción de personal.\nSegún las fuentes, la planificación para establecer los recursos humanos de una organización se realiza en dos direcciones principales: aumento del personal, que consiste en seleccionar y contratar nuevos empleados, y reducción de personal, que se refiere a despedir o prejubilar trabajadores.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que no recoge las dos direcciones fundamentales señaladas en el material.\nLa opción C es falsa, debido a que renovación o reciclaje de puestos no aparecen como la clasificación básica de esta planificación.\nLa opción D es falsa, porque las empresas sí realizan planificación de recursos humanos como parte de su gestión.\nPor ello, la respuesta correcta es la B."
+    explanation: "La respuesta correcta es la B. arrives.\nLa opción B es correcta porque el Present Simple se utiliza para hablar de horarios fijos, programas oficiales o medios de transporte en el futuro. Además, el sujeto the plane equivale a la tercera persona del singular, por lo que el verbo debe llevar -s.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque omite la -s obligatoria de la tercera persona.\nLa opción C es incorrecta porque emplea un gerundio, no una forma de presente simple.\nLa opción D es incorrecta porque, aunque expresa futuro, utiliza Future Simple y el enunciado pide Present Simple."
   },
   {
-    q: "La T.A.E. (Tasa Anual Equivalente) es la suma de:",
+    q: "Complete the sentence with a suitable indefinite pronoun: \"_____________ is knocking at the door\".",
     options: [
-      "Comisión de apertura, comisión de estudio y comisión por cancelación.",
-      "Interés nominal, comisiones y gastos.",
-      "Amortización fija, amortización permanente e impuestos.",
-      "Préstamos, créditos y sus correspondientes tipos de interés."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Interés nominal, comisiones y gastos.\nSegún las fuentes, la Tasa Anual Equivalente es un indicador que brinda información sobre el coste real anual de un préstamo. Para calcularla, se utiliza exactamente la fórmula mencionada en la opción B: interés nominal más comisiones más gastos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que aunque menciona comisiones frecuentes, la TAE no se compone solo de esas comisiones, sino también del interés nominal y de otros gastos.\nLa opción C es falsa, debido a que amortización fija, amortización permanente e impuestos no forman la fórmula de la TAE.\nLa opción D es falsa, porque mezclar préstamos, créditos y tipos de interés no define este indicador.\nPor tanto, la respuesta correcta es la B."
-  },
-  {
-    q: "Las normas internas que son establecidas por la dirección para determinar objetivos y prácticas de comunicación comunes para toda la empresa son lo que se denomina:",
-    options: [
-      "Planificación de RRHH.",
-      "Política de comunicación.",
-      "Comunicación vertical.",
-      "Flujo comunicativo."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Política de comunicación.\nDe acuerdo con las fuentes, la política de comunicación se define exactamente como las normas internas establecidas por la dirección para determinar objetivos y prácticas de comunicación comunes para toda la empresa. Esta política suele recogerse en una memoria que contiene directrices, indicadores y métodos de registro sobre la comunicación empresarial.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la planificación de RRHH se refiere a prever necesidades de personal, no a normas de comunicación.\nLa opción C es falsa, debido a que la comunicación vertical es un tipo de comunicación interna según la dirección del mensaje, no el conjunto de normas internas.\nLa opción D es falsa, porque el flujo comunicativo es el cauce por el que se mueve la información, no la política que fija objetivos y prácticas.\nPor ello, la respuesta correcta es la B."
-  },
-  {
-    q: "Las prestaciones pecuniarias exigidas por una Administración pública, como consecuencia de la realización del supuesto de hecho al que la ley vincula el deber de contribuir, se denominan:",
-    options: [
-      "Tesorerías.",
-      "Recibos.",
-      "Tributos.",
-      "Letras de cambio."
+      "Anywhere",
+      "Somewhere",
+      "Someone",
+      "Anything"
     ],
     correct: 2,
-    explanation: "La respuesta correcta es la C. Tributos.\nSegún las fuentes, los tributos se definen exactamente como las prestaciones pecuniarias exigidas por una Administración pública como consecuencia de la realización del supuesto de hecho al que la ley vincula el deber de contribuir. Su fin primordial es obtener los ingresos necesarios para financiar y sostener los gastos públicos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que las tesorerías se relacionan con la previsión de cobros y pagos, no con una obligación tributaria.\nLa opción B es falsa, debido a que los recibos son justificantes de pago o instrumentos de cobro, no la categoría jurídica mencionada.\nLa opción D es falsa, porque las letras de cambio son documentos formales de pago aplazado.\nPor tanto, la respuesta correcta es la C."
+    explanation: "La respuesta correcta es la C. Someone.\nLa opción C es correcta porque someone es un pronombre indefinido que se refiere a una persona y significa alguien. En este contexto, tiene sentido decir que alguien está llamando a la puerta.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque anywhere se refiere a lugares.\nLa opción B es incorrecta porque somewhere también se refiere a lugares y no puede ser el sujeto que llama a la puerta.\nLa opción D es incorrecta porque anything se refiere a cosas y además suele usarse en negativas e interrogativas."
   },
   {
-    q: "Los grupos profesionales se definen por:",
+    q: "Complete the sentence: \"She _________ you as soon as she arrives.\"",
     options: [
-      "Las características del trabajador.",
-      "La titulación del trabajador.",
-      "Las aptitudes del trabajador.",
-      "Todas son correctas."
+      "will called",
+      "are calling",
+      "called",
+      "will call"
     ],
     correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nSegún las fuentes, un grupo profesional es la forma de clasificación profesional que organiza el acceso a los distintos puestos de trabajo en una empresa. De acuerdo con el artículo 22 del Estatuto de los Trabajadores, este concepto agrupa unitariamente y se define en base a tres aspectos: las características del trabajador, la titulación que posee y sus aptitudes profesionales.\nA modo de aclaración sobre por qué las demás opciones también son verdaderas:\nLa opción A es correcta, ya que las características personales y profesionales forman parte de la definición del grupo.\nLa opción B es correcta, debido a que la titulación es uno de los criterios considerados.\nLa opción C es correcta, porque las aptitudes del trabajador también se valoran.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
+    explanation: "La respuesta correcta es la D. will call.\nLa opción D es correcta porque la oración expresa una acción futura. Para formar el Future Simple en afirmativa, se utiliza will seguido de la forma base del verbo. Por eso, la estructura correcta es She will call.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque después de will el verbo no puede ir en pasado.\nLa opción B es incorrecta porque utiliza are, que no corresponde con she, y además no encaja con la estructura requerida.\nLa opción C es incorrecta porque emplea pasado simple, creando una contradicción temporal."
   },
   {
-    q: "Los indicadores más habituales en el balance social son:",
+    q: "Complete the sentence: \"She ___________ sushi in her life\"",
     options: [
-      "Las variables, los tipos y las consecuencias.",
-      "La eficiencia, la eficacia y el impacto.",
-      "Inputs, outputs e insiders.",
-      "Locales, regionales, nacionales e internacionales."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. La eficiencia, la eficacia y el impacto.\nSegún las fuentes, en la elaboración del balance social, que es una herramienta que ayuda a evaluar la acción social de la empresa, se deben definir variables e indicadores que midan su evolución. Los indicadores más habituales como medio de control de gestión se relacionan exactamente con la eficacia, la eficiencia y el impacto.\nLa eficacia mide el grado de consecución de los objetivos propuestos, la eficiencia valora el grado de aprovechamiento de los recursos y el impacto evalúa el coste asumido en relación con el beneficio generado.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A, C y D no corresponden a la clasificación de indicadores que recoge el material.\nPor ello, la respuesta correcta es la B."
-  },
-  {
-    q: "Los préstamos personales:",
-    options: [
-      "Suelen tener un plazo máximo de amortización de hasta 15 años.",
-      "Sus intereses siempre son inferiores a los de los créditos hipotecarios.",
-      "Se conocen normalmente como préstamos al consumo.",
-      "Todas son correctas."
-    ],
-    correct: 2,
-    explanation: "La respuesta correcta es la C. Se conocen normalmente como préstamos al consumo.\nSegún las fuentes, los préstamos personales reciben comúnmente el nombre de préstamos al consumo, ya que su finalidad es facilitar compras en el momento en que surge la necesidad o el deseo sin tener que esperar a reunir el dinero.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que por norma general el plazo máximo de amortización de estos préstamos no suele superar los 8 años, no 15.\nLa opción B es falsa, debido a que los intereses de los préstamos personales son superiores a los de los créditos hipotecarios, no inferiores.\nLa opción D es falsa, porque no todas las afirmaciones anteriores son correctas.\nPor tanto, la respuesta correcta es la C."
-  },
-  {
-    q: "Los recursos humanos se conciben desde tres enfoques:",
-    options: [
-      "Político-legal, socioeconómico y laboral.",
-      "Personal, empresarial y social.",
-      "Administrativo-legal, contable-costes y de gestión.",
-      "Actitudinal, competencial y aptitudinal."
-    ],
-    correct: 2,
-    explanation: "La respuesta correcta es la C. Administrativo-legal, contable-costes y de gestión.\nSegún las fuentes, el enfoque y tratamiento de los recursos humanos dentro de una empresa se concibe exactamente desde estas tres perspectivas: el enfoque administrativo-legal, el enfoque contable-costes y el enfoque de gestión.\nEl enfoque administrativo-legal se refiere a las gestiones necesarias para la utilización formal del personal, el enfoque contable-costes analiza los gastos que las personas suponen para la organización, y el enfoque de gestión abarca las actividades necesarias para dirigir y aprovechar a los trabajadores.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A, B y D no coinciden con la clasificación exacta que presenta el material.\nPor ello, la respuesta correcta es la C."
-  },
-  {
-    q: "Para la planificación de los recursos humanos:",
-    options: [
-      "Es necesario plantear constantes aumentos de personal.",
-      "Se marcan objetivos logísticos y estratégicos.",
-      "Las desviaciones tienen siempre motivos extraordinarios.",
-      "Todas son correctas."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Se marcan objetivos logísticos y estratégicos.\nDe acuerdo con las fuentes, la planificación del personal persigue exactamente dos tipos de objetivos: logísticos y estratégicos. Los objetivos logísticos se marcan a corto plazo para asegurar que se cuenta con el número adecuado de personas y la cualificación ajustada a cada puesto, mientras que los estratégicos se plantean a largo plazo para prever cambios en la empresa o en el entorno que afecten a las necesidades de personal.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la planificación no exige constantes aumentos de personal, sino que también puede contemplar reducciones.\nLa opción C es falsa, debido a que las desviaciones respecto a lo planificado no siempre tienen causas extraordinarias; también pueden deberse a motivos ordinarios como bajas, absentismo o vacaciones.\nLa opción D es falsa, porque no todas las afirmaciones anteriores son correctas.\nPor tanto, la respuesta correcta es la B."
-  },
-  {
-    q: "Para poder elaborar un presupuesto familiar lo más fiel posible a la realidad, el primer paso es:",
-    options: [
-      "Identificar gastos e ingresos.",
-      "Contactar con un asesor fiscal.",
-      "Establecer el ahorro con un ingreso fijo.",
-      "Descargar el programa Excel."
+      "has never eaten",
+      "have never eaten",
+      "has ever eat",
+      "have never ate"
     ],
     correct: 0,
-    explanation: "La respuesta correcta es la A. Identificar gastos e ingresos.\nSegún las fuentes, para elaborar un presupuesto familiar lo más fiel a la realidad posible, el primer paso recomendado es identificar los gastos e ingresos. Esto implica registrar todas las fuentes de ingresos y anotar cada uno de los gastos que se realicen, por pequeños que sean, para obtener una media realista de lo que se gasta cada mes.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que no se menciona como paso necesario en el proceso.\nLa opción C es falsa, debido a que fijar el ahorro como un gasto fijo obligatorio es un paso posterior, no el primero.\nLa opción D es falsa, porque descargar un programa no aparece como requisito esencial en los textos.\nPor ello, la respuesta correcta es la A."
+    explanation: "La respuesta correcta es la A. has never eaten.\nLa opción A es correcta porque la oración se refiere a una experiencia de vida hasta el momento presente, lo que exige Present Perfect Simple. Con la tercera persona del singular, she, se utiliza has, seguido de never y del participio pasado del verbo eat, que es eaten.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones B y D son incorrectas porque utilizan have en lugar de has con she. Además, la opción D usa ate, que es pasado simple y no participio.\nLa opción C es incorrecta porque utiliza ever en lugar de never y deja el verbo en forma base, eat, en lugar del participio eaten."
   },
   {
-    q: "Renunciar a consumir hoy para consumir más en el futuro, ¿a qué concepto hace referencia?:",
+    q: "Complete the sentence: \"When we were kids, we _________ cartoons every morning\"",
     options: [
-      "Consumo.",
-      "Financiación.",
-      "Planificación.",
-      "Ahorro."
+      "used to watch",
+      "use to watched",
+      "was used to watch",
+      "using to watch"
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. used to watch.\nLa opción A es correcta porque la estructura used to + verbo en infinitivo se emplea para hablar de hábitos repetidos en el pasado que ya no ocurren en el presente. Aquí describe correctamente el hábito de ver dibujos animados cada mañana cuando eran niños.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es incorrecta porque combina use to con watched, cuando el verbo principal debe ir en infinitivo.\nLa opción C es incorrecta porque añade el verbo to be, lo cual rompe la estructura correcta, y además usa was con we.\nLa opción D es incorrecta porque utiliza using, una forma en gerundio incompatible con esta estructura."
+  },
+  {
+    q: "Complete this sentence with a question tag: \"You've been to Japan, ________?\"",
+    options: [
+      "don't you",
+      "didn't you",
+      "haven't you",
+      "will you"
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. haven't you.\nLa opción C es correcta porque las question tags se forman con el mismo auxiliar de la oración principal y con polaridad opuesta. En la frase You've been to Japan, el auxiliar es have y la oración es afirmativa, por lo que la coletilla debe ser negativa: haven't you.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque don't corresponde al Present Simple, no al Present Perfect.\nLa opción B es incorrecta porque didn't se usa con el Past Simple.\nLa opción D es incorrecta porque will no corresponde al tiempo verbal de la oración principal."
+  },
+  {
+    q: "Fill in the gap with an appropriate connector: \"I wanted to go to the party. __________, I had to finish my homework first\".",
+    options: [
+      "For instance",
+      "Because",
+      "However",
+      "Moreover"
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. However.\nLa opción C es correcta porque however es un conector de contraste que se utiliza para unir dos ideas opuestas o contradictorias. En este caso, contrasta el deseo de ir a la fiesta con el obstáculo de tener que terminar la tarea primero. Además, however encaja perfectamente con la puntuación de la oración, ya que conecta dos oraciones independientes.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque for instance se utiliza para dar ejemplos, no para contrastar ideas.\nLa opción B es incorrecta porque because expresa causa, y aquí no se está indicando la razón del deseo de ir a la fiesta.\nLa opción D es incorrecta porque moreover es un conector de adición, usado para añadir información complementaria, no para introducir una oposición."
+  },
+  {
+    q: "Fill in the gap with the correct comparative form of the adjective \"bad\": \"The weather today is _________ than it was yesterday\".",
+    options: [
+      "badder",
+      "worse",
+      "more bad",
+      "baddest"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. worse.\nLa opción B es correcta porque bad es un adjetivo irregular. Según las reglas gramaticales, su forma comparativa es worse y su forma superlativa es worst. Además, la presencia de than indica claramente que necesitamos un comparativo.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque no se forma el comparativo de bad añadiendo -er.\nLa opción C es incorrecta porque more se usa con adjetivos largos regulares, no con adjetivos irregulares como bad.\nLa opción D es incorrecta porque intenta formar un superlativo y, además, lo hace de forma errónea."
+  },
+  {
+    q: "Find the correct sentence:",
+    options: [
+      "There is some apples on the table.",
+      "Are there any apples on the table?",
+      "There isn't some milk in the fridge.",
+      "Is there some oranges in the box?"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Are there any apples on the table?\nLa opción B es correcta porque utiliza correctamente la estructura are there para preguntar por la existencia de un sustantivo en plural, apples, y además emplea any, que es el cuantificador adecuado para preguntas generales.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque mezcla there is, que es singular, con apples, que es plural.\nLa opción C es incorrecta porque en oraciones negativas debe usarse any, no some.\nLa opción D es incorrecta porque utiliza la forma singular is there con un sustantivo plural, oranges, y además usa some en una pregunta general."
+  },
+  {
+    q: "Find the incorrect question.",
+    options: [
+      "Why do you study in the library?",
+      "When she takes her last exam?",
+      "Who is your brother?",
+      "Where does she live?"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. When she takes her last exam?\nLa opción B es la pregunta incorrecta porque le falta el verbo auxiliar obligatorio. En preguntas con partículas interrogativas en Present Simple, la estructura correcta es: Wh-word + auxiliar + sujeto + verbo principal. En este caso, con she, debería ser: When does she take her last exam?\nA modo de aclaración sobre por qué las demás opciones son correctas:\nLa opción A es correcta porque utiliza adecuadamente el auxiliar do.\nLa opción C es correcta porque con el verbo to be no se necesita auxiliar extra.\nLa opción D es correcta porque utiliza correctamente el auxiliar does con la tercera persona del singular."
+  },
+  {
+    q: "Find the INCORRECT sentence.",
+    options: [
+      "There are many papers on the table.",
+      "Are there any papers on the table?",
+      "There aren't no papers on the table.",
+      "There aren't any papers on the table."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. There aren't no papers on the table.\nLa opción C es la oración incorrecta porque comete un error de doble negación. En inglés, si el verbo ya está en negativo, como aren't, debe utilizarse any y no no. La forma correcta sería There aren't any papers on the table o There are no papers on the table.\nA modo de aclaración sobre por qué las demás opciones son correctas:\nLa opción A es correcta porque emplea adecuadamente there are con un sustantivo plural y el cuantificador many.\nLa opción B es correcta porque utiliza la estructura interrogativa are there con any.\nLa opción D es correcta porque combina correctamente la forma negativa del verbo con el cuantificador any."
+  },
+  {
+    q: "Identify the sentence that correctly uses the imperative form.",
+    options: [
+      "You must to close the door.",
+      "Please, close the door!",
+      "She is closing the door.",
+      "You should closing the door."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Please, close the door!\nLa opción B es correcta porque el imperativo se forma con el verbo en su forma base, sin sujeto explícito, ya que este se sobreentiende. Además, se puede añadir please para hacer la petición más cortés.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque utiliza el modal must y además añade erróneamente to.\nLa opción C es incorrecta porque está en Present Continuous y describe una acción, no una orden.\nLa opción D es incorrecta porque usa should, que expresa consejo, y además combina mal la estructura con closing."
+  },
+  {
+    q: "Pick the correct preposition of movement to complete the sentence: \"She walked _________the bridge to get to the other side.\"",
+    options: [
+      "Off",
+      "into",
+      "through",
+      "across"
     ],
     correct: 3,
-    explanation: "La respuesta correcta es la D. Ahorro.\nSegún las fuentes, el ahorro consiste en reservar una parte de los ingresos para usarlos más adelante, en lugar de gastarlos en consumo inmediato. En definitiva, los textos lo definen de forma exacta como la acción de renunciar a consumir hoy para consumir más en el futuro.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el consumo implica precisamente satisfacer necesidades en el presente.\nLa opción B es falsa, debido a que la financiación permite consumir hoy recurriendo a fondos ajenos, lo que obliga a pagar más adelante.\nLa opción C es falsa, porque la planificación es una herramienta organizativa más amplia que puede ayudar a ahorrar, pero no equivale al concepto descrito.\nPor tanto, la respuesta correcta es la D."
+    explanation: "La respuesta correcta es la D. across.\nLa opción D es correcta porque across significa al otro lado de y expresa movimiento de un lado a otro sobre una superficie, como un puente. La frase to get to the other side confirma precisamente esa idea.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque off implica caerse o bajar de algo.\nLa opción B es incorrecta porque into significa dentro de, y no encaja con la idea de cruzar un puente.\nLa opción C es incorrecta porque through se usa normalmente para atravesar espacios cerrados o con volumen, como un túnel."
+  },
+  {
+    q: "Transform the words of this sentence into a question: She / like / travel / around the world / ?",
+    options: [
+      "Does she like travelling around the world?",
+      "Do she like travelling around the world?",
+      "Does she likes travelling around the world?",
+      "Does she like travel around the world?"
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Does she like travelling around the world?\nLa opción A es correcta porque en preguntas de Present Simple con la tercera persona del singular se utiliza does y el verbo principal permanece en forma base. Además, después de like puede usarse el verbo en gerundio, travelling.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es incorrecta porque con she debe usarse does, no do.\nLa opción C es incorrecta porque, si ya aparece does, el verbo principal no puede llevar -s.\nLa opción D es incorrecta porque después de like no corresponde usar travel solo; debe ir como travelling o to travel."
+  },
+  {
+    q: "What is the most appropriate connector for adding information?",
+    options: [
+      "Although",
+      "Besides",
+      "Instead",
+      "Therefore"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Besides.\nLa opción B es correcta porque besides es un conector de adición. Se utiliza para añadir información extra a una idea o conversación.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque although es un conector de contraste.\nLa opción C es incorrecta porque instead indica sustitución o alternativa.\nLa opción D es incorrecta porque therefore es un conector de causa y efecto."
+  },
+  {
+    q: "Which gerund form is correct?",
+    options: [
+      "Crying",
+      "Runing",
+      "Makeing",
+      "Swiming"
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Crying.\nLa opción A es correcta porque sigue la norma general para formar el gerundio: añadir -ing a la forma base del verbo. Los verbos terminados en y, como cry, no cambian su estructura.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es incorrecta porque run debe duplicar la consonante final: running.\nLa opción C es incorrecta porque make pierde la e antes de añadir -ing: making.\nLa opción D es incorrecta porque swim también duplica la consonante final: swimming."
+  },
+  {
+    q: "Which is the right adjective?",
+    options: [
+      "I was very frightened after watching that horror film.",
+      "I was very frightening after watching that horror film.",
+      "I was very frighten after watching that horror film.",
+      "I was very frightful after watching that horror film."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. I was very frightened after watching that horror film.\nLa opción A es correcta porque los adjetivos terminados en -ed se utilizan para describir cómo se siente una persona. En este caso, el hablante expresa su sentimiento después de ver la película.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es incorrecta porque frightening describe la causa del miedo, no el sentimiento de la persona.\nLa opción C es incorrecta porque frighten es un verbo, no un adjetivo.\nLa opción D es incorrecta porque frightful significa espantoso o terrible, pero no describe el estado emocional de la persona."
+  },
+  {
+    q: "Which of the following is NOT a use of the Present Continuous?",
+    options: [
+      "To describe actions happening at the moment of speaking.",
+      "To express temporary actions.",
+      "To talk about future arrangements or plans.",
+      "To talk about habits and routines."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. To talk about habits and routines.\nLa opción D es el uso incorrecto del Present Continuous, ya que para hablar de hábitos y rutinas se utiliza el Present Simple.\nA modo de aclaración sobre por qué las demás opciones son correctas:\nLa opción A es correcta porque el Present Continuous sirve para acciones que están ocurriendo en el momento de hablar.\nLa opción B es correcta porque también se usa para acciones o situaciones temporales.\nLa opción C es correcta porque puede emplearse para planes o acuerdos futuros ya fijados."
+  },
+  {
+    q: "Which of these indefinite pronouns refer to people?",
+    options: [
+      "Something",
+      "Anywhere",
+      "Nobody",
+      "Everything"
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Nobody.\nLa opción C es correcta porque nobody es un pronombre indefinido que se refiere específicamente a personas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque something se refiere a cosas.\nLa opción B es incorrecta porque anywhere se refiere a lugares.\nLa opción D es incorrecta porque everything también se refiere a cosas."
+  },
+  {
+    q: "Which of these words is a possessive pronoun?",
+    options: [
+      "Me",
+      "She",
+      "Their",
+      "Theirs"
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Theirs.\nLa opción D es correcta porque theirs es un pronombre posesivo. Se utiliza para indicar posesión sustituyendo a un sustantivo ya mencionado y evitando su repetición.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque me es un pronombre objeto.\nLa opción B es incorrecta porque she es un pronombre sujeto.\nLa opción C es incorrecta porque their es un adjetivo posesivo y debe ir delante de un sustantivo."
+  },
+  {
+    q: "Which quantifier is used with countable nouns?",
+    options: [
+      "Much",
+      "Little",
+      "Many",
+      "A little"
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Many.\nLa opción C es correcta porque many se utiliza específicamente con sustantivos contables para indicar una cantidad elevada.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque much se usa con sustantivos incontables.\nLa opción B es incorrecta porque little también se usa con incontables.\nLa opción D es incorrecta porque a little se utiliza igualmente con sustantivos incontables."
+  },
+  {
+    q: "Which quantifier would you use for a sufficient amount of something?",
+    options: [
+      "The bag is too heavy.",
+      "The coffee has too much sugar.",
+      "There are too many chairs in this classroom.",
+      "We don t have enough time to be on time."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. We don t have enough time to be on time.\nLa opción D es correcta porque enough + sustantivo se utiliza para expresar una cantidad suficiente de algo. En este caso, enough time indica la cantidad necesaria o suficiente de tiempo.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque too heavy expresa exceso respecto a un adjetivo.\nLa opción B es incorrecta porque too much se usa para cantidades excesivas con incontables.\nLa opción C es incorrecta porque too many se usa para cantidades excesivas con contables."
+  },
+  {
+    q: "Which sentence correctly uses a stative verb?",
+    options: [
+      "He is wanting ice cream.",
+      "I remember your face.",
+      "That car is belonging to me.",
+      "You are liking football."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. I remember your face.\nLa opción B es correcta porque remember es un verbo estático y está correctamente utilizado en Present Simple. Los verbos estáticos describen estados, emociones, pensamientos o posesión, y normalmente no se usan en tiempos continuos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque want es un verbo estático y no debe usarse como is wanting.\nLa opción C es incorrecta porque belong tampoco admite forma continua.\nLa opción D es incorrecta porque like es un verbo estático y no debe aparecer como are liking."
+  },
+  {
+    q: "Which sentence is an example of the First Conditional?",
+    options: [
+      "If it rains, the ground gets well.",
+      "If you study, you will pass the exam.",
+      "If she had a car, she would drive to work.",
+      "She will go to the party if you invites her."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. If you study, you will pass the exam.\nLa opción B es correcta porque sigue la estructura del First Conditional: if + presente simple, will + verbo en infinitivo. Este condicional se utiliza para hablar de situaciones reales y posibles en el futuro.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es incorrecta porque corresponde al Zero Conditional, con ambos verbos en presente simple.\nLa opción C es incorrecta porque es un ejemplo del Second Conditional.\nLa opción D es incorrecta porque, aunque intenta formar un First Conditional, comete un error con la forma you invites, que debería ser you invite."
+  },
+  {
+    q: "Which sentence is correct?",
+    options: [
+      "There are too many people in the room. We need more space.",
+      "There are too much people in the room. We need more space.",
+      "There are too enough people in the room. We need more space.",
+      "There are very people in the room. We need more space."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. There are too many people in the room. We need more space.\nLa opción A es correcta porque people funciona como un sustantivo contable en plural, y para expresar una cantidad excesiva con sustantivos contables se utiliza too many.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es incorrecta porque too much se utiliza con sustantivos incontables.\nLa opción C es incorrecta porque mezcla two con enough, estructuras incompatibles en este contexto.\nLa opción D es incorrecta porque very no funciona como cuantificador para sustantivos."
+  },
+  {
+    q: "Which type of speech uses quotation marks (\"\")?",
+    options: [
+      "Reported speech",
+      "Direct speech",
+      "Indirect speech",
+      "All answers are correct"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Direct speech.\nLa opción B es correcta porque el direct speech se utiliza para reproducir las palabras literales y exactas de una persona, lo cual exige el uso de comillas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y C son incorrectas porque reported speech e indirect speech se refieren al estilo indirecto, que no utiliza comillas.\nLa opción D es incorrecta porque no todas las respuestas son correctas; el uso de comillas es exclusivo del estilo directo."
   }
-];
+
+
+
+] ;
