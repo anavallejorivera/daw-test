@@ -2316,447 +2316,447 @@ const ExamTestApp = () => {
           name: "Prueba Semestral",
           questions: [
   {
-    q: "¿Cuál de las siguientes es una tendencia actual relativa a la comunicación interna?:",
+    q: "¿Como podemos cerrar una conexión de la base de datos?",
     options: [
-      "Motor de digitalización.",
-      "Employer Branding.",
-      "Apps internas.",
-      "Todas son correctas."
+      "No hay mecanismos para cerrar la conexión.",
+      "Haciendo uso del método .close() sobre el objeto Connection",
+      "Estableciendo en la conexión que se autocierre cuando no se use.",
+      "Todas las anteriores son incorrectas."
     ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nLas tendencias actuales relativas a la comunicación interna en las organizaciones incluyen todas las opciones listadas en la pregunta.\nLa opción A es correcta, ya que la comunicación interna actúa como un motor de digitalización, involucrando a toda la plantilla en el uso de la tecnología para crear un ecosistema más abierto.\nLa opción B es correcta, debido a que el employer branding convierte a los empleados en embajadores de la empresa y en altavoces internos de sus políticas.\nLa opción C es correcta, porque las apps internas se utilizan como un canal interactivo que permite a los trabajadores comunicarse con sus compañeros y acceder rápidamente a la información que necesitan para su trabajo diario, mejorando así su sentimiento de pertenencia.\nAdemás de estas tres, las fuentes también señalan otras tendencias actuales como la creación de lugares de trabajo digitales y la comunicación inside out.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Haciendo uso del método .close() sobre el objeto Connection.\nSegún el material de estudio, dentro del procedimiento para establecer y manejar la conexión a una base de datos relacional mediante la API JDBC, el último paso obligatorio es cerrar la declaración y la conexión haciendo uso del método close().\nEn los diferentes ejemplos prácticos expuestos en el temario se aprecia explícitamente cómo, tras crear el objeto Connection y operar con la base de datos, se invoca la instrucción conexion.close(); para liberar los recursos y finalizar la comunicación de forma segura.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el temario detalla explícitamente que sí existen métodos integrados en la API para terminar la conexión con la base de datos, concretamente close().\nLa opción C es falsa, debido a que en ningún apartado del material sobre JDBC se menciona la posibilidad de configurar un autocierre por desuso. El cierre debe realizarse explícitamente mediante código o gestionándolo con estructuras de control adecuadas.\nAl ser correcta la opción B, la opción D queda lógicamente descartada."
   },
   {
-    q: "¿Cuál de las siguientes no es una de las 5 fuerzas de Porter?:",
+    q: "¿Como podemos comprobar si un fichero o directorio existe?",
     options: [
-      "El flujo del proceso de compraventa.",
-      "La amenaza de productos sustitutivos.",
-      "El poder de negociación de los proveedores.",
-      "Las barreras de entrada."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. El flujo del proceso de compraventa.\nEl flujo del proceso de compraventa no forma parte del modelo de las cinco fuerzas de Porter, sino que se refiere a la cadena de emisión de documentos administrativos, como presupuesto, pedido, albarán, factura y pago, que rigen la gestión administrativa de una empresa.\nSegún las fuentes, las cinco fuerzas fundamentales de Porter para analizar el microentorno de una empresa son la amenaza de nuevos competidores, el poder de negociación de los clientes, el poder de negociación de los proveedores, la rivalidad entre los actuales competidores y la amenaza de productos sustitutivos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que la amenaza de productos sustitutivos sí forma parte del modelo.\nLa opción C es falsa, debido a que el poder de negociación de los proveedores también es una de las cinco fuerzas.\nLa opción D es falsa, porque las barreras de entrada están directamente relacionadas con la amenaza de nuevos competidores.\nPor tanto, la única opción que no pertenece al modelo es la A."
-  },
-  {
-    q: "¿Cuál de las siguientes no sería una estrategia del plan de marketing en función del producto?:",
-    options: [
-      "Estrategia de penetración.",
-      "Estrategia de desarrollo de producto.",
-      "Estrategia de enraizamiento.",
-      "Estrategia de diversificación."
+      "Usando isFile()",
+      "Usando isDirectory()",
+      "Usando exists()",
+      "Usando getPath()"
     ],
     correct: 2,
-    explanation: "La respuesta correcta es la C. Estrategia de enraizamiento.\nSegún las fuentes, las estrategias genéricas del plan de marketing en función del producto son únicamente cuatro: estrategia de penetración, estrategia de desarrollo de mercado, estrategia de desarrollo de producto y estrategia de diversificación.\nLa estrategia de penetración busca el aumento de la cuota de mercado dentro del propio mercado de la empresa. La estrategia de desarrollo de producto modifica o sustituye el producto para mejorarlo y conseguir mayor incursión en el mercado. La estrategia de diversificación combina las estrategias de desarrollo de mercado y de desarrollo de producto.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A, B y D sí forman parte de las estrategias del plan de marketing.\nLa opción C es la única que no figura como estrategia reconocida en el material.\nPor lo tanto, la respuesta correcta es la C."
+    explanation: "La respuesta correcta es la C. Usando exists().\nSegún el material de estudio, concretamente en la tabla de operaciones y métodos de la clase File, se establece explícitamente que el método exists() es el que comprueba si la ruta existe. Dado que una ruta puede apuntar tanto a un fichero como a un directorio, este es el método adecuado para verificar su existencia general.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el método isFile() no comprueba la existencia general, sino que determina específicamente si el elemento de la ruta es un fichero.\nLa opción B es falsa, debido a que isDirectory() se utiliza específicamente para comprobar si la ruta corresponde a un directorio.\nLa opción D es falsa, porque getPath() únicamente sirve para obtener la ruta en formato de texto y no realiza ninguna comprobación sobre si dicho archivo o directorio existe realmente en el sistema.\nAl ser correcta la opción C, las demás quedan descartadas."
   },
   {
-    q: "¿Cuál es el objetivo principal del marketing relacional?:",
+    q: "¿Cuál es la palabra reservada que convierte a un campo en común entre todos los objetos de una clase?",
     options: [
-      "Incrementar las ventas a corto plazo.",
-      "Mantener una relación significativa a largo plazo con el público objetivo.",
-      "Realizar promociones y descuentos.",
-      "Atraer nuevos clientes a través de la publicidad masiva."
+      "Static.",
+      "getter.",
+      "setter.",
+      "Todas las anteriores son incorrectas."
     ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Mantener una relación significativa a largo plazo con el público objetivo.\nEl marketing relacional engloba todas las iniciativas y actuaciones que desarrolla una organización al interactuar con los públicos que la rodean. Su finalidad principal es lograr una relación duradera mediante canales de comunicación que construyan un ambiente de confianza y aceptación.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el marketing relacional no se centra principalmente en incrementar ventas a corto plazo, sino en construir vínculos estables.\nLa opción C es falsa, debido a que las promociones y descuentos pueden formar parte de acciones concretas, pero no constituyen su objetivo principal.\nLa opción D es falsa, porque atraer nuevos clientes a través de publicidad masiva se relaciona más con enfoques promocionales tradicionales que con el marketing relacional.\nPor ello, la opción correcta es la B."
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Static.\nSegún el material de estudio, concretamente en el apartado dedicado a los campos o atributos de una clase, se establece explícitamente que opcionalmente se puede incluir la palabra reservada static para hacer ese campo común entre todos los objetos de esa clase. A este tipo de campos se les denomina campos estáticos, campos de clase o variables de clase.\nEl resumen de la unidad también confirma que Static es la palabra reservada que convierte la visibilidad en un campo común entre todos los objetos de esa clase.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones B y C son falsas, ya que getter y setter no son palabras reservadas para definir campos comunes, sino nombres habituales para los métodos observadores y modificadores.\nAl ser correcta la opción A, la opción D queda lógicamente descartada."
   },
   {
-    q: "¿Cuál es la definición más completa de marketing?:",
+    q: "¿Es posible cambiar el tamaño de un array durante su ejecución?",
     options: [
-      "El proceso de ventas de bienes y servicios.",
-      "El estudio de la competencia y el comportamiento del consumidor.",
-      "La actividad de publicidad y análisis de mercado.",
-      "La planificación y ejecución de la concepción del producto, fijación de precios, promoción y distribución de ideas, bienes y servicios para crear relaciones de intercambio que satisfagan objetivos individuales y organizacionales."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. La planificación y ejecución de la concepción del producto, fijación de precios, promoción y distribución de ideas, bienes y servicios para crear relaciones de intercambio que satisfagan objetivos individuales y organizacionales.\nDe acuerdo con las fuentes, el marketing se define exactamente con estos términos. Frecuentemente se comete el error de reducir el concepto de marketing a solo algunas de las actividades que forman parte de él, como pueden ser las ventas, la publicidad o el análisis de mercado, lo que desvirtúa su verdadero significado.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que reduce el marketing solo al proceso de ventas.\nLa opción B es falsa, debido a que se limita al estudio de la competencia y del consumidor.\nLa opción C es falsa, porque lo identifica únicamente con publicidad y análisis de mercado.\nLa definición global y completa abarca todo el proceso integral sustentado en producto, precio, promoción y distribución, por lo que la opción correcta es la D."
-  },
-  {
-    q: "¿Cuál es la principal diferencia entre marketing estratégico y marketing operativo?:",
-    options: [
-      "El marketing estratégico se centra en el corto plazo, mientras que el operativo se centra en el largo plazo.",
-      "El marketing estratégico se ocupa de la implementación de acciones, mientras que el operativo se ocupa del análisis de necesidades del público objetivo.",
-      "El marketing estratégico se ocupa de la publicidad, mientras que el marketing operativo se centra en las ventas.",
-      "El marketing estratégico se centra en el análisis continuo y la identificación de necesidades del público objetivo, mientras que el marketing operativo se focaliza en la puesta en marcha de medidas para aprovechar oportunidades."
+      "Sí.",
+      "Sí, solo cuando tenga un primer valor asignado.",
+      "Sí, en cualquier momento.",
+      "No, solo se puede indicar su tamaño en la declaración inicial."
     ],
     correct: 3,
-    explanation: "La respuesta correcta es la D. El marketing estratégico se centra en el análisis continuo y la identificación de necesidades del público objetivo, mientras que el marketing operativo se focaliza en la puesta en marcha de medidas para aprovechar oportunidades.\nDe acuerdo con las fuentes, el marketing estratégico se centra en el análisis continuo del entorno y de la competencia, así como en la identificación de las necesidades y anhelos del público objetivo. Su propósito es dirigir las acciones de la empresa para cubrir esas necesidades, facilitando la detección de nuevas oportunidades de negocio y preparando a la organización para adaptarse a los cambios del mercado.\nPor su parte, el marketing operativo se focaliza en la acción y en la implementación práctica de las medidas adecuadas para aprovechar de forma óptima las oportunidades previamente identificadas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que invierte los plazos habituales de ambos enfoques.\nLa opción B es falsa, porque intercambia las funciones de cada uno.\nLa opción C es falsa, debido a que simplifica en exceso ambos conceptos.\nPor tanto, la respuesta correcta es la D."
+    explanation: "La respuesta correcta es la D. No, solo se puede indicar su tamaño en la declaración inicial.\nSegún el material de estudio, concretamente en el resumen dedicado a las estructuras de almacenamiento, se establece de forma explícita que los arrays son objetos estáticos y secuenciales, y no es posible cambiar su tipo de datos ni su tamaño para incrementarlo o decrementarlo en ejecución.\nEl temario define al array como una estructura que contiene un número fijo de valores. Por tanto, si durante el programa se necesita añadir o eliminar elementos superando esa capacidad, la única solución es crear un nuevo array con un tamaño distinto y copiar los datos del anterior.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A, B y C son falsas porque afirman que sí es posible cambiar dinámicamente el tamaño del mismo array, lo cual contradice su naturaleza estática.\nPara disponer de estructuras dinámicas, el temario indica que se deben usar colecciones como ArrayList o LinkedList."
   },
   {
-    q: "¿Cuál es la principal herramienta del marketing estratégico?:",
+    q: "¿Qué es una colección?",
     options: [
-      "Análisis DAFO.",
-      "Plan de marketing.",
-      "Investigación de mercado.",
-      "Estrategia de precios."
+      "Una estructura estática que almacena elementos de forma secuencial con un tamaño ilimitado de valores.",
+      "Una estructura estática que almacena elementos con un tamaño limitado de valores.",
+      "Una estructura dinámica que almacena un grupo de elementos limitado.",
+      "Una estructura dinámica que almacena un grupo de elementos ilimitado."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Una estructura dinámica que almacena un grupo de elementos ilimitado.\nSegún el material de estudio, concretamente en el resumen dedicado a las colecciones, se define textualmente que las colecciones son estructuras dinámicas de un tamaño ilimitado que facilitan el tratamiento de un conjunto de valores. La teoría destaca que permiten agrupar elementos de una misma tipología y variar su tamaño según las necesidades del programa en tiempo de ejecución.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y B son falsas, ya que definen a la colección como una estructura estática. El temario especifica que la estructura estática corresponde a los arrays.\nLa opción C es falsa, debido a que indica que el grupo de elementos es limitado, cuando precisamente una de las principales ventajas de las colecciones es su tamaño dinámico e ilimitado.\nPor ello, la opción correcta es la D."
+  },
+  {
+    q: "¿Qué es una excepción?",
+    options: [
+      "Un error producido en tiempo de ejecución y que altera el flujo normal del programa.",
+      "Un evento producido en tiempo de compilación y que altera el flujo normal del programa.",
+      "Un código excepcional que se usa cuando se produce un evento.",
+      "Un código excepcional que se usa en casos especiales."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Un error producido en tiempo de ejecución y que altera el flujo normal del programa.\nSegún el material de estudio, concretamente en el resumen sobre el control y manejo de excepciones, se establece literalmente que las excepciones son eventos producidos por un error que alteran el flujo normal de ejecución. La teoría detalla además que se trata de eventos ante situaciones no previstas por errores funcionales o lógicos y que se producen en tiempo de ejecución.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que indica que el error se produce en tiempo de compilación, cuando el temario subraya que las excepciones se manifiestan en tiempo de ejecución.\nLas opciones C y D son falsas porque definen la excepción como un código, cuando en realidad la excepción es el evento anómalo en sí. El código que utiliza el programador para manejarla es la estructura try/catch/finally.\nPor tanto, la respuesta correcta es la A."
+  },
+  {
+    q: "¿Qué tipo de colección hace uso de una clave como identificador?",
+    options: [
+      "HashMap.",
+      "ArrayList.",
+      "HashSet.",
+      "ArrayDeque."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. HashMap.\nSegún el material de estudio, concretamente en el apartado dedicado a la interfaz Map, se establece de forma explícita que este tipo de estructura requiere hacer uso de un identificador para cada elemento, denominado clave-valor. El temario detalla que HashMap es una de las principales colecciones que implementan esta interfaz, guardando los datos a modo de diccionario donde la clave asocia de forma única a cada elemento.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que ArrayList pertenece a la interfaz List y su acceso es secuencial e indexado, sin claves.\nLa opción C es falsa, debido a que HashSet forma parte de Set, cuya principal característica es no permitir duplicados.\nLa opción D es falsa, porque ArrayDeque implementa Queue y se utiliza para estructuras tipo cola o pila, no para almacenar elementos mediante claves.\nPor ello, la respuesta correcta es la A."
+  },
+  {
+    q: "Al capturar una excepción que realiza este método printStackTrace()",
+    options: [
+      "Imprime la causa del error.",
+      "Obtiene el código de error de la excepción",
+      "Obtiene el mensaje de la excepción",
+      "Imprime el flujo de llamadas donde ocurrió el error."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Imprime el flujo de llamadas donde ocurrió el error.\nSegún el material de estudio, concretamente en el apartado sobre los miembros de una excepción, se detalla que la función del método printStackTrace() es imprimir todo el flujo de llamadas a los métodos hasta donde se ha producido el error.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que para obtener la causa del error se utiliza el método getCause().\nLa opción C es falsa, debido a que el mensaje de la excepción se obtiene mediante getMessage().\nLa opción B es falsa, porque printStackTrace() no extrae un código de error, sino la traza o historial de llamadas.\nPor tanto, la respuesta correcta es la D."
+  },
+  {
+    q: "Código traducido para que pueda ser interpretado por el microprocesador:",
+    options: [
+      "Código fuente.",
+      "Código máquina.",
+      "Código intermedio.",
+      "Todas las anteriores son incorrectas."
     ],
     correct: 1,
-    explanation: "La respuesta correcta es la B. Plan de marketing.\nEl marketing estratégico se centra en el análisis continuo y la identificación de las necesidades del público objetivo, con el fin de dirigir las metas de la empresa hacia la cobertura de dichas necesidades. Para lograr esto, su herramienta primordial es el plan de marketing, un documento estructurado que permite a las organizaciones alinear sus objetivos y dar respuesta a medio y largo plazo a tres cuestiones empresariales básicas: quiénes somos, qué queremos y cómo conseguirlo.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el análisis DAFO es una herramienta importante, pero no se presenta como la principal herramienta global del marketing estratégico.\nLa opción C es falsa, debido a que la investigación de mercado forma parte del análisis, pero no constituye por sí sola la herramienta principal.\nLa opción D es falsa, porque la estrategia de precios es solo una parte concreta de la actuación comercial.\nPor ello, la opción correcta es la B."
+    explanation: "La respuesta correcta es la B. Código máquina.\nSegún el material de estudio, concretamente en el apartado de conceptos fundamentales sobre lenguajes de programación, se define literalmente al código máquina o código objeto como el código traducido para que pueda ser interpretado por el microprocesador.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el código fuente es el programa escrito en un lenguaje de alto nivel, cercano al lenguaje humano, y no reconocido directamente por la computadora sin traducción.\nLa opción C es falsa, debido a que el código intermedio, como el bytecode en Java, no se puede ejecutar directamente en el sistema operativo y requiere una segunda traducción o interpretación mediante una máquina virtual.\nAl ser correcta la opción B, la opción D queda descartada."
   },
   {
-    q: "¿En qué se basa la decisión que se toma para cubrir necesidades?:",
+    q: "Coloca cada componente horizontalmente de izquierda a derecha. Si sobrepasa la fila comienza en la siguiente.:",
     options: [
-      "En un impulso.",
-      "En una comparativa.",
-      "En una encuesta.",
-      "En una imitación de lo que hace la sociedad."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. En una comparativa.\nPara decidir cómo cubrir sus necesidades, el individuo realiza un análisis que tiene en cuenta la relación coste-beneficio que cada opción le reporta. Por tanto, se trata de una elección racional basada en una comparativa entre aquello que se gana o satisface y aquello a lo que se renuncia o se pierde al tomar la decisión.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la teoría no presenta esta decisión como un impulso espontáneo.\nLa opción C es falsa, debido a que una encuesta puede aportar información, pero no define el fundamento de la decisión individual.\nLa opción D es falsa, porque imitar lo que hace la sociedad no constituye el criterio esencial señalado por el material.\nPor ello, la respuesta correcta es la B."
-  },
-  {
-    q: "¿Qué análisis no forma parte del análisis de la situación en el plan de marketing?:",
-    options: [
-      "Análisis de la demanda.",
-      "Análisis de la competencia.",
-      "Análisis del producto.",
-      "Análisis interno de la empresa."
+      "BorderLayout.",
+      "CardLayout.",
+      "FlowLayout.",
+      "GridLayout."
     ],
     correct: 2,
-    explanation: "La respuesta correcta es la C. Análisis del producto.\nDe acuerdo con las fuentes proporcionadas, el análisis de la situación dentro de un plan de marketing se divide en cuatro apartados específicos: análisis de la demanda, análisis de la competencia, análisis del entorno y análisis interno de la empresa.\nPor lo tanto, el análisis del producto no se considera un apartado dentro del análisis de la situación.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el análisis de la demanda sí forma parte del análisis de la situación.\nLa opción B es falsa, debido a que el análisis de la competencia también está incluido.\nLa opción D es falsa, porque el análisis interno de la empresa es otro de los apartados reconocidos.\nPor ello, la única opción que no forma parte de este análisis es la C."
+    explanation: "La respuesta correcta es la C. FlowLayout.\nSegún el material de estudio, concretamente en el apartado dedicado a los layouts o manejadores de componentes, se define de forma literal que FlowLayout coloca cada componente horizontalmente de izquierda a derecha y, si sobrepasa la fila, comienza en la siguiente.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que BorderLayout permite colocar elementos en el centro y en los cuatro bordes.\nLa opción B es falsa, debido a que CardLayout gestiona los componentes en el mismo espacio mostrando uno cada vez.\nLa opción D es falsa, porque GridLayout distribuye los elementos en una tabla de filas y columnas, no con un flujo libre de línea.\nPor ello, la respuesta correcta es la C."
   },
   {
-    q: "¿Qué herramienta permite analizar las debilidades, amenazas, fortalezas y oportunidades de una empresa?:",
+    q: "Como podemos capturar una excepción",
     options: [
-      "Análisis PEST.",
-      "Análisis DAFO.",
-      "Investigación de mercado.",
-      "Matriz de crecimiento."
+      "Incluir el código que puede provocar una excepción dentro del bloque try.",
+      "Incluir el código que puede provocar una excepción dentro del bloque catch.",
+      "Incluir el código que puede provocar una excepción dentro del bloque finally.",
+      "Incluir el código que puede provocar una excepción dentro de un método exclusivo."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Incluir el código que puede provocar una excepción dentro del bloque try.\nSegún el material de estudio, concretamente en el apartado de captura de excepciones, para capturar y tratar una excepción se debe hacer uso de la estructura try/catch/finally. La teoría especifica de forma literal que dentro de try se pondrá todo el código que puede producir el error.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el bloque catch está destinado al tratamiento del error una vez capturado, no a contener el código que lo provoca.\nLa opción C es falsa, debido a que finally se usa para el código que debe ejecutarse siempre, se produzca o no una excepción.\nLa opción D es falsa, porque incluir el código en un método exclusivo no forma parte del mecanismo de captura de excepciones en Java.\nPor ello, la respuesta correcta es la A."
+  },
+  {
+    q: "El código fuente en java se identifica por:",
+    options: [
+      "Usar la extensión .class",
+      "Usar la extensión .doc",
+      "Usar la extensión .ear",
+      "Usar la extensión .java"
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Usar la extensión .java.\nSegún el material de estudio, concretamente en el apartado dedicado a los tipos de archivos empleados, se establece de forma literal que cuando utilizamos Java, el código fuente debe ser almacenado en un archivo de texto plano cuya extensión sea .java.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la extensión .class identifica al código intermedio o bytecode generado tras compilar el código fuente.\nLa opción C es falsa, debido a que la extensión .ear se utiliza para empaquetar módulos en aplicaciones empresariales.\nLa opción B es falsa porque .doc es una extensión ajena a los archivos empleados para programar en Java.\nPor tanto, la respuesta correcta es la D."
+  },
+  {
+    q: "El código intermedio compilado en java se identifica por:",
+    options: [
+      "Usar la extensión .class",
+      "Usar la extensión .doc",
+      "Usar la extensión .ear",
+      "Usar la extensión .java"
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Usar la extensión .class.\nSegún el material de estudio, concretamente en el apartado dedicado a los tipos de archivos empleados, se establece de forma literal que al compilar con éxito un programa Java se devolverá un archivo que contenga código intermedio o bytecode cuya extensión será .class.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa porque .doc no corresponde a ningún tipo de archivo de programación Java.\nLa opción C es falsa, ya que .ear se emplea para empaquetar módulos empresariales y no para identificar el código intermedio.\nLa opción D es falsa, debido a que .java se utiliza para identificar el código fuente original.\nPor ello, la respuesta correcta es la A."
+  },
+  {
+    q: "El Pseudocódigo es",
+    options: [
+      "Un lenguaje de programación",
+      "Un lenguaje descriptivo para desarrollar algoritmos.",
+      "Código binario o hexadecimal.",
+      "Una estructura de control."
     ],
     correct: 1,
-    explanation: "La respuesta correcta es la B. Análisis DAFO.\nSegún las fuentes proporcionadas, la matriz de análisis DAFO, siglas de Debilidades, Amenazas, Fortalezas y Oportunidades, es una herramienta que permite recoger información del entorno para adaptar la empresa a la sociedad, al mismo tiempo que evalúa su estructura interna y la competencia para lograr un funcionamiento óptimo.\nPara llevar a cabo este análisis, la matriz se divide en dos vertientes: análisis interno, que evalúa fortalezas y debilidades, y análisis externo, que evalúa oportunidades y amenazas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el análisis PEST se centra en factores del entorno, pero no estudia conjuntamente fortalezas y debilidades internas.\nLa opción C es falsa, debido a que la investigación de mercado es una herramienta distinta y más amplia.\nLa opción D es falsa, porque la matriz de crecimiento no corresponde al análisis DAFO.\nPor tanto, la respuesta correcta es la B."
-  },
-
-  {
-    q: "A las personas que, sin haber sido dotadas de autoridad, tienen la capacidad de influenciar sobre los demás por su carisma y personalidad, se les denomina:",
-    options: [
-      "Líderes.",
-      "Directores.",
-      "Jefes.",
-      "Mandos."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Líderes.\nUn líder se define como una persona que tiene capacidad de influencia y que, aunque nadie le haya dotado de autoridad formal, la genera por sí mismo gracias a su carisma y a una personalidad que hace que otros le sigan.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que un director ocupa normalmente un cargo formal dentro de la organización, pero eso no implica necesariamente el liderazgo carismático descrito en el enunciado.\nLa opción C es falsa, debido a que un jefe posee autoridad jerárquica formal impuesta por la empresa para dirigir y exigir resultados a sus subordinados.\nLa opción D es falsa, porque el término mandos se refiere a posiciones de supervisión o responsabilidad formal dentro de la estructura organizativa.\nPor tanto, la respuesta correcta es la A."
+    explanation: "La respuesta correcta es la B. Un lenguaje descriptivo para desarrollar algoritmos.\nSegún el material de estudio, concretamente en los apartados dedicados al pseudocódigo, se define como un lenguaje intermedio similar al lenguaje natural cuyo objetivo principal es desarrollar algoritmos. La teoría detalla que permite describir y estructurar de manera clara la lógica de un programa antes de pasarlo a un lenguaje de programación específico.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el temario especifica expresamente que el pseudocódigo no es un lenguaje de programación.\nLa opción C es falsa, debido a que el pseudocódigo no tiene una traducción directa a código binario y no se ejecuta por sí mismo.\nLa opción D es falsa, porque el pseudocódigo utiliza estructuras de control, pero no es una estructura de control en sí mismo.\nPor tanto, la respuesta correcta es la B."
   },
   {
-    q: "Al responsable de recursos humanos se le presuponen varias habilidades, entre ellas:",
+    q: "En la utilización de los sistemas de ficheros, ¿Qué hace el método listFiles()?",
     options: [
-      "Tener motivación y ser capaz de trasmitirla al equipo.",
-      "Comunicar efectivamente.",
-      "Ser resolutivo y determinado en la toma de decisiones.",
-      "Todas son correctas."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nTeniendo en cuenta que las personas conforman el mayor recurso de una empresa, la figura de quien gestiona este capital humano es primordial para la organización. Por este motivo, al responsable o director de Recursos Humanos se le presuponen diversas habilidades clave, entre las que se encuentran tener motivación y ser capaz de transmitirla al equipo, comunicar efectivamente y ser resolutivo y determinado en la toma de decisiones.\nAdemás de estas competencias, las fuentes indican que un buen responsable de RRHH también debe conocer internamente la organización, estar formado y actualizado, poseer habilidades de negociación y resolución de conflictos, y tener capacidad para tratar con personas diversas.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
-  },
-  {
-    q: "Cuando hablamos de segmentación, la estrategia de expansión de mercado:",
-    options: [
-      "Se centrará en más de un segmento, pero con un solo producto.",
-      "Actuará en un solo segmento con un solo producto.",
-      "Ofrecerá distintos productos a un solo segmento.",
-      "Adaptará el producto a las particularidades de cada segmento."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Se centrará en más de un segmento, pero con un solo producto.\nSegún las fuentes, al realizar la segmentación del mercado, la estrategia de expansión de mercado consiste precisamente en dirigir un único producto a varios segmentos distintos. Esta estrategia se suele aplicar cuando la organización cuenta con un producto que es muy potente.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B define a la estrategia de concentración, que actúa en un solo segmento con un solo producto.\nLa opción C corresponde a la estrategia de expansión de productos, que ofrece distintos productos a un solo segmento.\nLa opción D hace referencia a la estrategia de diferenciación, que adapta el producto a las particularidades de cada segmento.\nPor tanto, la respuesta correcta es la A."
-  },
-  {
-    q: "Dentro de las teorías del liderazgo, la teoría del gran hombre afirma que:",
-    options: [
-      "Los rasgos del líder son innatos y no se pueden adquirir ni con entrenamiento ni con experiencia.",
-      "El comportamiento del líder depende de la percepción que tenga de la naturaleza de sus subordinados,",
-      "Solo puede existir un líder en la organización, que ejercerá su mando con mano de hierro.",
-      "El líder teje una malla gerencial para desarrollar sus funciones."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Los rasgos del líder son innatos y no se pueden adquirir ni con entrenamiento ni con experiencia.\nSegún las fuentes, la teoría del gran hombre o de rasgos defiende que los líderes nacen, no se hacen. Esta teoría asume que existe una forma ideal de liderar y que los líderes poseen de nacimiento ciertas características comunes y fuertemente enraizadas en su personalidad que no se pueden obtener mediante la experiencia o la formación.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B define la Teoría X e Y de McGregor, donde el estilo de dirección depende de la percepción que tiene el líder sobre la naturaleza de sus subordinados.\nLa opción C es falsa, ya que no corresponde a una formulación reconocida de la teoría del gran hombre.\nLa opción D hace referencia a la teoría de la malla gerencial de Blake y Mouton.\nPor ello, la respuesta correcta es la A."
-  },
-  {
-    q: "Documento formal que incorpora una orden de pago, por la que una persona ordena pagar una determinada cantidad de dinero al poseedor de esta a su vencimiento:",
-    options: [
-      "Cheque.",
-      "Letra de cambio.",
-      "Recibo normalizado.",
-      "Transferencia bancaria."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Letra de cambio.\nSegún las fuentes, la letra de cambio se define exactamente como un documento formal que incorpora una orden de pago, mediante la cual una persona ordena pagar una cantidad determinada de dinero a su poseedor en la fecha de su vencimiento.\nUna característica principal y distintiva de este documento es que el derecho de cobro se puede transmitir a un tercero.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el cheque es otro medio de pago distinto y no responde exactamente a la definición dada.\nLa opción C es falsa, debido a que el recibo normalizado consiste en domiciliar pagos periódicos en una entidad bancaria.\nLa opción D es falsa, porque la transferencia bancaria es una operación de pago entre cuentas, no un documento formal con las características descritas.\nPor tanto, la respuesta correcta es la B."
-  },
-  {
-    q: "El Estado puede conseguir los ingresos públicos de:",
-    options: [
-      "Las donaciones y la deuda pública.",
-      "La extracción o expropiación.",
-      "Los ingresos contractuales.",
-      "Todas son correctas."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nSegún las fuentes proporcionadas, para que el Estado y las administraciones puedan cubrir el gasto público, es necesario obtener ingresos, los cuales se consiguen a través de varias vías: mediante la extracción o expropiación, a través de los ingresos contractuales, mediante donaciones y por la emisión de deuda pública.\nA modo de aclaración sobre por qué las demás opciones también son verdaderas:\nLa opción A es correcta, ya que las donaciones y la deuda pública forman parte de las fuentes de ingresos públicos.\nLa opción B es correcta, debido a que la extracción o expropiación incluye ingresos derivados del poder sancionador y fiscal.\nLa opción C es correcta, porque los ingresos contractuales son los que recibe el Estado por la prestación de servicios.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
-  },
-  {
-    q: "El estilo de liderazgo en el que el líder interviene solo cuando lo cree conveniente, dejando máxima libertad a sus empleados y controlando lo mínimo imprescindible, se denomina:",
-    options: [
-      "Liderazgo laissez faire.",
-      "Liderazgo democrático.",
-      "Liderazgo paternalista.",
-      "Liderazgo visionario."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Liderazgo laissez faire.\nSegún las fuentes, el liderazgo de no intervención o laissez faire, también denominado delegativo, se define exactamente así: el líder interviene solo cuando lo cree conveniente, dejando máxima libertad a sus empleados y controlando lo mínimo imprescindible.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el liderazgo democrático fomenta la comunicación y tiene en cuenta la opinión del equipo en la toma de decisiones.\nLa opción C es falsa, debido a que el liderazgo paternalista se caracteriza porque el líder toma las decisiones y adopta una actitud protectora hacia su equipo.\nLa opción D es falsa, porque el liderazgo visionario se basa en transmitir con claridad una meta común para que el equipo la comparta.\nPor ello, la respuesta correcta es la A."
-  },
-  {
-    q: "El estilo de liderazgo en el que el líder tiene claro dónde quiere ir e intenta que el equipo visualice su meta y la comparta, se denomina:",
-    options: [
-      "Liderazgo laissez faire.",
-      "Liderazgo democrático.",
-      "Liderazgo paternalista.",
-      "Liderazgo visionario."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Liderazgo visionario.\nDe acuerdo con las fuentes, el liderazgo visionario se caracteriza porque el líder moviliza al equipo transmitiendo con claridad una meta común; es decir, tiene claro dónde quiere ir e intenta que el equipo visualice su meta y la comparta. Este estilo de dirección además favorece un buen ambiente de trabajo.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A describe el liderazgo laissez faire, en el que el líder interviene muy poco.\nLa opción B corresponde al liderazgo democrático o participativo, donde se fomenta la comunicación y la participación del grupo.\nLa opción C hace referencia al liderazgo paternalista, en el que el líder toma las decisiones y protege al equipo.\nPor tanto, la respuesta correcta es la D."
-  },
-  {
-    q: "El factor que impulsa a las personas a iniciar, mantener o terminar una actividad, un comportamiento o una actitud se denomina:",
-    options: [
-      "Motivación.",
-      "Pirámide de necesidades.",
-      "Autoestima.",
-      "Higiénico."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. Motivación.\nSegún las fuentes, la motivación se define exactamente como el factor que impulsa a las personas a iniciar, mantener o terminar una actividad, un comportamiento o una actitud. Se trata de un estímulo que empuja al individuo a cubrir sus necesidades y encontrar satisfacción.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que la pirámide de necesidades es un modelo teórico sobre la jerarquía de las necesidades humanas, no el factor impulsor en sí mismo.\nLa opción C es falsa, debido a que la autoestima es una necesidad o dimensión personal, pero no define de forma general el concepto preguntado.\nLa opción D es falsa, porque higiénico hace referencia a los factores higiénicos de ciertas teorías de motivación, no al concepto global de impulso de la conducta.\nPor ello, la respuesta correcta es la A."
-  },
-  {
-    q: "El impuesto que se encarga de gravar el consumo es:",
-    options: [
-      "El IVA.",
-      "El IRPF.",
-      "El Impuesto sobre Sociedades.",
-      "La declaración censal."
-    ],
-    correct: 0,
-    explanation: "La respuesta correcta es la A. El IVA.\nDe acuerdo con las fuentes, el Impuesto sobre el Valor Añadido o IVA es el tributo indirecto que se encarga de gravar el consumo de bienes y la prestación de servicios. Este impuesto recae sobre todo el proceso productivo y afecta a todos los consumidores finales por igual.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el IRPF grava la obtención de rentas de las personas físicas.\nLa opción C es falsa, debido a que el Impuesto sobre Sociedades grava los beneficios obtenidos por empresas y entidades jurídicas.\nLa opción D es falsa, porque la declaración censal no es un impuesto, sino una obligación fiscal para darse de alta en el censo correspondiente.\nPor tanto, la respuesta correcta es la A."
-  },
-  {
-    q: "El Impuesto sobre Sociedades:",
-    options: [
-      "Tiene carácter indirecto.",
-      "Grava la ganancia de rentas por parte de personas físicas y entidades públicas.",
-      "Es de naturaleza personal porque tiene en cuenta determinadas circunstancias particulares de cada contribuyente.",
-      "Ninguna es correcta."
+      "Comprueba si la ruta existe.",
+      "Comprueba si es un directorio",
+      "Obtiene un listado de ficheros que hay en la ruta.",
+      "Obtiene el directorio padre."
     ],
     correct: 2,
-    explanation: "La respuesta correcta es la C. Es de naturaleza personal porque tiene en cuenta determinadas circunstancias particulares de cada contribuyente.\nSegún las fuentes, el Impuesto sobre Sociedades tiene una naturaleza personal precisamente porque valora las circunstancias concretas de cada contribuyente para determinar la cuantía que debe abonar.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el Impuesto sobre Sociedades no tiene carácter indirecto, sino directo.\nLa opción B es falsa, debido a que no grava a las personas físicas, sino a empresas, entidades jurídicas y algunas entidades no jurídicas residentes.\nLa opción D es falsa, porque sí existe una afirmación correcta, que es la opción C.\nPor ello, la respuesta correcta es la C."
+    explanation: "La respuesta correcta es la C. Obtiene un listado de ficheros que hay en la ruta.\nSegún el material de estudio, concretamente en las tablas que detallan las operaciones y métodos de la clase File, se establece de forma explícita que el método listFiles() obtiene un listado de tipo File de los ficheros que hay en la ruta.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que para comprobar si la ruta existe se utiliza exists().\nLa opción B es falsa, debido a que para comprobar si una ruta corresponde a un directorio se usa isDirectory().\nLa opción D es falsa, porque el método empleado para obtener el directorio padre es getParent().\nPor ello, la respuesta correcta es la C."
   },
   {
-    q: "El presupuesto familiar se compone de:",
+    q: "En una aplicación en java:",
     options: [
-      "Gastos fijos.",
-      "Gastos corrientes.",
-      "Gastos ocasionales.",
-      "Todas son correctas."
+      "Tiene que haber una clase denominada .x",
+      "Es obligatorio usar paquetes.",
+      "Tiene que haber un método main.",
+      "Puede no haber ninguna clase."
     ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nSegún las fuentes, el presupuesto familiar es una herramienta básica de planificación financiera que sirve para prever y anticipar los ingresos y gastos de una persona o familia. Para que refleje fielmente la realidad, debe componerse de gastos fijos, gastos corrientes y gastos ocasionales.\nLa opción A es correcta, ya que los gastos fijos son aquellos obligatorios o derivados de un contrato, como la hipoteca o el alquiler.\nLa opción B es correcta, debido a que los gastos corrientes son los necesarios para la vida diaria, como la comida o el transporte.\nLa opción C es correcta, porque los gastos ocasionales son aquellos que se producen de manera irregular, como una avería o un gasto médico imprevisto.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Tiene que haber un método main.\nSegún el material de estudio, concretamente en el apartado dedicado al método main, se establece explícitamente que cualquier aplicación debe tener un método main en una clase para indicar el punto de inicio. La teoría detalla que todos los programas en Java necesitan este punto de entrada para comenzar su ejecución.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que en ningún punto del temario se exige una clase denominada .x.\nLa opción B es falsa, debido a que aunque los paquetes son recomendables para organizar el proyecto, no son obligatorios para que una aplicación básica pueda ejecutarse.\nLa opción D es falsa, porque en Java todo el código debe estar dentro de una clase.\nPor ello, la respuesta correcta es la C."
   },
   {
-    q: "Engloba todas las tareas dirigidas a la obtención y transformación de los recursos que permiten desarrollar la actividad de la empresa y aprovechar las oportunidades de mercado, delimitando el plan de actuación que llevará a la generación de beneficios económicos:",
+    q: "Es habitual trabajar directamente con ficheros de tipo de datos",
     options: [
-      "Ciclo de explotación.",
-      "Sistema de mercado.",
-      "Aprovisionamiento.",
-      "Marketing relacional."
+      "De bytes o caracteres.",
+      "De enteros.",
+      "De cadena de caracteres.",
+      "De hexadecimal."
     ],
     correct: 0,
-    explanation: "La respuesta correcta es la A. Ciclo de explotación.\nSegún las fuentes, el ciclo de explotación se define exactamente como el conjunto de tareas dirigidas a la obtención y transformación de los recursos que permiten desarrollar la actividad de la empresa y aprovechar las oportunidades de mercado, delimitando así el plan de actuación para generar beneficios económicos y alcanzar los objetivos propuestos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que sistema de mercado no corresponde a la definición descrita.\nLa opción C es falsa, debido a que el aprovisionamiento es solo uno de los subsistemas que componen el ciclo de explotación.\nLa opción D es falsa, porque el marketing relacional tiene la finalidad de mantener relaciones duraderas con el público objetivo, no de englobar todas las tareas productivas y operativas de la empresa.\nPor tanto, la respuesta correcta es la A."
+    explanation: "La respuesta correcta es la A. De bytes o caracteres.\nSegún el material de estudio, concretamente en los apartados dedicados a los tipos de flujo y los tipos de ficheros, se establece de forma explícita que la clasificación principal de los flujos para el manejo de información se divide en flujos de bytes y flujos de caracteres.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción C es incompleta, ya que aunque menciona las cadenas de caracteres, omite los ficheros de bytes, que son igualmente fundamentales.\nLas opciones B y D son falsas, puesto que enteros y hexadecimal no representan la clasificación base de los ficheros o flujos, aunque dentro de un fichero binario puedan almacenarse datos enteros.\nPor tanto, la respuesta correcta es la A."
   },
   {
-    q: "Entre los objetivos del análisis de los puestos de trabajo se encuentra:",
+    q: "Estos, char, int, boolean y double, son:",
     options: [
-      "Ayudar al reclutamiento y selección de personal.",
-      "Detectar necesidades de formación.",
-      "Prever los costes salariales.",
-      "Todas son correctas."
+      "Constantes.",
+      "Tipos de datos primitivos.",
+      "Operadores.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Tipos de datos primitivos.\nSegún el material de estudio, concretamente en los apartados dedicados a los tipos de datos primitivos, se establece de forma explícita que int, double, char y boolean pertenecen a esta categoría básica de datos definida en el lenguaje por defecto.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que las constantes son elementos que mantienen un valor fijo y se declaran usando variables inmutables, pero no son tipos de datos en sí.\nLa opción C es falsa, debido a que los operadores sirven para realizar operaciones aritméticas, lógicas o relacionales, no para definir el tipo de la información.\nAl ser correcta la opción B, la opción D queda descartada."
+  },
+  {
+    q: "Indica que controlador permite introducir texto en un campo",
+    options: [
+      "Button.",
+      "Label.",
+      "Checkbox.",
+      "TextField."
     ],
     correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nDe acuerdo con las fuentes proporcionadas, el análisis de los puestos de trabajo persigue múltiples propósitos fundamentales para la gestión de los recursos humanos. Entre sus objetivos explícitos se encuentran ayudar al reclutamiento y selección de personal, detectar necesidades de formación y prever los costes salariales en base a los sueldos establecidos para cada puesto.\nAdemás de estas funciones, este análisis también permite diseñar planes de prevención de riesgos laborales, determinar planes de carrera y controlar si el personal realiza correctamente sus funciones.\nAl ser verdaderas todas las opciones anteriores, la respuesta correcta es la D."
+    explanation: "La respuesta correcta es la D. TextField.\nSegún el material de estudio, concretamente en los apartados dedicados a los controles de interfaces gráficas, se define de forma literal al componente TextField como un campo para introducir texto.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que Button es un botón destinado a realizar acciones al hacer clic.\nLa opción B es falsa, debido a que Label es una etiqueta de información usada para mostrar texto, no para introducirlo.\nLa opción C es falsa, porque Checkbox es un botón de selección que permite marcar o desmarcar opciones, no escribir texto.\nPor tanto, la respuesta correcta es la D."
   },
   {
-    q: "Es una modificación de la jerarquía de Maslow que clasifica las necesidades básicas en tres subgrupos (existencia, relación y crecimiento):",
+    q: "La estructura basada en bucles es:",
     options: [
-      "Teoría de McGregor.",
-      "Pirámide de las tres esquinas.",
-      "Teoría ERG.",
-      "Jerarquía de Adams."
+      "Secuencial.",
+      "Alternativa.",
+      "Iterativa.",
+      "Ninguna de las anteriores."
     ],
     correct: 2,
-    explanation: "La respuesta correcta es la C. Teoría ERG.\nSegún las fuentes, la Teoría ERG es una modificación de la jerarquía de Maslow que agrupa las necesidades básicas en tres subgrupos: existencia, relación y crecimiento. Además, a diferencia del modelo de Maslow, esta teoría plantea que puede operar más de una necesidad de forma simultánea en un mismo momento.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la Teoría de McGregor, también conocida como Teoría X e Y, se centra en estilos de liderazgo y dirección.\nLa opción B es falsa, debido a que pirámide de las tres esquinas no es una formulación teórica reconocida en este contexto.\nLa opción D es falsa, porque la teoría de Adams se relaciona con la equidad y la comparación entre esfuerzo y recompensa.\nPor ello, la respuesta correcta es la C."
+    explanation: "La respuesta correcta es la C. Iterativa.\nSegún el material de estudio, concretamente en los apartados dedicados a las estructuras de control, se establece de forma explícita que la estructura iterativa es la que crea un bucle en el que se repetirán las diferentes instrucciones mientras se cumpla una condición propuesta. El temario también se refiere a ellas como estructuras de repetición o bucles, como for, while o do while.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la estructura secuencial consiste simplemente en ejecutar una instrucción tras otra siguiendo el orden preasignado.\nLa opción B es falsa, debido a que la estructura alternativa corresponde a las condicionales como if/else o switch, que seleccionan un camino pero no repiten código.\nAl ser correcta la opción C, la opción D queda lógicamente descartada."
   },
   {
-    q: "La Agencia Tributaria:",
+    q: "La estructura de una clase está compuesta por:",
     options: [
-      "Es una entidad de derecho público adscrita al Ministerio de Hacienda.",
-      "Se misión es aplicar el sistema tributario y hacer cumplir el artículo 31 de la Constitución.",
-      "Se creó en 1992.",
-      "Todas son correctas."
+      "Solo variables",
+      "Solo métodos",
+      "Campos y métodos.",
+      "Métodos y funciones."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Campos y métodos.\nSegún el material de estudio, concretamente en el apartado dedicado a la estructura y miembros de una clase, se establece explícitamente que las clases se componen de dos partes: campos y métodos. La teoría detalla que los campos o atributos permiten guardar la información y propiedades que debe contener la clase, mientras que los métodos dotan de acciones a esa clase haciendo uso de dichos datos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y B son falsas, ya que afirmar que una clase está compuesta solo por variables o solo por métodos es incompleto.\nLa opción D es falsa, debido a que métodos y funciones hacen referencia a la misma categoría de comportamiento y omiten la parte estructural de almacenamiento de datos."
+  },
+  {
+    q: "La estructura if",
+    options: [
+      "Permite hacer saltos incondicionales",
+      "Permite ejecutar una parte de código según una condición.",
+      "Permite ejecutar varias veces una parte de código.",
+      "Solo se ejecuta una vez."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Permite ejecutar una parte de código según una condición.\nSegún el material de estudio, concretamente en el apartado dedicado a las estructuras de selección, la sentencia if sirve para evaluar una condición y, dependiendo del resultado, actuar de una cierta manera. Solo si la condición se cumple se ejecutará el bloque de instrucciones correspondiente.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que los saltos incondicionales corresponden a sentencias como break y continue.\nLa opción C es falsa, debido a que ejecutar varias veces una parte de código corresponde a estructuras iterativas como for, while o do while.\nLa opción D es falsa, porque aunque un if no sea una estructura repetitiva, su función no es simplemente ejecutarse una vez, sino evaluar una condición."
+  },
+  {
+    q: "La notación Big-0",
+    options: [
+      "Es un tipo de dato",
+      "Permite medir la complejidad algorítmica.",
+      "Es una herramienta para calcular los usuarios que puede soportar una aplicación",
+      "Es una estructura de programación"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Permite medir la complejidad algorítmica.\nSegún el material de estudio, concretamente en los apartados dedicados a la recursividad y complejidad algorítmica, se establece de forma explícita que la notación Big-O es la unidad de medida para estudiar el consumo de recursos de la complejidad algorítmica. Esta notación se emplea para valorar cómo se comporta un algoritmo en función del tamaño de los datos de entrada.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que un tipo de dato sirve para definir el formato de la información almacenada.\nLa opción C es falsa, debido a que Big-O no es una herramienta práctica para calcular usuarios concurrentes.\nLa opción D es falsa, porque no es una estructura de programación, sino una métrica."
+  },
+  {
+    q: "Las clases abstractas:",
+    options: [
+      "Pueden ser instanciadas normalmente.",
+      "Pueden ser instanciadas per requieren de la palabra reservada abstract.",
+      "No puede ser instanciada ni empleada de otro modo.",
+      "No puede ser instanciada, pero sí empleada para la herencia."
     ],
     correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nDe acuerdo con las fuentes proporcionadas, la Agencia Tributaria se define por tener todas estas características: se creó en el año 1992, es una entidad de derecho público adscrita al Ministerio de Hacienda y su misión es aplicar el sistema tributario y hacer cumplir el artículo 31 de la Constitución, el cual establece que todos los ciudadanos han de contribuir al sostenimiento de los gastos públicos de acuerdo con su capacidad económica.\nA modo de aclaración sobre por qué las demás opciones también son verdaderas:\nLa opción A es correcta, ya que la Agencia Tributaria está adscrita al Ministerio de Hacienda.\nLa opción B es correcta, debido a que su misión es aplicar el sistema tributario y velar por el cumplimiento del deber constitucional de contribuir.\nLa opción C es correcta, porque fue creada en 1992.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
+    explanation: "La respuesta correcta es la D. No puede ser instanciada, pero sí empleada para la herencia.\nSegún el material de estudio, concretamente en los apartados dedicados a las clases y métodos abstractos, se establece explícitamente que de una clase abstracta nunca se generan instancias. La teoría detalla que este tipo de clases sirve exclusivamente para la herencia, actuando como plantilla o superclase para indicar cómo deben implementarse los métodos en las clases hijas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A y B son falsas, ya que una clase abstracta no puede instanciarse bajo ninguna circunstancia.\nLa opción C es falsa, debido a que aunque no puede instanciarse, sí puede y debe emplearse como base para la herencia."
   },
   {
-    q: "La demanda dependerá, entre otros, de:",
+    q: "No es una forma de polimorfismo:",
     options: [
-      "El comportamiento del consumidor.",
-      "El precio del producto.",
-      "La renta disponible y su distribución.",
-      "Todas son correctas."
+      "Asignación polimorfa.",
+      "Ejecución polimorfa.",
+      "Herencia polimorfa.",
+      "Todas las anteriores son incorrectas."
     ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nDe acuerdo con las fuentes, la demanda de un producto dependerá de varias cuestiones, entre las que se incluyen explícitamente todas las opciones mencionadas: el comportamiento del consumidor, el precio del producto y la renta disponible y su distribución.\nLa renta disponible influye porque cuanto más alto sea su nivel, mayor será la demanda general. El comportamiento del consumidor también es determinante, ya que está condicionado por factores internos y externos que afectan a los hábitos de compra. Por último, el precio del producto incide directamente en la demanda, pues cuanto más se ajuste a las expectativas y condiciones de los clientes, más alta será esta.\nAdemás, las fuentes indican que la demanda también depende del precio de otros bienes, especialmente de los productos competidores y sustitutivos.\nAl ser correctas todas las opciones, la respuesta válida es la D."
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Herencia polimorfa.\nSegún el material de estudio, concretamente en los apartados dedicados al polimorfismo, se establece de forma explícita que solo existen dos formas de polimorfismo: la asignación polimorfa y la ejecución polimorfa. Aunque el polimorfismo está estrechamente relacionado con la herencia, el concepto de herencia polimorfa no existe como forma reconocida.\nA modo de aclaración sobre por qué las demás opciones no son correctas como respuesta:\nLa opción A es falsa, ya que sí es una forma válida de polimorfismo.\nLa opción B es falsa, debido a que también es una forma válida.\nAl existir una opción inventada, la opción D queda descartada."
   },
   {
-    q: "La organización formal:",
+    q: "Para establecer cualquier conexión a una base de datos desde Java, es necesario:",
     options: [
-      "Es aquella donde la estructura organizativa la definen los directivos y se refleja en un organigrama con los puestos de trabajo, relaciones jerárquicas y funciones.",
-      "Es aquella donde la estructura organizativa está conformada según las relaciones personales que surgen de forma natural entre los trabajadores.",
-      "Es aquella que procura que su estructura esté en todo momento provista de personal, en sentido tanto cuantitativo como cualitativo.",
-      "Es aquella que impulsa la transformación digital implicando a todos los integrantes en el uso de la tecnología para fomentar un ecosistema abierto y digitalizado."
+      "Emplear un driver específico.",
+      "Emplear el objeto statement.",
+      "Emplear una librería con ficheros .iso.",
+      "Todas las anteriores son incorrectas."
     ],
     correct: 0,
-    explanation: "La respuesta correcta es la A. Es aquella donde la estructura organizativa la definen los directivos y se refleja en un organigrama con los puestos de trabajo, relaciones jerárquicas y funciones.\nDe acuerdo con las fuentes proporcionadas, dentro de una empresa conviven dos tipos de organizaciones. La organización formal es la estructura diseñada y establecida por los directivos para poder desarrollar la actividad de la empresa. Esta se refleja visualmente en el organigrama, una representación gráfica que muestra los puestos de trabajo, las personas que los ocupan, las funciones de cada uno y las relaciones jerárquicas.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B describe la organización informal, que surge espontáneamente a través de las relaciones personales entre trabajadores.\nLa opción C hace referencia a una finalidad propia de la planificación de recursos humanos, no a la definición de organización formal.\nLa opción D alude a tendencias de digitalización y comunicación interna, no a la estructura organizativa formal.\nPor ello, la respuesta correcta es la A."
+    explanation: "La respuesta correcta es la A. Emplear un driver específico.\nSegún el material de estudio, concretamente en el apartado dedicado al establecimiento de la conexión, se establece literalmente que para establecer cualquier conexión a una base de datos desde Java es necesario usar un driver específico dependiendo del tipo de base de datos y proveedor.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el objeto Statement no se utiliza para establecer la conexión inicial, sino para operar con la base de datos una vez conectados.\nLa opción C es falsa, debido a que el temario especifica que los drivers son librerías en ficheros .jar, no .iso.\nPor ello, la respuesta correcta es la A."
   },
   {
-    q: "La organización informal:",
+    q: "Para indicar a una clase que se almacene a una base de datos orientada a objetos, usaremos la etiqueta.",
     options: [
-      "Es aquella donde la estructura organizativa la define la dirección y se refleja en un organigrama con los puestos de trabajo, relaciones jerárquicas y funciones.",
-      "Es aquella donde la estructura organizativa está conformada según las relaciones personales que surgen de forma natural entre los trabajadores.",
-      "Es aquella que procura que su estructura esté en todo momento provista de personal, en sentido tanto cuantitativo como cualitativo.",
-      "Es aquella que impulsa la transformación digital implicando a todos los integrantes en el uso de la tecnología para fomentar un ecosistema abierto y digitalizado."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Es aquella donde la estructura organizativa está conformada según las relaciones personales que surgen de forma natural entre los trabajadores.\nSegún las fuentes, la organización informal se constituye de manera espontánea a través de las relaciones personales que surgen de forma natural entre los empleados. Estas relaciones pueden darse tanto dentro como fuera del entorno de la empresa, y los directivos no tienen ningún tipo de control sobre ellas, puesto que son independientes de la estructura organizativa oficial.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A describe la organización formal, ya que se refiere a la estructura definida por la dirección y reflejada en un organigrama.\nLa opción C se refiere a la planificación de personal y a la cobertura cuantitativa y cualitativa de la estructura, no a la organización informal.\nLa opción D trata sobre la transformación digital y no sobre el concepto de organización informal.\nPor tanto, la respuesta correcta es la B."
-  },
-  {
-    q: "La planificación para establecer el personal de una organización se realiza en dos direcciones:",
-    options: [
-      "Expansión laboral y fusión de centros.",
-      "Aumento de personal y reducción de personal.",
-      "Renovación de puestos y reciclaje de puestos actuales.",
-      "Ninguna empresa realiza ya planificaciones de los recursos humanos."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Aumento de personal y reducción de personal.\nSegún las fuentes, la planificación para establecer los recursos humanos de una organización se realiza en dos direcciones principales: aumento del personal, que consiste en seleccionar y contratar nuevos empleados, y reducción de personal, que se refiere a despedir o prejubilar trabajadores.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que no recoge las dos direcciones fundamentales señaladas en el material.\nLa opción C es falsa, debido a que renovación o reciclaje de puestos no aparecen como la clasificación básica de esta planificación.\nLa opción D es falsa, porque las empresas sí realizan planificación de recursos humanos como parte de su gestión.\nPor ello, la respuesta correcta es la B."
-  },
-  {
-    q: "La T.A.E. (Tasa Anual Equivalente) es la suma de:",
-    options: [
-      "Comisión de apertura, comisión de estudio y comisión por cancelación.",
-      "Interés nominal, comisiones y gastos.",
-      "Amortización fija, amortización permanente e impuestos.",
-      "Préstamos, créditos y sus correspondientes tipos de interés."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Interés nominal, comisiones y gastos.\nSegún las fuentes, la Tasa Anual Equivalente es un indicador que brinda información sobre el coste real anual de un préstamo. Para calcularla, se utiliza exactamente la fórmula mencionada en la opción B: interés nominal más comisiones más gastos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que aunque menciona comisiones frecuentes, la TAE no se compone solo de esas comisiones, sino también del interés nominal y de otros gastos.\nLa opción C es falsa, debido a que amortización fija, amortización permanente e impuestos no forman la fórmula de la TAE.\nLa opción D es falsa, porque mezclar préstamos, créditos y tipos de interés no define este indicador.\nPor tanto, la respuesta correcta es la B."
-  },
-  {
-    q: "Las normas internas que son establecidas por la dirección para determinar objetivos y prácticas de comunicación comunes para toda la empresa son lo que se denomina:",
-    options: [
-      "Planificación de RRHH.",
-      "Política de comunicación.",
-      "Comunicación vertical.",
-      "Flujo comunicativo."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Política de comunicación.\nDe acuerdo con las fuentes, la política de comunicación se define exactamente como las normas internas establecidas por la dirección para determinar objetivos y prácticas de comunicación comunes para toda la empresa. Esta política suele recogerse en una memoria que contiene directrices, indicadores y métodos de registro sobre la comunicación empresarial.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la planificación de RRHH se refiere a prever necesidades de personal, no a normas de comunicación.\nLa opción C es falsa, debido a que la comunicación vertical es un tipo de comunicación interna según la dirección del mensaje, no el conjunto de normas internas.\nLa opción D es falsa, porque el flujo comunicativo es el cauce por el que se mueve la información, no la política que fija objetivos y prácticas.\nPor ello, la respuesta correcta es la B."
-  },
-  {
-    q: "Las prestaciones pecuniarias exigidas por una Administración pública, como consecuencia de la realización del supuesto de hecho al que la ley vincula el deber de contribuir, se denominan:",
-    options: [
-      "Tesorerías.",
-      "Recibos.",
-      "Tributos.",
-      "Letras de cambio."
-    ],
-    correct: 2,
-    explanation: "La respuesta correcta es la C. Tributos.\nSegún las fuentes, los tributos se definen exactamente como las prestaciones pecuniarias exigidas por una Administración pública como consecuencia de la realización del supuesto de hecho al que la ley vincula el deber de contribuir. Su fin primordial es obtener los ingresos necesarios para financiar y sostener los gastos públicos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que las tesorerías se relacionan con la previsión de cobros y pagos, no con una obligación tributaria.\nLa opción B es falsa, debido a que los recibos son justificantes de pago o instrumentos de cobro, no la categoría jurídica mencionada.\nLa opción D es falsa, porque las letras de cambio son documentos formales de pago aplazado.\nPor tanto, la respuesta correcta es la C."
-  },
-  {
-    q: "Los grupos profesionales se definen por:",
-    options: [
-      "Las características del trabajador.",
-      "La titulación del trabajador.",
-      "Las aptitudes del trabajador.",
-      "Todas son correctas."
-    ],
-    correct: 3,
-    explanation: "La respuesta correcta es la D. Todas son correctas.\nSegún las fuentes, un grupo profesional es la forma de clasificación profesional que organiza el acceso a los distintos puestos de trabajo en una empresa. De acuerdo con el artículo 22 del Estatuto de los Trabajadores, este concepto agrupa unitariamente y se define en base a tres aspectos: las características del trabajador, la titulación que posee y sus aptitudes profesionales.\nA modo de aclaración sobre por qué las demás opciones también son verdaderas:\nLa opción A es correcta, ya que las características personales y profesionales forman parte de la definición del grupo.\nLa opción B es correcta, debido a que la titulación es uno de los criterios considerados.\nLa opción C es correcta, porque las aptitudes del trabajador también se valoran.\nAl ser válidas todas las opciones anteriores, la respuesta correcta es la D."
-  },
-  {
-    q: "Los indicadores más habituales en el balance social son:",
-    options: [
-      "Las variables, los tipos y las consecuencias.",
-      "La eficiencia, la eficacia y el impacto.",
-      "Inputs, outputs e insiders.",
-      "Locales, regionales, nacionales e internacionales."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. La eficiencia, la eficacia y el impacto.\nSegún las fuentes, en la elaboración del balance social, que es una herramienta que ayuda a evaluar la acción social de la empresa, se deben definir variables e indicadores que midan su evolución. Los indicadores más habituales como medio de control de gestión se relacionan exactamente con la eficacia, la eficiencia y el impacto.\nLa eficacia mide el grado de consecución de los objetivos propuestos, la eficiencia valora el grado de aprovechamiento de los recursos y el impacto evalúa el coste asumido en relación con el beneficio generado.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A, C y D no corresponden a la clasificación de indicadores que recoge el material.\nPor ello, la respuesta correcta es la B."
-  },
-  {
-    q: "Los préstamos personales:",
-    options: [
-      "Suelen tener un plazo máximo de amortización de hasta 15 años.",
-      "Sus intereses siempre son inferiores a los de los créditos hipotecarios.",
-      "Se conocen normalmente como préstamos al consumo.",
-      "Todas son correctas."
-    ],
-    correct: 2,
-    explanation: "La respuesta correcta es la C. Se conocen normalmente como préstamos al consumo.\nSegún las fuentes, los préstamos personales reciben comúnmente el nombre de préstamos al consumo, ya que su finalidad es facilitar compras en el momento en que surge la necesidad o el deseo sin tener que esperar a reunir el dinero.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que por norma general el plazo máximo de amortización de estos préstamos no suele superar los 8 años, no 15.\nLa opción B es falsa, debido a que los intereses de los préstamos personales son superiores a los de los créditos hipotecarios, no inferiores.\nLa opción D es falsa, porque no todas las afirmaciones anteriores son correctas.\nPor tanto, la respuesta correcta es la C."
-  },
-  {
-    q: "Los recursos humanos se conciben desde tres enfoques:",
-    options: [
-      "Político-legal, socioeconómico y laboral.",
-      "Personal, empresarial y social.",
-      "Administrativo-legal, contable-costes y de gestión.",
-      "Actitudinal, competencial y aptitudinal."
-    ],
-    correct: 2,
-    explanation: "La respuesta correcta es la C. Administrativo-legal, contable-costes y de gestión.\nSegún las fuentes, el enfoque y tratamiento de los recursos humanos dentro de una empresa se concibe exactamente desde estas tres perspectivas: el enfoque administrativo-legal, el enfoque contable-costes y el enfoque de gestión.\nEl enfoque administrativo-legal se refiere a las gestiones necesarias para la utilización formal del personal, el enfoque contable-costes analiza los gastos que las personas suponen para la organización, y el enfoque de gestión abarca las actividades necesarias para dirigir y aprovechar a los trabajadores.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones A, B y D no coinciden con la clasificación exacta que presenta el material.\nPor ello, la respuesta correcta es la C."
-  },
-  {
-    q: "Para la planificación de los recursos humanos:",
-    options: [
-      "Es necesario plantear constantes aumentos de personal.",
-      "Se marcan objetivos logísticos y estratégicos.",
-      "Las desviaciones tienen siempre motivos extraordinarios.",
-      "Todas son correctas."
-    ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Se marcan objetivos logísticos y estratégicos.\nDe acuerdo con las fuentes, la planificación del personal persigue exactamente dos tipos de objetivos: logísticos y estratégicos. Los objetivos logísticos se marcan a corto plazo para asegurar que se cuenta con el número adecuado de personas y la cualificación ajustada a cada puesto, mientras que los estratégicos se plantean a largo plazo para prever cambios en la empresa o en el entorno que afecten a las necesidades de personal.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la planificación no exige constantes aumentos de personal, sino que también puede contemplar reducciones.\nLa opción C es falsa, debido a que las desviaciones respecto a lo planificado no siempre tienen causas extraordinarias; también pueden deberse a motivos ordinarios como bajas, absentismo o vacaciones.\nLa opción D es falsa, porque no todas las afirmaciones anteriores son correctas.\nPor tanto, la respuesta correcta es la B."
-  },
-  {
-    q: "Para poder elaborar un presupuesto familiar lo más fiel posible a la realidad, el primer paso es:",
-    options: [
-      "Identificar gastos e ingresos.",
-      "Contactar con un asesor fiscal.",
-      "Establecer el ahorro con un ingreso fijo.",
-      "Descargar el programa Excel."
+      "@Entity",
+      "@Embedded",
+      "@Transient",
+      "@Id"
     ],
     correct: 0,
-    explanation: "La respuesta correcta es la A. Identificar gastos e ingresos.\nSegún las fuentes, para elaborar un presupuesto familiar lo más fiel a la realidad posible, el primer paso recomendado es identificar los gastos e ingresos. Esto implica registrar todas las fuentes de ingresos y anotar cada uno de los gastos que se realicen, por pequeños que sean, para obtener una media realista de lo que se gasta cada mes.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que no se menciona como paso necesario en el proceso.\nLa opción C es falsa, debido a que fijar el ahorro como un gasto fijo obligatorio es un paso posterior, no el primero.\nLa opción D es falsa, porque descargar un programa no aparece como requisito esencial en los textos.\nPor ello, la respuesta correcta es la A."
+    explanation: "La respuesta correcta es la A. @Entity.\nSegún el material de estudio, concretamente en el apartado dedicado a las clases persistentes, se establece de forma literal que para que la clase sea almacenada se tendrá que indicar la etiqueta @Entity antes de la definición de la clase. Esta anotación sirve para definir una clase como persistente dentro de la base de datos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que @Embedded se utiliza para incrustar una clase dentro de otra como campo.\nLa opción C es falsa, debido a que @Transient indica que un campo no se guardará en la base de datos.\nLa opción D es falsa, porque @Id se usa para definir el identificador único o clave primaria de un campo."
   },
   {
-    q: "Renunciar a consumir hoy para consumir más en el futuro, ¿a qué concepto hace referencia?:",
+    q: "Para montar la cadena de conexión ¿Que datos necesitamos?",
     options: [
-      "Consumo.",
-      "Financiación.",
-      "Planificación.",
-      "Ahorro."
+      "Solo el nombre de la base de datos.",
+      "La URL de la base de datos, el usuario y la contraseña.",
+      "El nombre de la base de datos y la tabla que queremos consultar.",
+      "No hace falta ningún dato, el driver ya dispone de los datos para conectarse."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. La URL de la base de datos, el usuario y la contraseña.\nSegún el material de estudio, tanto en bases de datos orientadas a objetos como en relacionales, se necesitan estos datos fundamentales para poder conectarse. La teoría especifica que la conexión se crea haciendo uso de la URL, el usuario y la contraseña.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que solo el nombre de la base de datos es insuficiente.\nLa opción C es falsa, debido a que la tabla que queremos consultar no forma parte de los parámetros de conexión, sino de las sentencias SQL posteriores.\nLa opción D es falsa, porque el driver no conoce automáticamente los datos concretos de conexión del servidor."
+  },
+  {
+    q: "Podemos decir de la herencia:",
+    options: [
+      "Es una relación jerárquica entre una clase padre y una clase hija.",
+      "En java solo se puede heredar de una superclase o clase padre.",
+      "Las clases hijas o subclases heredan toda la funcionalidad de la clase padre.",
+      "Todas las anteriores son correctas"
     ],
     correct: 3,
-    explanation: "La respuesta correcta es la D. Ahorro.\nSegún las fuentes, el ahorro consiste en reservar una parte de los ingresos para usarlos más adelante, en lugar de gastarlos en consumo inmediato. En definitiva, los textos lo definen de forma exacta como la acción de renunciar a consumir hoy para consumir más en el futuro.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el consumo implica precisamente satisfacer necesidades en el presente.\nLa opción B es falsa, debido a que la financiación permite consumir hoy recurriendo a fondos ajenos, lo que obliga a pagar más adelante.\nLa opción C es falsa, porque la planificación es una herramienta organizativa más amplia que puede ayudar a ahorrar, pero no equivale al concepto descrito.\nPor tanto, la respuesta correcta es la D."
+    explanation: "La respuesta correcta es la D. Todas las anteriores son correctas.\nSegún el material de estudio, concretamente en el apartado dedicado a la herencia, todas las afirmaciones expuestas son ciertas. La herencia se define como una relación jerárquica entre una clase padre y una clase hija, en Java solo es posible una herencia simple de una única clase, y las clases hijas heredan la funcionalidad de la clase padre.\nA modo de aclaración:\nLa opción A es correcta porque describe la naturaleza jerárquica de la herencia.\nLa opción B es correcta ya que Java no permite herencia múltiple entre clases.\nLa opción C es correcta porque las subclases heredan la funcionalidad de la superclase.\nAl ser válidas las tres afirmaciones, la respuesta global correcta es la D."
+  },
+  {
+    q: "Que campos de una clase no se guardaran en una base de datos orientada a objetos",
+    options: [
+      "Todos los campos se guardan siempre.",
+      "Los campos que se declaren como final, static, transient o lleve la etiqueta @Transient",
+      "Los que tengan visibilidad privada.",
+      "Los que lleven la etiqueta @FieldNotIncluded."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Los campos que se declaren como final, static, transient o lleve la etiqueta @Transient.\nSegún el material de estudio, concretamente en el apartado dedicado a los campos persistentes, se establece de forma explícita que todos los campos de una clase se guardarán en la base de datos por defecto, a excepción de aquellos declarados como final, static o transient, o si llevan la etiqueta @Transient.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el propio temario contempla excepciones.\nLa opción C es falsa, debido a que tener visibilidad privada no impide que el campo se persista; de hecho, suele ser la convención recomendada.\nLa opción D es falsa, porque @FieldNotIncluded no es una anotación estándar válida en JPA."
+  },
+  {
+    q: "Que tipos de recursividad existen:",
+    options: [
+      "Simple, multiple, cruzada o anidada.",
+      "Simple, multiple, cruzada o anillada.",
+      "Doble, unificada, indirecta o anillada.",
+      "Doble, anillada, simple o cruzada."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Simple, multiple, cruzada o anidada.\nSegún el material de estudio, concretamente en el apartado dedicado a los tipos de recursividad, se estipula de forma explícita que existen cuatro tipos principales: recursividad simple, múltiple, cruzada o indirecta, y anidada.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLas opciones B, C y D son falsas porque introducen clasificaciones inventadas o erróneas, como anillada, doble o unificada, que no forman parte de la clasificación oficial."
+  },
+  {
+    q: "Queremos realizar las acciones de un semáforo, Verde para continuar, Amarillo y Rojo para parar. ¿Cómo se puede hacer?",
+    options: [
+      "Con una estructura switch",
+      "Con una estructura if-else",
+      "Con una estructura if-else if",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Todas las anteriores son correctas.\nSegún el material de estudio, concretamente en los apartados dedicados a las estructuras de selección o alternativa, cualquiera de las tres opciones propuestas sirve para implementar la lógica de un semáforo.\nLa opción A es correcta porque switch permite evaluar el valor de una variable y definir distintos casos.\nLa opción B es correcta porque if-else permite evaluar una condición principal y una alternativa.\nLa opción C es correcta porque if-else if permite encadenar varias condiciones específicas.\nAl ser válidas las tres estructuras, la respuesta correcta es la D."
+  },
+  {
+    q: "Queremos sumar los 10 primeros números para que dé como resultado 55 ¿Qué código es correcto?",
+    options: [
+      "for (int i = 1; i <= 10; i++) { resultado += i; }",
+      "int i=1; while(i<10) { resultado += i; }",
+      "int i=1;do { i++; resultado +=i; } while(i<=10);",
+      "Todas las anteriores son correctas."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. for (int i = 1; i <= 10; i++) { resultado += i; }.\nSegún el material de estudio y los ejemplos prácticos de sumas iterativas, esta es la única opción que implementa correctamente la lógica. El bucle for inicializa i en 1, continúa mientras i sea menor o igual a 10 y acumula correctamente los valores del 1 al 10.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa porque el bucle while carece de incremento dentro del bloque, lo que provocaría un bucle infinito.\nLa opción C es falsa porque incrementa i antes de sumar, perdiéndose el valor 1 y alterando la lógica del resultado.\nAl ser erróneas B y C, la opción D queda descartada."
+  },
+  {
+    q: "Se considera la plantilla o estructura del elemento principal de POO:",
+    options: [
+      "Clase.",
+      "Campo.",
+      "Objeto.",
+      "Ninguna de las anteriores es correcta."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Clase.\nSegún el material de estudio, concretamente en los apartados dedicados al concepto de clase, se establece de forma explícita que la clase es el elemento principal de la programación orientada a objetos y funciona como la plantilla o estructura con la cual se crean e instancian los objetos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que el campo es solo un elemento interno de la clase.\nLa opción C es falsa, debido a que el objeto es la instanciación práctica de la clase, no su plantilla.\nAl ser correcta la opción A, la opción D queda descartada."
+  },
+  {
+    q: "Se puede decir de un constructor que...",
+    options: [
+      "Se encarga de crear instancias de objetos.",
+      "Se encarga de destruir instancias de objetos.",
+      "Un método personalizado que realizar una función concreta, por ejemplo, una suma.",
+      "Es un atributo de una clase."
+    ],
+    correct: 0,
+    explanation: "La respuesta correcta es la A. Se encarga de crear instancias de objetos.\nSegún el material de estudio, un constructor se define como un tipo especial de método que pertenece a una clase concreta y se utiliza para instanciar objetos que pertenecen a esta. También se describe como la subrutina que permite instanciar objetos a partir de una clase.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción B es falsa, ya que destruir objetos corresponde al concepto de destructor, que en Java se sustituye en la práctica por el recolector de basura.\nLa opción C es falsa, porque eso describe a un método personalizado, no a un constructor.\nLa opción D es falsa, debido a que un constructor es un método especial, no un atributo."
+  },
+  {
+    q: "Si queremos acceder al primer elemento de un array, usaremos...",
+    options: [
+      "array[1]",
+      "array[array.length]",
+      "array[0]",
+      "array[1][1]"
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. array[0].\nSegún el material de estudio, concretamente en los apartados dedicados al acceso y recorrido de arrays, se establece de forma explícita que el primer elemento tiene la posición 0. El índice de un array siempre comienza en 0 y termina en la cantidad total de elementos menos uno.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que array[1] accede al segundo elemento.\nLa opción B es falsa, debido a que array.length devuelve el tamaño total, pero el último índice válido es length - 1.\nLa opción D es falsa porque corresponde a la sintaxis de un array multidimensional y, aun así, no señalaría el primer elemento absoluto."
+  },
+  {
+    q: "Todas las excepciones deben de heredar de:",
+    options: [
+      "La clase que contiene el método main o cualquier subclase.",
+      "La clase Throwable o cualquier subclase.",
+      "La clase System o cualquier subclase.",
+      "Ninguna de las anteriores."
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. La clase Throwable o cualquier subclase.\nSegún el material de estudio, concretamente en el apartado dedicado a la jerarquía de excepciones, se establece de forma explícita que todas las excepciones tienen una jerarquía usando como raíz java.lang.Throwable y por debajo Exception y Error. La teoría detalla que, si se necesita definir una nueva excepción, esta ha de heredar obligatoriamente de Throwable o cualquiera de sus hijos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que la clase que contiene el método main solo actúa como punto de entrada del programa.\nLa opción C es falsa, debido a que System se emplea para el manejo de entrada y salida estándar, no para la jerarquía de excepciones.\nAl ser correcta la opción B, la opción D queda descartada."
+  },
+  {
+    q: "TreeSet",
+    options: [
+      "No existe este tipo de colección",
+      "Es una colección que permite tener elementos duplicados",
+      "Los datos se organizan en forma de árbol jerárquico",
+      "Usa la interfaz map."
+    ],
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Los datos se organizan en forma de árbol jerárquico.\nSegún el material de estudio, concretamente en el apartado dedicado a las colecciones, se establece de forma explícita que TreeSet es una estructura en árbol binario. La teoría detalla que este tipo de estructura organiza jerárquicamente sus elementos y los mantiene ordenados según sus valores o un criterio definido.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que TreeSet es una colección existente y ampliamente descrita en Java.\nLa opción B es falsa, debido a que al pertenecer a Set no permite elementos duplicados.\nLa opción D es falsa, porque TreeSet no usa Map, sino la interfaz Set."
+  },
+  {
+    q: "Un caso base es",
+    options: [
+      "Una plantilla para hacer recursividad",
+      "Una condición de terminación de la recursividad.",
+      "Un ejemplo de recursividad.",
+      "Ninguna de las anteriores"
+    ],
+    correct: 1,
+    explanation: "La respuesta correcta es la B. Una condición de terminación de la recursividad.\nSegún el material de estudio, concretamente en los apartados dedicados a la recursividad, se establece de forma explícita que al dividir un problema recursivo en subproblemas más pequeños es necesario plantear una condición de terminación para esos casos más pequeños, denominada caso base. El glosario también lo define como la parte de la recursividad que hace que termine el flujo de llamadas para evitar bucles infinitos.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que no es una plantilla, sino una condición lógica concreta.\nLa opción C es falsa, debido a que no es un ejemplo, sino un componente estructural obligatorio.\nAl ser correcta la opción B, la opción D queda descartada."
+  },
+  {
+    q: "Una aplicación...",
+    options: [
+      "No necesita manejar información.",
+      "Necesita el manejo de información dependiendo de la funcionalidad.",
+      "Necesita el manejo de información existiendo solo una entrada de datos.",
+      "Necesita el manejo de información existiendo una entrada y salida de datos."
+    ],
+    correct: 3,
+    explanation: "La respuesta correcta es la D. Necesita el manejo de información existiendo una entrada y salida de datos.\nSegún el material de estudio, concretamente en el resumen sobre estructuras de control, se establece de forma literal que cualquier programa necesita del manejo de información, siendo necesaria una entrada por donde recibe los datos y una salida para mostrar los datos hacia el usuario. La teoría enfatiza que todo programa interactúa con elementos externos tanto para entrada como para salida de información.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que contradice el principio básico de que cualquier programa necesita manejar información.\nLa opción B es falsa, debido a que el manejo de información no es opcional, sino general a cualquier programa.\nLa opción C es falsa, porque ignora que además de entrada debe existir una salida de datos.\nPor ello, la respuesta correcta es la D."
   }
 ]
+
         },
 
         unidad1: {
