@@ -3050,10 +3050,10 @@ const ExamTestApp = () => {
   {
     q: "En la configuración de NetBeans Keymap permite:",
     options: [
-      "Elegir tipografía.",
+      "Podremos elegir el tipo de simbología y la tipografía que utiliza el editor.",
       "Permite establecer shortcuts.",
-      "Configurar depurador.",
-      "Ninguna."
+      "Permite configurar como se comportará el depurador.",
+      "Todas las anteriores son incorrectas."
     ],
     correct: 1,
     explanation: "La respuesta correcta es la B.\nKeymap permite establecer shortcuts.\nAclaraciones:\nA es Fonts & Colors.\nC es configuración Java."
@@ -3083,10 +3083,10 @@ const ExamTestApp = () => {
   {
     q: "Un compilador JIT:",
     options: [
-      "Compila alto nivel.",
-      "Evita recompilar varias veces.",
-      "Codifica intermedio.",
-      "Ninguna."
+      "Permite compilar directamente lenguaje de alto nivel.",
+      "Nos permite ahorrar tiempo al evitar que traduzcamos varias veces el mismo código.",
+      "Permite codificar código intermedio.",
+      "Ninguna de las anteriores"
     ],
     correct: 1,
     explanation: "La respuesta correcta es la B.\nEl JIT mejora rendimiento evitando traducciones repetidas.\nAclaraciones:\nA es falso.\nC es incorrecto."
@@ -3096,8 +3096,8 @@ const ExamTestApp = () => {
     options: [
       "No se puede ejecutar regularmente.",
       "Consume recursos mientras se ejecuta.",
-      "Solo se ejecuta sin memoria.",
-      "Ninguna."
+      "Solo se puede ejecutar cuando no queda memoria libre.",
+      "Ninguna de las anteriores."
     ],
     correct: 1,
     explanation: "La respuesta correcta es la B.\nConsume recursos y afecta rendimiento.\nAclaraciones:\nA y C son falsas."
