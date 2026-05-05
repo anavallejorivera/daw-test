@@ -3233,7 +3233,7 @@ const ExamTestApp = () => {
       "Todas las anteriores son correctas."
     ],
     correct: 4,
-    explanation: "La respuesta correcta es la D.
+    explanation: "La respuesta correcta es la D."
       },
   {
     q: "La entrada de datos puede ser:",
@@ -3312,7 +3312,7 @@ const ExamTestApp = () => {
       "No hará nada."
     ],
     correct: 1,
-    explanation: "La respuesta correcta es la A. Se ejecutará 10 veces la instrucción de imprimir y 10 veces la instrucción i++.\nComo no se ha incluido el fragmento de código en el enunciado, no es posible asegurarlo con certeza absoluta. Sin embargo, basándonos en el tipo de pregunta y en la sintaxis habitual de las estructuras de repetición en Java, lo más probable es que se trate de un bucle correctamente escrito en el que tanto la instrucción de impresión como el incremento i++ forman parte del bloque iterativo.\nSegún el material de estudio, las estructuras de repetición como for o while permiten ejecutar repetidamente un bloque de instrucciones mientras se cumpla una condición. Si ambas instrucciones están correctamente agrupadas dentro del bloque del bucle, lo normal es que la impresión se ejecute 10 veces y también el incremento i++ se ejecute 10 veces.\nA modo de aclaración sobre por qué las demás opciones serían incorrectas en ese escenario:\nLa opción A solo sería correcta si, por un problema de sintaxis o por ausencia de llaves, la única instrucción controlada por el bucle fuera i++.\nLa opción B sería posible si el incremento quedara fuera del bloque y la impresión estuviera dentro, aunque eso dependería completamente de cómo estuviera escrito el código concreto.\nLa opción D sería falsa en un bucle estándar cuya condición inicial permita entrar en él al menos una vez.\nPor tanto, tomando como referencia la forma más habitual y correcta de este tipo de ejercicios, la opción más probable es la C."
+    explanation: "La respuesta correcta es la A. Se ejecutará i++."
   },
   {
     q: "Qué método permite obtener una línea completa por teclado.",
