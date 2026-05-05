@@ -3232,7 +3232,7 @@ const ExamTestApp = () => {
       "Determinar el resultado de la aplicación según la entrada de datos.",
       "Todas las anteriores son correctas."
     ],
-    correct: 4,
+    correct: 3,
     explanation: "La respuesta correcta es la D."
       },
   {
