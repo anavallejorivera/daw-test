@@ -2774,10 +2774,10 @@ const ExamTestApp = () => {
   {
     q: "Dentro de la simbología de los diagramas de flujo cuál de estas afirmaciones es falsa:",
     options: [
-      "Las operaciones deben seguir un orden indicado con flechas.",
-      "Las decisiones se indican en un rombo.",
-      "Las operaciones se describen con una bandera.",
-      "Empiezan y terminan con un óvalo."
+      "Las operaciones que se vayan realizando deben de seguir un orden en concreto, y este orden se indica con flechas.",
+      "Las decisiones se indican en un rombo donde pondremos tantas líneas de flujo como alternativas finales tengamos.",
+      "Las operaciones de cálculo interno del programa se describen con una bandera.",
+      "Cada uno de los diagramas de flujo comienzan y terminan con terminal que se representa con un óvalo o elipse."
     ],
     correct: 2,
     explanation: "La respuesta correcta es la C. Las operaciones de cálculo interno del programa se describen con una bandera.\nEsta afirmación es la falsa porque, según el material de estudio correspondiente a la simbología de los diagramas de flujo, \"las operaciones de cálculo interno del programa se describen con un rectángulo\", no con una bandera.\nA modo de aclaración:\nLa opción A es verdadera.\nLa opción B es verdadera.\nLa opción D es verdadera."
@@ -2796,10 +2796,10 @@ const ExamTestApp = () => {
   {
     q: "En la cohesión comunicacional:",
     options: [
-      "Una sola tarea definida.",
-      "Salida coincide con entrada.",
-      "Actividades paralelas con mismos datos.",
-      "Ninguna."
+      "Los elementos software que constituyen el módulo tienen una sola tarea definida.",
+      "La salida de una instrucción debe de coincidir de manera estricta con la entrada.",
+      "Conviven varias actividades paralelas que no siguen un orden específico y que comparten los mismos datos de entrada y salida.",
+      "Ninguna de las anteriores es correcta."
     ],
     correct: 2,
     explanation: "La respuesta correcta es la C. Conviven varias actividades paralelas que no siguen un orden específico y que comparten los mismos datos de entrada y salida.\nSegún el material de estudio, se define literalmente así.\nAclaraciones:\nLa opción A es cohesión funcional.\nLa opción B es cohesión secuencial.\nLa opción D es incorrecta."
@@ -2807,9 +2807,9 @@ const ExamTestApp = () => {
   {
     q: "En la cohesión lógica:",
     options: [
-      "Una sola tarea definida.",
-      "Salida coincide con entrada.",
-      "Actividades paralelas.",
+      "Los elementos software que constituyen el módulo tienen una sola tarea definida.",
+      "La salida de una instrucción debe de coincidir de manera estricta con la entrada.",
+      "Conviven varias actividades paralelas que no siguen un orden específico y que comparten los mismos datos de entrada y salida.",
       "Ninguna de las anteriores."
     ],
     correct: 3,
@@ -2902,15 +2902,15 @@ const ExamTestApp = () => {
     q: "El encapsulamiento:",
     options: [
       "Agrupación en un mismo elemento de los datos y las operaciones relacionadas con estos.",
-      "Reducir complejidad (abstracción).",
-      "Permite reutilizar código.",
+      "Mecanismo que permite reducir la complejidad de los objetos minimizando la información a representar, dejando solo los aspectos más relevantes",
+      "Permite reutilizar el código de forma sencilla.",
       "Ninguna de las anteriores."
     ],
     correct: 0,
     explanation: "La respuesta correcta es la A. Agrupación en un mismo elemento de los datos y las operaciones relacionadas con estos.\nSegún el material de estudio, el encapsulamiento se define como la \"agrupación en un mismo elemento de los datos y las operaciones relacionadas con estos\".\nSu propósito es ocultar los datos y acceder mediante interfaces.\n\nAclaraciones:\nLa opción B describe abstracción.\nLa opción C describe reutilización."
   },
   {
-    q: "Elementos que actúan como variables propias de cada instancia:",
+    q: "Elementos que actúan como variables propias de cada instancia de una clase y que definen un atributo de un objeto:",
     options: [
       "Propiedad.",
       "Método.",
@@ -2923,10 +2923,10 @@ const ExamTestApp = () => {
   {
     q: "En el área intermedia de los diagramas de clase:",
     options: [
-      "Nombre de la clase.",
-      "Campos de la clase.",
-      "Métodos.",
-      "Ninguna."
+      "Se encuentra el Nombre de la clase.",
+      "Se encuentra el Campos de la clase.",
+      "Se encuentran los Métodos.",
+      "Ninguna de las anteriores."
     ],
     correct: 1,
     explanation: "La respuesta correcta es la B.\nSegún el material, el área intermedia contiene los campos.\n\nEstructura:\nSuperior → nombre\nIntermedia → campos\nInferior → métodos"
@@ -2956,10 +2956,10 @@ const ExamTestApp = () => {
   {
     q: "La forma de declarar propiedades en Java:",
     options: [
-      "Es sencilla y reutilizable.",
-      "No es sencilla pero reutilizable.",
-      "No es sencilla ni reutilizable.",
-      "Java no ofrece mecanismos."
+      "Es sencilla y permite reutilizar el código",
+      "No es sencilla, pero permite reutilizar el código.",
+      "No es sencilla ni permite reutilizar el código.",
+      "Todas las anteriores son incorrectas, Java no ofrece mecanismos para declararlas."
     ],
     correct: 3,
     explanation: "La respuesta correcta es la D.\nSegún el material, Java no tiene mecanismo específico.\n\nSe usan campos + getters/setters."
@@ -3584,8 +3584,8 @@ const ExamTestApp = () => {
       "Las opciones a) y b) son correctas.",
       "Ninguna opción es correcta."
     ],
-    correct: 1,
-    explanation: "La respuesta correcta es la B. Con la función .length.\nSegún el material de estudio, concretamente en el apartado sobre las operaciones para realizar sobre un array estático, se establece explícitamente que para recorrer un array tenemos que conocer previamente su capacidad total o longitud de la dimensión, y para ello el array tiene un campo length que nos devuelve la longitud total. Además, en el resumen de acceso a los arrays se reitera que para conocer la posición del último elemento se usa la propiedad .length del array.\nA modo de aclaración sobre por qué las demás opciones son incorrectas:\nLa opción A es falsa, ya que el propio temario indica la lógica inversa: para recorrer un array tenemos que conocer previamente su capacidad total. Por lo tanto, no se recorre el array para descubrir su tamaño, sino que se utiliza .length para conocerlo antes de recorrerlo.\nAl ser incorrecta la opción A, la opción C también es falsa.\nAl ser válida la opción B como la forma estipulada para conocer la longitud, la opción D queda lógicamente descartada."
+    correct: 2,
+    explanation: "La respuesta correcta es la C. Con la función .length.\n En los test marca esta respuesta aunque sea la B\nLa opción A es falsa, ya que el propio temario indica la lógica inversa: para recorrer un array tenemos que conocer previamente su capacidad total. Por lo tanto, no se recorre el array para descubrir su tamaño, sino que se utiliza .length para conocerlo antes de recorrerlo.\nAl ser incorrecta la opción A, la opción C también es falsa.\nAl ser válida la opción B como la forma estipulada para conocer la longitud, la opción D queda lógicamente descartada."
   },
   {
     q: "¿De qué tipo se puede declarar los valores un array?",
